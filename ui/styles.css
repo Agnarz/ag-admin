@@ -1,0 +1,18 @@
+body {background: #00000000!important; overflow: hidden;}
+div#q-loading-bar {display: none!important;}
+#AdminUI {display: none;}
+
+:root {
+  --bgPrimary: #0C0C0C!important;
+  --bgSecondary: #121212!important;
+  --bgTertiary: #181818!important;
+}
+
+.container {
+  display: flex; flex-direction: column;
+  background: var(--bgPrimary)!important;
+  position: fixed;
+  top: 50%; right: 0.5%;
+  transform: translate(-0%,-50%);
+  height: 75vh; width: 498px;
+}
