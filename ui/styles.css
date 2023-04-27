@@ -1,18 +1,51 @@
 body {background: #00000000!important; overflow: hidden;}
 div#q-loading-bar {display: none!important;}
-#AdminUI {display: none;}
+#AdminUI {display: block;}
 
 :root {
   --bgPrimary: #0C0C0C!important;
   --bgSecondary: #121212!important;
   --bgTertiary: #181818!important;
+  --quickaction: #4c4c4c!important;
+  --accentMain: #0f64c4!important;
+
 }
 
 .container {
-  display: flex; flex-direction: column;
+  display: flex; flex-direction: row;
   background: var(--bgPrimary)!important;
   position: fixed;
   top: 50%; right: 0.5%;
   transform: translate(-0%,-50%);
   height: 75vh; width: 498px;
 }
+
+#quickActions {
+  background: var(--bgSecondary)!important;
+  color: white;
+  height: 100%; width: 56px;
+  padding: 6px;
+  display: flex; flex-direction: column;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.quickaction {
+  background: var(--quickaction)!important;
+  border: none;
+  font-size: 13px!important;
+}
+
+.q-tab-panels, .q-tab-panel {
+  background: rgb(0, 0, 0, 0.0)!important;
+  padding: 0px!important;
+  display: flex; flex-direction: column;
+  position: relative!important;
+  height: 100%!important;
+  width: 100%!important;
+}
+
+li:nth-child(odd) {background: var(--odd)!important;}
+li:nth-child(even) {background: var(--even)!important;}
+
+.activeTab { background: var(--accentMain)!important}

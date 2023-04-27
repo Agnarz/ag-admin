@@ -18,6 +18,17 @@
     <body>
         <div id="AdminUI">
             <div class="container">
+                <div id="quickActions">
+                    <div v-for="(v, index) in tabs">
+                        <q-btn v-on:click="SwitchTab(v.name)" class="full-width quickaction" unelevated :icon="v.icon" :class="{ activeTab: tab == v.name }"></q-btn>
+                    </div>
+                    <q-separator spaced dark></q-separator>
+                </div>
+                <q-tab-panels v-model="tab" animated dark transition-prev="fade" transition-next="fade">
+                    <q-tab-panel name="commands"></q-tab-panel>
+                    <q-tab-panel name="online"></q-tab-panel>
+                    <q-tab-panel name="bans"></q-tab-panel>
+                </q-tab-panels>
 
             </div>
         </div>

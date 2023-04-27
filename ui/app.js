@@ -3,7 +3,12 @@ const { ref } = Vue;
 const app = Vue.createApp({
   data: function () {
     return {
-
+      tabs: [
+        {name: "commands", icon: "fas fa-hat-wizard"},
+        {name: "online", icon: "fas fa-users"},
+        {name: "bans", icon: "fas fa-gavel"},
+      ],
+      tab: "commands",
     };
   },
   setup() {
@@ -29,8 +34,9 @@ const app = Vue.createApp({
         $("#AdminUI").fadeIn(150);
       } else {
         $("#AdminUI").fadeOut(550);
-      }
+      };
     },
+    SwitchTab(tab) {this.tab = tab;},
     nuiHandler: function(data) {
       axios.post("https://ag-admin/NUIHandler",
         JSON.stringify(data)
