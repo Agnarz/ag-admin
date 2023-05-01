@@ -6,7 +6,7 @@ const app = Vue.createApp({
       tabs: [
         {name: "commands", icon: "fas fa-hat-wizard"},
         {name: "online", icon: "fas fa-users"},
-        {name: "bans", icon: "fas fa-gavel"},
+        {name: "bans", icon: "fas fa-gavel"}
       ],
       tab: "commands",
     };

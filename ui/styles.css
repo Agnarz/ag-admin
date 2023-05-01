@@ -8,7 +8,6 @@ div#q-loading-bar {display: none!important;}
   --bgTertiary: #181818!important;
   --quickaction: #4c4c4c!important;
   --accentMain: #0f64c4!important;
-
 }
 
 .container {
@@ -20,8 +19,8 @@ div#q-loading-bar {display: none!important;}
   height: 75vh; width: 498px;
 }
 
-#quickActions {
-  background: var(--bgSecondary)!important;
+#sidebar {
+  background: var(--bgTertiary)!important;
   color: white;
   height: 100%; width: 56px;
   padding: 6px;
