@@ -13,13 +13,16 @@ const app = Vue.createApp({
   },
   setup() {
     return {
-
+      playerData: ref(),
     };
   },
   mounted() {
     this.listener = window.addEventListener("message", (event) => {
       if (event.data.action === "open") {this.ToggleMenu(true);}
       if (event.data.action === "close") {this.ToggleMenu(false);}
+      if (event.data.action === "playerData") {
+        this.playerData = event.data.playerData;
+      }
     });
     Config = {};
   },

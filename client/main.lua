@@ -1,7 +1,10 @@
+local QBCore = exports['qb-core']:GetCoreObject()
+local PlayerData = QBCore.Functions.GetPlayerData()
 local _G = _G
 local TriggerEvent = TriggerEvent
 local TriggerServerEvent = TriggerServerEvent
 local RegisterNetEvent = RegisterNetEvent
+local AddEventHandler = AddEventHandler
 local RegisterNUICallback = RegisterNUICallback
 local RegisterCommand = RegisterCommand
 local RegisterKeyMapping = RegisterKeyMapping
@@ -9,13 +12,30 @@ local SetNuiFocus = SetNuiFocus
 local SetCursorLocation = SetCursorLocation
 local SendNUIMessage = SendNUIMessage
 
-local QBCore = exports['qb-core']:GetCoreObject()
+RegisterNetEvent("QBCore:Client:OnPlayerLoaded", function()
+    PlayerData = QBCore.Functions.GetPlayerData()
+end)
+
+RegisterNetEvent("QBCore:Client:OnPlayerUnload", function()
+    PlayerData = {}
+end)
+
+RegisterNetEvent("QBCore:Player:SetPlayerData", function(val)
+    PlayerData = val
+    SendNUIMessage({action = "playerData", playerData = PlayerData})
+end)
+
+AddEventHandler('onResourceStart', function(resourceName)
+    if GetCurrentResourceName() ~= resourceName then return end
+    PlayerData = QBCore.Functions.GetPlayerData()
+end)
 
 local function ToggleMenu(bool)
     if bool then
         SetNuiFocus(true, true)
         SetCursorLocation(0.9, 0.5)
         SendNUIMessage({action = "open"})
+        SendNUIMessage({action = "playerData", playerData = PlayerData})
     else
         SetNuiFocus(false, false)
         SendNUIMessage({action = "close"})
