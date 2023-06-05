@@ -21,14 +21,12 @@ local function Draw2DText(content, font, colour, scale, x, y)
 end
 
 local function RotationToDirection(rotation)
-	local adjustedRotation =
-	{
+	local adjustedRotation = {
 		x = (math_pi / 180) * rotation.x,
 		y = (math_pi / 180) * rotation.y,
 		z = (math_pi / 180) * rotation.z
 	}
-	local direction =
-	{
+	local direction = {
 		x = -math_sin(adjustedRotation.z) * math_abs(math_cos(adjustedRotation.x)),
 		y = math_cos(adjustedRotation.z) * math_abs(math_cos(adjustedRotation.x)),
 		z = math_sin(adjustedRotation.x)
@@ -40,8 +38,7 @@ local function RayCastGamePlayCamera(distance)
     local cameraRotation = GetGameplayCamRot()
 	local cameraCoord = GetGameplayCamCoord()
 	local direction = RotationToDirection(cameraRotation)
-	local destination =
-	{
+	local destination = {
 		x = cameraCoord.x + direction.x * distance,
 		y = cameraCoord.y + direction.y * distance,
 		z = cameraCoord.z + direction.z * distance
@@ -56,15 +53,13 @@ local function DrawEntityBoundingBox(entity, color)
     local rightVector, forwardVector, upVector, position = GetEntityMatrix(entity)
 
     -- Calculate size
-    local dim =
-	{
+    local dim = {
 		x = 0.5*(max.x - min.x),
 		y = 0.5*(max.y - min.y),
 		z = 0.5*(max.z - min.z)
 	}
 
-    local FUR =
-    {
+    local FUR = {
 		x = position.x + dim.y*rightVector.x + dim.x*forwardVector.x + dim.z*upVector.x,
 		y = position.y + dim.y*rightVector.y + dim.x*forwardVector.y + dim.z*upVector.y,
 		z = 0
@@ -74,8 +69,7 @@ local function DrawEntityBoundingBox(entity, color)
     FUR.z = FUR_z
     FUR.z = FUR.z + 2 * dim.z
 
-    local BLL =
-    {
+    local BLL = {
         x = position.x - dim.y*rightVector.x - dim.x*forwardVector.x - dim.z*upVector.x,
         y = position.y - dim.y*rightVector.y - dim.x*forwardVector.y - dim.z*upVector.y,
         z = 0
