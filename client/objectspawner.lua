@@ -1,9 +1,14 @@
+local ResourceName = GetCurrentResourceName()
+local RegisterNetEvent = RegisterNetEvent
+local AddEventHandler = AddEventHandler
 local CreateThread = CreateThread
 local Wait = Wait
-local ResourceName = GetCurrentResourceName()
-local previewObject = nil
-local spawnedObjects = {}
+local tableInsert = table.insert
 
+local previewObject = nil -- variable to store the preview object
+local spawnedObjects = {} -- table to store all spawned objects
+
+-- function to preview the object before spawning it
 function PreviewObject(hash)
     local model = GetHashKey(hash)
     if not IsModelInCdimage(model) then return end
@@ -22,8 +27,8 @@ function PreviewObject(hash)
     SetModelAsNoLongerNeeded(previewObject)
     previewObject = object
 end
-RegisterNetEvent("Admin:client:SpawnObject")
-AddEventHandler("Admin:client:SpawnObject", PreviewObject)
+RegisterNetEvent("Admin:Client:SpawnObject")
+AddEventHandler("Admin:Client:SpawnObject", PreviewObject)
 
 -- function to delete the preview object
 function DeletePreviewObject()
@@ -37,7 +42,7 @@ end
 function PlaceObject()
     SetEntityAlpha(previewObject, 255, false)
     SetEntityCollision(previewObject, true, true)
-    table.insert(spawnedObjects, previewObject)
+    tableInsert(spawnedObjects, previewObject)
     previewObject = nil
 end
 
@@ -106,6 +111,7 @@ CreateThread(function()
     end
 end)
 
+-- event to delete the preview object when the resource stops
 AddEventHandler('onResourceStop', function(resourceName)
     if resourceName == ResourceName then
         DeleteEntity(previewObject)
