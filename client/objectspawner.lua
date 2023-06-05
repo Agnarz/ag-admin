@@ -108,6 +108,6 @@ end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if resourceName == ResourceName then
-        DeleteAllSpawned()
+        DeleteEntity(previewObject)
     end
 end)
