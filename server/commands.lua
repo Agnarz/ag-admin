@@ -140,7 +140,7 @@ QBCore.Commands.Add("fuel", Lang:t("commands.refuel_vehicle"), {}, false, functi
     TriggerClientEvent("Admin:Client:RefuelVehicle", src)
 end, "admin")
 
-QBCore.Commands.Add("bennys", Lang:t("open_bennys"), {}, false, function(source)
+QBCore.Commands.Add("bennys", Lang:t("commands.bennys"), {}, false, function(source)
     local src = source
     TriggerClientEvent("Admin:Client:OpenBennys", src)
 end, "admin")
