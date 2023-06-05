@@ -277,8 +277,6 @@ const app = Vue.createApp({
         this.gangGrades = event.data.gangGrades;
         this.gangGrade = "";
       };
-
-
     });
     Config = {};
   },
