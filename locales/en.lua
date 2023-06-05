@@ -81,14 +81,10 @@ local Translations = {
       ["repair_vehicle"] = "Repair Vehicle (Admin Only)",
       ["refuel_vehicle"] = "Refuel Vehicle (Admin Only)",
       ["warp_to_vehicle"] = "Warp to last vehicle (Admin Only)",
-      ["open_bennys"] = "Open Bennys Menu (Admin Only)",
-
-
-
+      ["bennys"] = "Open Bennys Menu (Admin Only)",
       ["teleport_location"] = "Teleport to location (Admin Only)",
       ["teleport_main"] = "Teleport to coords (Admin Only)",
       ["teleport_marker"] = "Teleport to marker (Admin Only)",
-
       ["set_timecycle"] = "Set Timecycle (Admin Only)",
       ["clear_timecycle"] = "Clear Timecycle (Admin Only)",
       ["spawn_object"] = "Spawn Object (Admin Only)",
