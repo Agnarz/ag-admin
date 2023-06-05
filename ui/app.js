@@ -55,12 +55,6 @@ const app = Vue.createApp({
     const conditions = ref(Conditions);
     const resources = ref(Resources);
     return {
-      props: {
-        frameName: {type: String, default: "Admin"},
-        dev: {type: Boolean, default: false},
-        godMode: {type: Boolean, default: false},
-        noClip: {type: Boolean, default: false},
-      },
       framework: { plugins: ["LocalStorage", "SessionStorage"] },
       playerData: ref(undefined),
       players,
