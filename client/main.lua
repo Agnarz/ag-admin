@@ -421,14 +421,14 @@ RegisterNetEvent("Admin:Client:SpawnVehicle", function(vehicle, modded, deletePr
     while not HasModelLoaded(hash) do
         Wait(0)
     end
-    if deletePrevious == true then
+    if deletePrevious == true or 'true' then
         DeleteVehicle(veh)
     end
-
     local vehicle = CreateVehicle(hash, GetEntityCoords(ped), GetEntityHeading(ped), true, false)
     TaskWarpPedIntoVehicle(ped, vehicle, -1)
     SetVehicleModKit(vehicle, 0)
-    if modded == true then
+    Wait(250)
+    if modded == true or 'true' then
         TriggerEvent("Admin:Client:MaxModVehicle")
     end
     exports["LegacyFuel"]:SetFuel(vehicle, 100.0)
@@ -851,6 +851,11 @@ RegisterNUICallback("NUIHandler", function(data, cb)
     local eventName = data[2]
     local args = data[3]
     print("NUIHandler: ", eventType, eventName, args)
+    if type(args) == "table" then
+        for k, v in pairs(args) do
+            print(k, v)
+        end
+    end
     if eventType == "function" then
         _G[eventName](args)
         return
