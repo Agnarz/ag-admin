@@ -375,6 +375,14 @@ const app = Vue.createApp({
         $("#AdminUI").fadeOut(550);
       };
     },
+    nuiHandler: function(data) {
+      axios.post("https://ag-admin/NUIHandler",
+        JSON.stringify(data)
+      );
+      if (data[1] == "Admin:Client:DeletePersonalVehicle") {
+        this.personalVehicle = undefined;
+      }
+    },
     SwitchTab: function(tab) {
       this.tab = tab;
       if (tab == "players") {
@@ -386,14 +394,6 @@ const app = Vue.createApp({
     },
     SetPlayerFilter: function(filter) {
       this.playerFilter = filter;
-    },
-    nuiHandler: function(data) {
-      axios.post("https://ag-admin/NUIHandler",
-        JSON.stringify(data)
-      );
-      if (data[1] == "Admin:Client:DeletePersonalVehicle") {
-        this.personalVehicle = undefined;
-      }
     },
 
     favCommand: function() {
