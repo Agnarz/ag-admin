@@ -82,7 +82,6 @@ local function round(input, decimalPlaces)
     return tonumber(stringFormat("%." .. (decimalPlaces or 0) .. "f", input))
 end
 
-
 local function isPedDrivingAVehicle() -- Checks if the player is in a vehicle and if it"s a car, not a plane, helicopter, bicycle or train
 	local ped = PlayerPedId()
 	vehicle = GetVehiclePedIsIn(ped, false)
@@ -724,8 +723,6 @@ RegisterNetEvent("Admin:Client:DisablePeds", function()
         QBCore.Functions.Notify(Lang:t("info.peds_enabled"))
     end
 end)
-
-
 
 RegisterNetEvent("Admin:Client:ToggleCoordinates", function()
     local x = 0.4
