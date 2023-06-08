@@ -54,7 +54,7 @@ function DeleteAllSpawned()
     spawnedObjects = {}
 end
 
--- function to move the object based on the camera angle
+-- function to move the object based on player coords & heading
 local function moveObject()
     local ped = PlayerPedId()
     local objectCoords = GetOffsetFromEntityInWorldCoords(ped, 0.0, 2.0, -1.0)
