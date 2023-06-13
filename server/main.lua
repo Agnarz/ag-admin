@@ -164,11 +164,6 @@ RegisterNetEvent("Admin:Server:IntoVehicleTarget", function(source, targetID)
     end
 end)
 
-RegisterNetEvent('Admin:Server:OpenTargetInventory', function(target)
-    local src = source
-    TriggerClientEvent('Admin:Client:OpenTargetInventory', src, target)
-end)
-
 RegisterNetEvent('Admin:Server:KickAll', function(source, reason)
     local src = source
     if QBCore.Functions.HasPermission(src, 'admin') or IsPlayerAceAllowed(source, 'command') then
