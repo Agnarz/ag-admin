@@ -17,7 +17,7 @@ div#q-loading-bar {display: none!important;}
   --activeQuickaction: #ba233f!important;
   --borderColor: #ffffff40!important;
   --bgCard: #21262d!important;
-  --selectMenu: #0d1117!important;
+  --selectMenu: #010409!important;
 
   --accentMain: #0c57ad!important;
   --accentMain-transparent: #005aadcc!important;
@@ -206,4 +206,3 @@ li:nth-child(even) {background: var(--even)!important;}
   .container { height: 75vh!important; width: 19vw!important;}
   .command {font-size: 14px!important; height: 3vh!important;}
 }
-
