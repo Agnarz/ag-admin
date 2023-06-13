@@ -1,5 +1,7 @@
 local QBCore = exports["qb-core"]:GetCoreObject()
 local PlayerData = QBCore.Functions.GetPlayerData()
+local MenuOpen = false
+
 local _G = _G
 local TriggerEvent = TriggerEvent
 local TriggerServerEvent = TriggerServerEvent
@@ -15,16 +17,10 @@ local GetCurrentResourceName = GetCurrentResourceName
 local Wait = Wait
 local CreateThread = CreateThread
 
-local tostring = tostring
 local tonumber = tonumber
 local stringUpper = string.upper
-local stringLower = string.lower
 local stringFormat = string.format
 local tableSort = table.sort
-local tableInsert = table.insert
-local tableRemove = table.remove
-
-local MenuOpen = false
 
 local dev = false
 local godMode = false
@@ -284,29 +280,7 @@ RegisterNUICallback("close", function(_, cb) cb(1) ToggleMenu(false) end)
 RegisterNetEvent("Admin:Client:ToggleMenu", function(bool) ToggleMenu(bool) end)
 
 -- Events
-RegisterNetEvent("Admin:Client:DevMode", function()
-    local player = PlayerId()
-    local ped = PlayerPedId()
-    dev = not dev
-    TriggerEvent("qb-admin:client:ToggleDevmode")
-    if dev then
-        godMode = true
-        unlimitedStamina = true
-        CreateThread(function()
-            while dev do
-                RestorePlayerStamina(player, 1.0)
-                Wait(0)
-            end
-        end)
-        while dev do
-            Wait(0)
-            SetPlayerInvincible(player, true)
-        end
-        SetPlayerInvincible(player, false)
-        godMode = false
-        unlimitedStamina = false
-    end
-end)
+
 
 RegisterNetEvent("Admin:Client:ReviveSelf", function()
     local ped = PlayerPedId()
@@ -756,6 +730,30 @@ end)
 
 RegisterNetEvent("Admin:Client:OpenTargetInventory", function(target)
     TriggerServerEvent("inventory:server:OpenInventory", "otherplayer", target)
+end)
+
+RegisterNetEvent("Admin:Client:DevMode", function()
+    local player = PlayerId()
+    local ped = PlayerPedId()
+    dev = not dev
+    TriggerEvent("qb-admin:client:ToggleDevmode")
+    if dev then
+        godMode = true
+        unlimitedStamina = true
+        CreateThread(function()
+            while dev do
+                RestorePlayerStamina(player, 1.0)
+                Wait(0)
+            end
+        end)
+        while dev do
+            Wait(0)
+            SetPlayerInvincible(player, true)
+        end
+        SetPlayerInvincible(player, false)
+        godMode = false
+        unlimitedStamina = false
+    end
 end)
 
 RegisterNetEvent("Admin:Client:DisablePeds", function()

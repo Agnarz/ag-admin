@@ -7,7 +7,7 @@ local tonumber = tonumber
 local tostring = tostring
 local pairs = pairs
 
-QBCore.Commands.Add('save', 'Save your character', {}, false, function(source)
+QBCore.Commands.Add('save', Lang:t("commands.save_character"), {}, false, function(source)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if Player ~= nil then
@@ -111,7 +111,7 @@ QBCore.Commands.Add("car", Lang:t("commands.spawn_vehicle"), {{name = "model", h
     TriggerClientEvent("Admin:Client:SpawnVehicle", src, model, modded, deletePrevious)
 end, "admin")
 
-QBCore.Commands.Add("spv", "Spawn Personal Vehicle", {{name = "model", help = "Model name of the vehicle"}, {name = "plate", help = "Vehicle Plate"}, {name = "deletePrevious", help = "Delete Previous Vehicle (true/false)"}}, true, function(source, args)
+QBCore.Commands.Add("spv", Lang:t("commands.spawn_personal_vehicle"), {{name = "model", help = "Model name of the vehicle"}, {name = "plate", help = "Vehicle Plate"}, {name = "deletePrevious", help = "Delete Previous Vehicle (true/false)"}}, true, function(source, args)
     local src = source
     local model = args[1]
     local plate = args[2]
@@ -154,7 +154,14 @@ QBCore.Commands.Add("bennys", Lang:t("commands.bennys"), {}, false, function(sou
     TriggerClientEvent("Admin:Client:OpenBennys", src)
 end, "admin")
 
-QBCore.Commands.Add("tp", Lang:t("commands.teleport_main"), {{name = "x", help = "X position"}, {name = "y", help = "Y position"}, {name = "z", help = "Z position"}, {name = "keepVehicle", help = "Keep vehicle or not (true/false)"}}, true, function(source, args)
+QBCore.Commands.Add("tpl", Lang:t("commands.teleport_location"), {{name = "location", help = "Location name"}, {name = "keepVehicle", help = "Keep vehicle or not (true/false)"}}, false, function(source, args)
+    local src = source
+    local location = tostring(args[1])
+    local keepVehicle = args[2]
+    TriggerClientEvent("Admin:Client:TeleportLocation", src, location, keepVehicle)
+end, "admin")
+
+QBCore.Commands.Add("tp", Lang:t("commands.teleport_coords"), {{name = "x", help = "X position"}, {name = "y", help = "Y position"}, {name = "z", help = "Z position"}, {name = "keepVehicle", help = "Keep vehicle or not (true/false)"}}, true, function(source, args)
     local src = source
     local coords = {
         x = tonumber(args[1]),
@@ -165,31 +172,14 @@ QBCore.Commands.Add("tp", Lang:t("commands.teleport_main"), {{name = "x", help =
     TriggerClientEvent("Admin:Client:TeleportCoords", src, coords, keepVehicle)
 end, "admin")
 
-QBCore.Commands.Add("tpv", Lang:t("commands.warp_to_vehicle"), {}, true, function(source)
-    local src = source
-    TriggerClientEvent("Admin:Client:WarpToVehicle", src)
-end, "admin")
-
-QBCore.Commands.Add("tpl", Lang:t("commands.teleport_location"), {{name = "location", help = "Location name"}, {name = "keepVehicle", help = "Keep vehicle or not (true/false)"}}, false, function(source, args)
-    local src = source
-    local location = tostring(args[1])
-    local keepVehicle = args[2]
-    TriggerClientEvent("Admin:Client:TeleportLocation", src, location, keepVehicle)
-end, "admin")
-
-QBCore.Commands.Add("tps", Lang:t("commands.teleport_saved_position"), {}, false, function(source)
-    local src = source
-    TriggerClientEvent("Admin:Client:TeleportSavedPosition", src)
-end, "admin")
-
 QBCore.Commands.Add("tpm", Lang:t("commands.teleport_marker"), {}, false, function(source)
     local src = source
     TriggerClientEvent("Admin:Client:TeleportMarker", src)
 end, "admin")
 
-QBCore.Commands.Add("savepos", Lang:t("commands.save_position"), {}, false, function(source)
+QBCore.Commands.Add("tpv", Lang:t("commands.warp_to_vehicle"), {}, true, function(source)
     local src = source
-    TriggerClientEvent("Admin:Client:SavePosition", src)
+    TriggerClientEvent("Admin:Client:WarpToVehicle", src)
 end, "admin")
 
 QBCore.Commands.Add("timecycle", Lang:t("commands.set_timecycle"), {{name = "timecycle", help = "Timecycle name"}, {name = "timecycle strength", help = "Timecycle Strength value"}}, false, function(source, args)
@@ -227,7 +217,7 @@ QBCore.Commands.Add("kill", Lang:t("commands.kill_target"), {{name = "id", help 
     TriggerEvent("Admin:Server:KillTarget", target)
 end, "god")
 
-QBCore.Commands.Add("kill-r", "Kill Players in radius", {}, false, function(source)
+QBCore.Commands.Add("kill-r", Lang:t("commands.kill_radius"), {}, false, function(source)
     local src = source
     TriggerEvent("Admin:Server:KillRadius", src)
 end, "god")
@@ -238,19 +228,19 @@ QBCore.Commands.Add("freeze", Lang:t("commands.freeze_target"), {{name = "id", h
     TriggerEvent("Admin:Server:FreezeTarget", src, target)
 end, "admin")
 
-QBCore.Commands.Add("bring", "Bring player to you", {{name = "id", help = "Target ID"}}, false, function(source, args)
+QBCore.Commands.Add("bring", Lang:t("commands.bring_target"), {{name = "id", help = "Target ID"}}, false, function(source, args)
     local src = source
     local target = args[1]
     TriggerEvent("Admin:Server:BringTarget", src, target)
 end, "admin")
 
-QBCore.Commands.Add("goto", "Teleport to player", {{name = "id", help = "Target ID"}}, false, function(source, args)
+QBCore.Commands.Add("goto", Lang:t("commands.teleport_to_player"), {{name = "id", help = "Target ID"}}, false, function(source, args)
     local src = source
     local target = args[1]
     TriggerEvent("Admin:Server:GotoTarget", src, target)
 end, "admin")
 
-QBCore.Commands.Add("gotov", "Go to Target Vehicle", {{name = "id", help = "Target ID"}}, false, function(source, args)
+QBCore.Commands.Add("gotov", Lang:t("commands.go_target_vehicle"), {{name = "id", help = "Target ID"}}, false, function(source, args)
     local src = source
     local target = args[1]
     TriggerEvent("Admin:Server:GotoTargetVehicle", src, target)
