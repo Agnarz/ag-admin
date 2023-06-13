@@ -406,7 +406,9 @@ const app = Vue.createApp({
     SetPlayerFilter: function(filter) {
       this.playerFilter = filter;
     },
-
+    ClearTarget: function() {
+      this.target = undefined;
+    },
     favCommand: function() {
       localStorage.setItem("commands", JSON.stringify(this.commands));
       this.commands.sort((a, b) => { return b.fav - a.fav; });
