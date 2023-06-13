@@ -1,8 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-local _G = _G
 local RegisterNetEvent = RegisterNetEvent
 local AddEventHandler = AddEventHandler
-local ResourceName      = GetCurrentResourceName()
+local ResourceName = GetCurrentResourceName()
 local Wait = Wait
 
 local IsNoClipping      = false
