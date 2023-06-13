@@ -51,7 +51,9 @@ RegisterNetEvent("Admin:Server:DeletePersonalVehicle", function(plate)
     TriggerClientEvent("Admin:Client:UpdatePersonalVehicles", src)
 end)
 
-RegisterNetEvent("Admin:Server:ResourceControl", function(action, resource)
+RegisterNetEvent("Admin:Server:ResourceControl", function(data)
+    local action = data[1]
+    local resource = data[2]
     if action == "stop" then
         StopResource(resource)
     end
@@ -71,7 +73,7 @@ RegisterNetEvent("Admin:Server:ReviveTarget", function(target)
     TriggerClientEvent("hospital:client:Revive", target)
 end)
 
-RegisterNetEvent("Admin:Server:ReviveRadius", function()
+RegisterNetEvent("Admin:Server:ReviveRadius", function(source)
     local players = QBCore.Functions.GetPlayers()
     local src = source
     local ped = GetPlayerPed(src)
@@ -91,7 +93,7 @@ RegisterNetEvent("Admin:Server:KillTarget", function(target)
     TriggerClientEvent("hospital:client:KillPlayer", target)
 end)
 
-RegisterNetEvent("Admin:Server:KillRadius", function()
+RegisterNetEvent("Admin:Server:KillRadius", function(source)
     local players = QBCore.Functions.GetPlayers()
     local src = source
     local ped = GetPlayerPed(src)
@@ -106,7 +108,7 @@ RegisterNetEvent("Admin:Server:KillRadius", function()
     end
 end)
 
-RegisterNetEvent("Admin:Server:SpectateTarget", function(targetID)
+RegisterNetEvent("Admin:Server:SpectateTarget", function(source, targetID)
     local src = source
     local target = GetPlayerPed(targetID)
     local coords = GetEntityCoords(target)
@@ -124,7 +126,7 @@ RegisterNetEvent("Admin:Server:FreezeTarget", function(player)
     end
 end)
 
-RegisterNetEvent("Admin:Server:BringTarget", function(targetID)
+RegisterNetEvent("Admin:Server:BringTarget", function(source, targetID)
     local src = source
     local admin = GetPlayerPed(src)
     local coords = GetEntityCoords(admin)
@@ -132,14 +134,14 @@ RegisterNetEvent("Admin:Server:BringTarget", function(targetID)
     SetEntityCoords(target, coords)
 end)
 
-RegisterNetEvent("Admin:Server:GotoTarget", function(targetID)
+RegisterNetEvent("Admin:Server:GotoTarget", function(source, targetID)
     local src = source
     local admin = GetPlayerPed(src)
     local coords = GetEntityCoords(GetPlayerPed(targetID))
     SetEntityCoords(admin, coords)
 end)
 
-RegisterNetEvent("Admin:Server:IntoVehicleTarget", function(targetID)
+RegisterNetEvent("Admin:Server:IntoVehicleTarget", function(source, targetID)
     local src = source
     local admin = GetPlayerPed(src)
     -- local coords = GetEntityCoords(GetPlayerPed(target))
@@ -167,15 +169,7 @@ RegisterNetEvent('Admin:Server:OpenTargetInventory', function(target)
     TriggerClientEvent('Admin:Client:OpenTargetInventory', src, target)
 end)
 
-RegisterNetEvent('Admin:Server:KickTarget', function(target, reason)
-    local src = source
-    if QBCore.Functions.HasPermission(src, 'admin') or IsPlayerAceAllowed(src, 'command') then
-        TriggerEvent('qb-log:server:CreateLog', 'bans', 'Player Kicked', 'red', string.format('%s was kicked by %s for %s', GetPlayerName(target), GetPlayerName(src), reason), true)
-        DropPlayer(target, reason)
-    end
-end)
-
-RegisterNetEvent('Admin:Server:KickAll', function(reason)
+RegisterNetEvent('Admin:Server:KickAll', function(source, reason)
     local src = source
     if QBCore.Functions.HasPermission(src, 'admin') or IsPlayerAceAllowed(source, 'command') then
         for k, v in pairs(QBCore.Functions.GetPlayers()) do

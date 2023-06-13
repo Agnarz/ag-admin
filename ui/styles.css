@@ -7,16 +7,16 @@ div#q-loading-bar {display: none!important;}
 #AdminUI {display: none;}
 
 :root {
-  --bgPrimary: #0d1117!important;
-  --bgSecondary: #161B22!important;
-  --bgTertiary: #21262D!important;
+  --bgPrimary: #010409!important;
+  --bgSecondary: #0d1117!important;
+  --bgTertiary: #161b22!important;
   --bgAlt: #1d2e46!important;
-  --odd: #1a2029!important;
-  --even: #1a2029!important;
+  --odd: #161b22!important;
+  --even: #161b22!important;
   --quickaction: #565c66!important;
   --activeQuickaction: #ba233f!important;
   --borderColor: #ffffff40!important;
-  --bgCard: #30363d!important;
+  --bgCard: #21262d!important;
   --selectMenu: #0d1117!important;
 
   --accentMain: #0c57ad!important;
@@ -73,7 +73,7 @@ div#q-loading-bar {display: none!important;}
   font-size: 13px!important;
 }
 #filterbar {
-  background: #101010!important;
+  background: #0C0C0C!important;
   display: flex; flex-direction: row;
   width: 100%;
   padding: 12px;

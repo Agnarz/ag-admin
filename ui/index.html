@@ -498,9 +498,9 @@
                                         </q-select>
                                         <q-separator spaced dark></q-separator>
                                         <div class="commandActions">
-                                            <q-btn @click="resourceAction = 'restart'" v-on:click="ResourceControl"  label="Restart" color="submit" unelevated dense dark style="width: 100%;" unelevated></q-btn>
-                                            <q-btn @click="resourceAction = 'start'" v-on:click="ResourceControl" label="Start" color="confirm" unelevated dense dark style="width: 100%;" unelevated></q-btn>
-                                            <q-btn @click="resourceAction = 'stop'" v-on:click="ResourceControl" label="Stop" color="deny" unelevated dense dark style="width: 100%;" unelevated></q-btn>
+                                            <q-btn v-on:click="nuiHandler(['server', 'Admin:Server:ResourceControl', ['restart', resource]])" label="Restart" color="submit" unelevated dense dark style="width: 100%;" unelevated></q-btn>
+                                            <q-btn v-on:click="nuiHandler(['server', 'Admin:Server:ResourceControl', ['start', resource]])" label="Start" color="confirm" unelevated dense dark style="width: 100%;" unelevated></q-btn>
+                                            <q-btn v-on:click="nuiHandler(['server', 'Admin:Server:ResourceControl', ['stop', resource]])" label="Stop" color="deny" unelevated dense dark style="width: 100%;" unelevated></q-btn>
                                         </div>
                                     </div>
                                 </q-expansion-item>
@@ -649,7 +649,7 @@
                                         </q-select>
                                         <q-separator spaced dark></q-separator>
                                         <div class="commandActions">
-                                            <q-btn v-on:click="OpenTargetInventory" label="Open" class="submit" unelevated></q-btn>
+                                            <q-btn v-on:click="nuiHandler(['command', 'openinv', [target]])" label="Open" class="submit" unelevated></q-btn>
                                         </div>
                                     </div>
                                 </q-expansion-item>
@@ -773,7 +773,30 @@
                         </q-list>
                     </q-tab-panel>
 
-                    <q-tab-panel name="bans"></q-tab-panel>
+                    <q-tab-panel name="bans">
+                        <q-list class="dataList q-gutter-y-xs">
+                            <li v-for="(ban, index) in bans" :key="ban.id">
+                                <q-expansion-item header-class="command" dense dark>
+                                    <template v-slot:header>
+                                        <q-item-section><q-item-label>{{ban.label}}</q-item-label></q-item-section>
+                                    </template>
+                                        <div class="commandCard">
+                                            <div>Account: {{ban.name}}</div>
+                                            <div>Reason: {{ban.reason}}</div>
+                                            <div>License: {{ban.license}}</div>
+                                            <div>IP: {{ban.ip}}</div>
+                                            <div>Length: {{ban.expire}}</div>
+                                            <div>Banned by: {{ban.bannedby}}</div>
+                                            <q-separator spaced dark></q-separator>
+                                            <div class="commandActions">
+                                                <q-btn v-on:click="nuiHandler(['command', 'unban', [ban.id]])" label="Unban" color="submit" unelevated></q-btn>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </q-expansion-item>
+                            </li>
+                        </q-list>
+                    </q-tab-panel>
                 </q-tab-panels>
             </div>
         </div>

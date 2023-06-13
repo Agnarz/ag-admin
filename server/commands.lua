@@ -7,6 +7,15 @@ local tonumber = tonumber
 local tostring = tostring
 local pairs = pairs
 
+QBCore.Commands.Add('save', 'Save your character', {}, false, function(source)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    if Player ~= nil then
+        Player.Functions.Save()
+        QBCore.Functions.Notify(src, 'Character saved!', 'success')
+    end
+end, 'admin')
+
 QBCore.Commands.Add("dev", Lang:t("commands.toggle_dev_mode"), {}, false, function(source)
     local src = source
     TriggerClientEvent("Admin:Client:DevMode", src)
@@ -209,7 +218,7 @@ end, "admin")
 
 QBCore.Commands.Add("revive-r", Lang:t("commands.revive_radius"), {}, false, function(source)
     local src = source
-    TriggerEvent("Admin:Server:ReviveRadius")
+    TriggerEvent("Admin:Server:ReviveRadius", src)
 end, "admin")
 
 QBCore.Commands.Add("kill", Lang:t("commands.kill_target"), {{name = "id", help = "Target ID"}}, false, function(source, args)
@@ -218,35 +227,45 @@ QBCore.Commands.Add("kill", Lang:t("commands.kill_target"), {{name = "id", help 
     TriggerEvent("Admin:Server:KillTarget", target)
 end, "god")
 
-QBCore.Commands.Add("killradius", "Kill Players in radius", {}, false, function(source)
-    TriggerEvent("Admin:Server:KillRadius")
+QBCore.Commands.Add("kill-r", "Kill Players in radius", {}, false, function(source)
+    local src = source
+    TriggerEvent("Admin:Server:KillRadius", src)
 end, "god")
 
 QBCore.Commands.Add("freeze", Lang:t("commands.freeze_target"), {{name = "id", help = "Target ID"}}, false, function(source, args)
     local src = source
     local target = args[1]
-    TriggerEvent("Admin:Server:FreezeTarget", target)
+    TriggerEvent("Admin:Server:FreezeTarget", src, target)
 end, "admin")
 
 QBCore.Commands.Add("bring", "Bring player to you", {{name = "id", help = "Target ID"}}, false, function(source, args)
+    local src = source
     local target = args[1]
-    TriggerEvent("Admin:Server:BringTarget", target)
+    TriggerEvent("Admin:Server:BringTarget", src, target)
 end, "admin")
 
 QBCore.Commands.Add("goto", "Teleport to player", {{name = "id", help = "Target ID"}}, false, function(source, args)
+    local src = source
     local target = args[1]
-    TriggerEvent("Admin:Server:GotoTarget", target)
+    TriggerEvent("Admin:Server:GotoTarget", src, target)
 end, "admin")
 
 QBCore.Commands.Add("gotov", "Go to Target Vehicle", {{name = "id", help = "Target ID"}}, false, function(source, args)
     local src = source
     local target = args[1]
-    TriggerEvent("Admin:Server:GotoTargetVehicle", target)
+    TriggerEvent("Admin:Server:GotoTargetVehicle", src, target)
 end, "admin")
 
-QBCore.Commands.Add("givecloth", Lang:t("commands.give_clothing_menu"), {{name = "id", help = "Target ID"}}, false, function(target, args)
+QBCore.Commands.Add("givecloth", Lang:t("commands.give_clothing_menu"), {{name = "id", help = "Target ID"}}, false, function(source, args)
+    local src = source
     local target = args[1]
-    TriggerEvent("Admin:Server:GiveClothingMenu", target)
+    TriggerClientEvent('qb-clothing:client:openMenu', target)
+end, "admin")
+
+QBCore.Commands.Add("openinv", Lang:t("commands.open_target_inventory"), {{name = "id", help = "Target ID"}}, false, function(source, args)
+    local src = source
+    local target = args[1]
+    TriggerClientEvent('Admin:Client:OpenTargetInventory', src, target)
 end, "admin")
 
 QBCore.Commands.Add("warn", Lang:t("commands.warn_target"), {{name = "id", help = "Target ID"}, {name = "Reason", help = "Reason"}}, true, function(source, args)
@@ -270,11 +289,14 @@ QBCore.Commands.Add("warn", Lang:t("commands.warn_target"), {{name = "id", help 
     end
 end, "admin")
 
-QBCore.Commands.Add("kick", Lang:t("commands.kick_target"), {{name = "id", help = "Target ID"}, {name = "reason", help = "Reason"}}, false, function(args)
+QBCore.Commands.Add("kick", Lang:t("commands.kick_target"), {{name = "id", help = "Target ID"}, {name = "reason", help = "Reason"}}, false, function(source, args)
     local src = source
     local target = args[1]
     local reason = args[2]
-    TriggerEvent("Admin:Server:KickTarget", target, reason)
+    if QBCore.Functions.HasPermission(src, 'admin') or IsPlayerAceAllowed(src, 'command') then
+        TriggerEvent('qb-log:server:CreateLog', 'bans', 'Player Kicked', 'red', string.format('%s was kicked by %s for %s', GetPlayerName(target), GetPlayerName(src), reason), true)
+        DropPlayer(target, reason)
+    end
 end, "admin")
 
 QBCore.Commands.Add("kickall", Lang:t("commands.kick_all"), {{name = "reason", help = "Reason"}}, false, function(source, args)

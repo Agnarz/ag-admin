@@ -65,6 +65,7 @@ var Weapons = undefined;
 var Vehicles = undefined;
 var PersonalVehicles = undefined;
 var Resources = undefined;
+var Bans = undefined;
 
 const PedModels = [
   // Female Models

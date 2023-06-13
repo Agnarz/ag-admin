@@ -82,6 +82,13 @@ local function round(input, decimalPlaces)
     return tonumber(stringFormat("%." .. (decimalPlaces or 0) .. "f", input))
 end
 
+local function LoadPlayerModel(skin)
+    RequestModel(skin)
+    while not HasModelLoaded(skin) do
+      Wait(0)
+    end
+end
+
 local function isPedDrivingAVehicle() -- Checks if the player is in a vehicle and if it"s a car, not a plane, helicopter, bicycle or train
 	local ped = PlayerPedId()
 	vehicle = GetVehiclePedIsIn(ped, false)
@@ -223,7 +230,7 @@ function RefreshData(data) -- Refreshes the data in the UI
         end)
         Wait(250)
         SendNUIMessage({
-            action = "commandOptions",
+            action = "update:options",
             targets = targets,
             playerData = PlayerData,
             items = items,
@@ -237,16 +244,21 @@ function RefreshData(data) -- Refreshes the data in the UI
         })
         return
     elseif data == "player" then
-        SendNUIMessage({action = "playerData", playerData = PlayerData})
+        SendNUIMessage({action = "update:player", playerData = PlayerData})
         return
     elseif data == "players" then
         QBCore.Functions.TriggerCallback("GetOnlinePlayers", function(result)
-            SendNUIMessage({action = "players", players = result})
+            SendNUIMessage({action = "update:players", players = result})
         end)
         return
     elseif data == "personalVehicles" then
         QBCore.Functions.TriggerCallback("Admin:GetPersonalVehicles", function(result)
-            SendNUIMessage({action = "personalVehicles", personalVehicles = result})
+            SendNUIMessage({action = "update:personalVehicles", personalVehicles = result})
+        end)
+        return
+    elseif data == "bans" then
+        QBCore.Functions.TriggerCallback("GetBannedPlayers", function(result)
+            SendNUIMessage({action = "update:bans", bans = result})
         end)
         return
     end
@@ -409,6 +421,49 @@ RegisterNetEvent("Admin:Client:ToggleThermalVision", function()
         end
         SetSeethrough(false)
     end
+end)
+
+RegisterNetEvent('Admin:Client:OpenClothingMenu', function()
+    local ped = PlayerPedId()
+    ToggleMenu(false)
+    TriggerEvent('qb-clothing:client:openMenu', ped)
+end)
+
+RegisterNetEvent('Admin:Client:SetPedModel', function(skin)
+    local ped = source
+    local model = GetHashKey(skin)
+    SetEntityInvincible(ped, true)
+    if IsModelInCdimage(model) and IsModelValid(model) then
+        LoadPlayerModel(model)
+        SetPlayerModel(PlayerId(), model)
+        if isPedAllowedRandom(skin) then
+            SetPedRandomComponentVariation(ped, true)
+        end
+		SetModelAsNoLongerNeeded(model)
+	end
+	SetEntityInvincible(ped, false)
+end)
+
+RegisterNetEvent("Admin:Client:GiveAmmo", function(weapon, ammo)
+    local ped = PlayerPedId()
+    if weapon ~= "current" then
+        local weapon = weapon:upper()
+        SetPedAmmo(ped, GetHashKey(weapon), ammo)
+        QBCore.Functions.Notify(Lang:t("info.ammo_for_weapon", {value = ammo, weapon = QBCore.Shared.Weapons[weapon]["label"]}))
+    else
+        local weapon = GetSelectedPedWeapon(ped)
+        if weapon ~= nil then
+            SetPedAmmo(ped, weapon, ammo)
+            QBCore.Functions.Notify(Lang:t("info.ammo_for_weapon", {value = ammo, weapon = QBCore.Shared.Weapons[weapon]["label"]}))
+        else
+            QBCore.Functions.Notify(Lang:t("error.no_weapon"), "error")
+        end
+    end
+end)
+
+RegisterNetEvent("Admin:Client:RepairWeapon", function(amount)
+    local amount = 100
+    TriggerEvent("weapons:client:SetWeaponQuality", amount)
 end)
 
 RegisterNetEvent("Admin:Client:SpawnVehicle", function(vehicle, modded, deletePrevious)

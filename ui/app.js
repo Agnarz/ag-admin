@@ -54,6 +54,7 @@ const app = Vue.createApp({
     const timecycles = ref(Timecycles);
     const conditions = ref(Conditions);
     const resources = ref(Resources);
+    const bans = ref(Bans);
     return {
       framework: { plugins: ["LocalStorage", "SessionStorage"] },
       playerData: ref(undefined),
@@ -113,6 +114,7 @@ const app = Vue.createApp({
       warnReason: ref(undefined),
       banReason: ref(undefined),
       banLength: ref(undefined),
+      bans,
       Filters: function (val, update, abort) {
         update(() => {
           const needle = val.toLowerCase();
@@ -139,12 +141,12 @@ const app = Vue.createApp({
         this.playerData = event.data.playerData;
       };
 
-      if (event.data.action === "players") {
+      if (event.data.action === "update:players") {
         Players = event.data.players;
         this.players = event.data.players;
       };
 
-      if (event.data.action === "commandOptions") {
+      if (event.data.action === "update:options") {
         Targets = event.data.targets;
         this.targets = event.data.targets;
 
@@ -257,7 +259,7 @@ const app = Vue.createApp({
         };
       };
 
-      if (event.data.action === "personalVehicles") {
+      if (event.data.action === "update:personalVehicles") {
         PersonalVehicles = event.data.personalVehicles;
         this.personalVehicles = event.data.personalVehicles;
       };
@@ -271,6 +273,11 @@ const app = Vue.createApp({
         this.gangGrades = event.data.gangGrades;
         this.gangGrade = "";
       };
+
+      if (event.data.action === "update:bans") {
+        Bans = event.data.bans;
+        this.bans = event.data.bans;
+      }
     });
     Config = {};
   },
@@ -386,6 +393,10 @@ const app = Vue.createApp({
     SwitchTab: function(tab) {
       this.tab = tab;
       if (tab == "players") {
+        this.nuiHandler(["function", "RefreshData", tab]);
+      }
+
+      if (tab == "bans") {
         this.nuiHandler(["function", "RefreshData", tab]);
       }
     },

@@ -66,3 +66,20 @@ QBCore.Functions.CreateCallback('Admin:GetPersonalVehicles', function(source, cb
         cb(Vehicles)
     end)
 end)
+
+QBCore.Functions.CreateCallback('GetBannedPlayers', function(source, cb)
+    local Bans = {}
+    MySQL.query('SELECT * FROM bans', function(result)
+        for i = 1, (#result), 1 do
+            result[i].label = result[i].name
+            result[i].name = result[i].name
+            result[i].ip = result[i].ip
+            result[i].reason = result[i].reason
+            result[i].expire = result[i].expire
+            result[i].bannedby = result[i].bannedby
+            result[i].license = result[i].license
+            Bans[#Bans+1] = result[i]
+        end
+        cb(Bans)
+    end)
+end)
