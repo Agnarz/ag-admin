@@ -280,8 +280,6 @@ RegisterNUICallback("close", function(_, cb) cb(1) ToggleMenu(false) end)
 RegisterNetEvent("Admin:Client:ToggleMenu", function(bool) ToggleMenu(bool) end)
 
 -- Events
-
-
 RegisterNetEvent("Admin:Client:ReviveSelf", function()
     local ped = PlayerPedId()
     TriggerEvent("hospital:client:Revive", ped)
