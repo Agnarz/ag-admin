@@ -1,6 +1,8 @@
 # ag-admin
  Admin Menu for QBCore
 
+UODATE: been learning React and working on a privatw project. I'll return to this at some point 
+
 
 # Preview
 ![preview](https://cdn.discordapp.com/attachments/946308781967556643/1115592139921969162/FiveM_b2802_GTAProcess_uDqhofrBZz.png)
