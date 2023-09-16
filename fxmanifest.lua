@@ -1,35 +1,18 @@
-fx_version "cerulean"
-game "gta5"
+fx_version 'cerulean'
+use_experimental_fxv2_oal 'yes'
+lua54 'yes'
+game 'gta5'
 
-description "ag-admin"
-version "1.0.0"
+name 'ag-admin'
+version '0.0.0'
+description 'FiveM Admin Menu'
+author 'Agnarz'
+repository 'https://github.com/Agnarz/ag-admin'
 
 shared_scripts {
-  "@qb-core/shared/locale.lua",
-  "locales/en.lua",
-  "config.lua",
-}
-
-client_scripts {
-  "client/main.lua",
-  "client/noclip.lua",
-  "client/blipnames.lua",
-  "client/objectspawner.lua",
-  "client/deletelazer.lua"
+  	'@ox_lib/init.lua',
 }
 
 server_scripts {
-  "@oxmysql/lib/MySQL.lua",
-  "server/main.lua",
-  "server/callbacks.lua",
-  "server/commands.lua"
-}
-lua54 "yes"
-
-ui_page "ui/index.html"
-files {
-  "ui/index.html",
-  "ui/styles.css",
-  "ui/data.js",
-  "ui/app.js"
+    '@oxmysql/lib/MySQL.lua',
 }
