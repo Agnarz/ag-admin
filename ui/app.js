@@ -10,7 +10,7 @@ const app = Vue.createApp({
       ],
       tab: "commands",
       playerFilter: "allPlayers",
-      dev: false,
+      devMode: false,
       godMode: false,
       noClip: false,
       invisible: false,
@@ -27,14 +27,6 @@ const app = Vue.createApp({
       showBlips: false,
       vehicleDevMode: false,
       deleteLazer: false,
-      qaColor: "#fffffff1",
-      devColor: "#fffffff1",
-      pedColor: "#fffffff1",
-      coordsColor: "#fffffff1",
-      namesColor: "#fffffff1",
-      blipsColor: "#fffffff1",
-      vDevColor: "#fffffff1",
-      lazerColor: "#fffffff1",
     };
   },
   setup() {
@@ -86,7 +78,6 @@ const app = Vue.createApp({
       weapons,
       weapon: ref(undefined),
       ammoAmount: ref("100"),
-      savedPosition: ref({x: undefined, y: undefined, z: undefined}),
       keepVehicle: ref(true),
       spawnModded: ref(true),
       deleteLast: ref(true),
@@ -186,7 +177,7 @@ const app = Vue.createApp({
 
       if (event.data.action === "utilities") {
         this.playerData = event.data.playerData;
-        this.dev = event.data.dev;
+        this.devMode = event.data.devMode;
         this.godMode = event.data.godMode;
         this.noClip = event.data.noClip;
         this.invisible = event.data.invisible;
@@ -201,46 +192,6 @@ const app = Vue.createApp({
         this.showBlips = event.data.showBlips;
         this.vehicleDevMode = event.data.vehicleDevMode;
         this.deleteLazer = event.data.deleteLazer;
-
-        if (event.data.dev === true) {
-          this.dev = true;
-          this.devColor = "#f40552";
-        } else {
-          this.dev = false;
-          this.devColor = "#fffffff1";
-        };
-
-        if (event.data.disablePeds === true) {
-          this.disablePeds = true;
-          this.pedColor = "#f40552";
-        } else {
-          this.disablePeds = false;
-          this.pedColor = "#fffffff1";
-        };
-
-        if (event.data.showCoords === true) {
-          this.showCoords = true;
-          this.coordsColor = "#f40552";
-        } else {
-          this.showCoords = false;
-          this.coordsColor = "#fffffff1";
-        };
-
-        if (event.data.showNames === true) {
-          this.showNames = true;
-          this.namesColor = "#f40552";
-        } else {
-          this.showNames = false;
-          this.namesColor = "#fffffff1";
-        };
-
-        if (event.data.showBlips === true) {
-          this.showBlips = true;
-          this.blipsColor = "#f40552";
-        } else {
-          this.showBlips = false;
-          this.blipsColor = "#fffffff1";
-        };
 
         if (event.data.vehicleDevMode === true) {
           this.vehicleDevMode = true;

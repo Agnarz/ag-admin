@@ -22,7 +22,7 @@ local stringUpper = string.upper
 local stringFormat = string.format
 local tableSort = table.sort
 
-local dev = false
+local devMode = false
 local godMode = false
 local noClip = false
 local invisible = false
@@ -732,19 +732,19 @@ end)
 
 RegisterNetEvent("Admin:Client:DevMode", function()
     local player = PlayerId()
-    local ped = PlayerPedId()
-    dev = not dev
+
+    devMode = not devMode
     TriggerEvent("qb-admin:client:ToggleDevmode")
-    if dev then
+    if devMode then
         godMode = true
         unlimitedStamina = true
         CreateThread(function()
-            while dev do
+            while devMode do
                 RestorePlayerStamina(player, 1.0)
                 Wait(0)
             end
         end)
-        while dev do
+        while devMode do
             Wait(0)
             SetPlayerInvincible(player, true)
         end
@@ -849,7 +849,7 @@ local function updateUtilities(data)
     if shouldUpdate then
         SendNUIMessage({
             action = 'utilities',
-            dev = data[1],
+            devMode = data[1],
             godMode = data[2],
             noClip = data[3],
             invisible = data[4],
@@ -873,7 +873,7 @@ CreateThread(function()
         Wait(500)
         if MenuOpen then
             updateUtilities({
-                dev,
+                devMode,
                 godMode,
                 noClip,
                 invisible,

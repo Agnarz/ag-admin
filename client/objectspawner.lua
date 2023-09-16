@@ -9,6 +9,7 @@ local previewObject = nil -- variable to store the preview object
 local spawnedObjects = {} -- table to store all spawned objects
 
 -- function to preview the object before spawning it
+---@param hash string The hash of the object to spawn
 function PreviewObject(hash)
     local model = GetHashKey(hash)
     if not IsModelInCdimage(model) then return end
