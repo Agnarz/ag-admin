@@ -1,7 +1,7 @@
 # ag-admin
- Admin Menu for QBCore
+ Admin Menu for QBCore (OUDATED BRANCH)
 
-UODATE: been learning React and working on a privatw project. I'll return to this at some point 
+UODATE: been learning React and working on a privatw project. I'll return to this at some point
 
 
 # Preview
