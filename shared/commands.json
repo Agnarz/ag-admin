@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "label": "Revive Self",
+    "command": "revive",
+    "type": "button"
+  },
+  {
+    "label": "Give Armour",
+    "command": "armour",
+    "type": "button"
+  },
+  {
+    "label": "GodMode",
+    "command": "godmode",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "NoClip",
+    "command": "noclip",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "Cloak",
+    "command": "cloak",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "Increased Run Speed",
+    "command": "godspeed",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "Unlimited Stamina",
+    "command": "godstam",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "Superjump",
+    "command": "superjump",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "Night Vision",
+    "command": "nightv",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "Thermal Vision",
+    "command": "thermalv",
+    "type": "button",
+    "active": true
+  },
+  {
+    "label": "Repair Vehicle",
+    "command": "fix",
+    "type": "button"
+  },
+  {
+    "label": "Teleport to Waypoint",
+    "command": "tpm",
+    "type": "button"
+  }
+]
