@@ -1,6 +1,7 @@
 {
   "liveServer.settings.port": 5501,
   "Lua.diagnostics.disable": [
-    "undefined-global"
+    "undefined-global",
+    "lowercase-global"
   ]
 }
