@@ -1,4 +1,17 @@
+local resource = GetCurrentResourceName()
 local nuiReady = false
+
+---Load a json file from the shared directory and return the data as a table.
+---The file must be in the format of a `.json` file and must be in the `shared` directory.
+---@param directory string
+---@return table
+local function loadJSON(directory)
+    local dir = ('shared/%s.json'):format(directory)
+    local file = json.decode(LoadResourceFile(resource, dir))
+    return file
+end
+
+local commands = loadJSON('commands')
 
 ---Update the menu with new data
 ---@param action string -- Action to perform
@@ -29,8 +42,9 @@ end)
 
 RegisterNuiCallback('init', function(_, cb)
     cb(1)
-    if lib.callback.await('ox_lib:checkPlayerAce', 1000, 'command') then
+    if lib.callback.await('ox_lib:checkPlayerAce', 250, 'command') then
         nuiReady = true
+        updateMenu('setCommands', commands)
     end
 end)
 
