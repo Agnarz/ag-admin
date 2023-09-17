@@ -16,7 +16,7 @@ local commands = loadJSON('commands')
 ---Update the menu with new data
 ---@param action string -- Action to perform
 ---@param data string | table | number | boolean -- Data to send to the menu
-local function updateMenu(action, data)
+function updateMenu(action, data)
     SendNUIMessage({
         action = action,
         data = data
