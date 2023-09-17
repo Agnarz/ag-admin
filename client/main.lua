@@ -1,6 +1,19 @@
 local resource = GetCurrentResourceName()
 local nuiReady = false
 
+local _registerCommand = RegisterCommand
+
+---@param commandName string
+---@param callback fun(source, args, raw)
+---@param restricted boolean?
+function RegisterCommand(commandName, callback, restricted)
+	_registerCommand(commandName, function(source, args, raw)
+		if not restricted or lib.callback.await('ox_lib:checkPlayerAce', 100, ('command.%s'):format(commandName)) then
+			callback(source, args, raw)
+		end
+	end)
+end
+
 ---Load a json file from the shared directory and return the data as a table.
 ---The file must be in the format of a `.json` file and must be in the `shared` directory.
 ---@param directory string
@@ -31,8 +44,9 @@ local function toggleMenu(bool)
     updateMenu('toggleMenu', bool)
 end
 
+RegisterCommand('admin', function() toggleMenu(true) end)
+RegisterKeyMapping('admin', 'Open Admin Menu', 'keyboard', 'U')
 RegisterNetEvent('admin:toggleMenu', toggleMenu)
-
 RegisterNUICallback('closeMenu', function(_, cb)
     cb(1)
     toggleMenu(false)
@@ -58,15 +72,3 @@ RegisterNUICallback('triggerCommand', function(data, cb)
         })
     end
 end)
-
--- Work around for admin command being registered on the server.
-lib.addKeybind({
-    name = 'openadmin',
-    description = 'Open Admin Menu',
-    defaultKey = 'U',
-    onPressed = function()
-        if lib.callback.await('ox_lib:checkPlayerAce', 100, 'command.admin') then
-            ExecuteCommand('admin')
-        end
-    end
-})
