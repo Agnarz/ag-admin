@@ -47,6 +47,7 @@ const CommandList: React.FC = () => {
                   command={v.command}
                   type={v.type}
                   active={v.active}
+                  close={v.close}
                 />
               )}
             </React.Fragment>

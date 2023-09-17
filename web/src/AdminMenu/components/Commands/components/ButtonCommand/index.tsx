@@ -48,7 +48,7 @@ const useStyles = createStyles((theme) => ({
 
 const ButtonCommand: React.FC<ButtonCommandProps> = ((props) => {
   const { classes } = useStyles();
-  const { label, command, active } = props;
+  const { label, command, active, close } = props;
 
   const handleClick = () => {
     fetchNui('triggerCommand', command);
@@ -58,6 +58,7 @@ const ButtonCommand: React.FC<ButtonCommandProps> = ((props) => {
   useNuiEvent<boolean>(`setActive:${command}`, (data) => {
     if (!active) return;
     setActive(data);
+    if (close) { fetchNui('closeMenu'); }
   });
 
   const activeStyle = {

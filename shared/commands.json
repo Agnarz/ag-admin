@@ -19,7 +19,8 @@
     "label": "NoClip",
     "command": "noclip",
     "type": "button",
-    "active": true
+    "active": true,
+    "close": true
   },
   {
     "label": "Cloak",
