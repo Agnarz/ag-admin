@@ -59,7 +59,7 @@ const useStyles = createStyles((theme) => ({
 
 const AdminMenu: React.FC = () => {
   const { classes } = useStyles();
-  const [visible, setVisible] = useState(0.95);
+  const [visible, setVisible] = useState(0);
 
   // Using opacity instead of display: none; because we want to keep the menu mounted
   useNuiEvent("toggleMenu", (data) => {
@@ -72,7 +72,7 @@ const AdminMenu: React.FC = () => {
 
   const tabs = [
     { name: "Commands", icon: "fas fa-hat-wizard" },
-    { name: "Users", icon: "fas fa-users" }
+    { name: "Players", icon: "fas fa-users" }
   ];
 
   return (
@@ -97,7 +97,7 @@ const AdminMenu: React.FC = () => {
 
           </Tabs.Panel>
 
-          <Tabs.Panel value="Users" className={classes.panel}>
+          <Tabs.Panel value="Players" className={classes.panel}>
 
           </Tabs.Panel>
         </Tabs>
