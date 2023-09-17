@@ -22,6 +22,31 @@ RegisterNetEvent('admin:toggleMenu', function(bool)
     toggleMenu(bool)
 end)
 
+RegisterNUICallback('closeMenu', function(_, cb)
+    cb(1)
+    toggleMenu(false)
+end)
+
+RegisterNuiCallback('init', function(_, cb)
+    cb(1)
+    if lib.callback.await('ox_lib:checkPlayerAce', 1000, 'command') then
+        nuiReady = true
+    end
+end)
+
+RegisterNUICallback('triggerCommand', function(data, cb)
+    cb(1)
+    if lib.callback.await('ox_lib:checkPlayerAce', 250, 'command') then
+        ExecuteCommand(data)
+    else
+        lib.notify({
+            type = 'error',
+            title = 'Admin',
+            desription = 'You do not have permission to use this command.'
+        })
+    end
+end)
+
 -- Work around for admin command being registered on the server.
 lib.addKeybind({
     name = 'openadmin',

@@ -4,10 +4,17 @@ lua54 'yes'
 game 'gta5'
 
 name 'ag-admin'
-version '0.1.0'
+version '0.1.1'
 description 'FiveM Admin Menu'
 author 'Agnarz'
 repository 'https://github.com/Agnarz/ag-admin'
+
+ui_page 'web/build/index.html'
+
+files {
+    'web/build/index.html',
+    'web/build/**/*',
+}
 
 shared_scripts {
   	'@ox_lib/init.lua',

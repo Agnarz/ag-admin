@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+::-webkit-scrollbar  {display: hide; width: 6px; border: 0px;}
+::-webkit-scrollbar-track {background: #ffffff32; border-radius: 8px;}
+::-webkit-scrollbar-thumb {background: #ffffffb3; border-radius: 8px;}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  overflow: hidden;
+
+}
+
+#root { height: 100%; }
