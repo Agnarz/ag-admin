@@ -4,7 +4,7 @@ lua54 'yes'
 game 'gta5'
 
 name 'ag-admin'
-version '0.1.4'
+version '0.1.5'
 description 'FiveM Admin Menu'
 author 'Agnarz'
 repository 'https://github.com/Agnarz/ag-admin'
@@ -23,6 +23,7 @@ shared_scripts {
 
 client_scripts {
     'client/main.lua',
+    'client/commands.lua'
 }
 
 server_scripts {
