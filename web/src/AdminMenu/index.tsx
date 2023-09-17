@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createStyles, Tabs } from '@mantine/core';
 import { useNuiEvent } from '../hooks/useNuiEvent';
+import Commands from './components/Commands';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -83,18 +84,18 @@ const AdminMenu: React.FC = () => {
             {tabs.map((v, index) => (
               <React.Fragment key={index}>
                 <Tabs.Tab
+                  className={classes.tabBtn}
+                  value={v.name}
                   icon={
                     <i className={v.icon} style={{ color: 'white', fontSize: 18 }} />
                   }
-                  value={v.name}
-                  className={classes.tabBtn}
                 />
               </React.Fragment>
             ))}
           </Tabs.List>
 
           <Tabs.Panel value='Commands' className={classes.panel}>
-
+            <Commands />
           </Tabs.Panel>
 
           <Tabs.Panel value='Players' className={classes.panel}>
