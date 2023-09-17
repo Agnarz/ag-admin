@@ -15,6 +15,7 @@ end)
 
 RegisterCommand('godmode', function()
     godMode = not godMode
+    updateMenu('setActive:godmode', godMode)
     if godMode then
         while godMode do
             SetPlayerInvincible(cache.playerId, true)
@@ -26,11 +27,13 @@ end)
 
 RegisterCommand('noclip', function()
     noClip = not noClip
+    updateMenu('setActive:noclip', noClip)
     --freecam?
 end)
 
 RegisterCommand('cloak', function()
     cloak = not cloak
+    updateMenu('setActive:cloak', cloak)
     if cloak then
         Wait(0)
         cloak = true
@@ -43,6 +46,7 @@ end)
 
 RegisterCommand('godstam', function()
     infiniteStamina = not infiniteStamina
+    updateMenu('setActive:godstam', infiniteStamina)
     if infiniteStamina then
         CreateThread(function()
             while infiniteStamina do
@@ -57,6 +61,7 @@ end)
 
 RegisterCommand('godspeed', function()
     increasedSpeed = not increasedSpeed
+    updateMenu('setActive:godspeed', increasedSpeed)
     if increasedSpeed then
         while increasedSpeed do
             Wait(0)
@@ -70,6 +75,7 @@ end)
 
 RegisterCommand('superjump', function()
     superjump = not superjump
+    updateMenu('setActive:superjump', superjump)
     if superjump then
         CreateThread(function()
             while superjump do
@@ -84,6 +90,7 @@ end)
 
 RegisterCommand('nightv', function()
     nightVision = not nightVision
+    updateMenu('setActive:nightv', nightVision)
     if nightVision then
         while nightVision do
             Wait(0)
@@ -95,6 +102,7 @@ end)
 
 RegisterCommand('thermalv', function()
     thermalVision = not thermalVision
+    updateMenu('setActive:thermalv', thermalVision)
     if thermalVision then
         while thermalVision do
             Wait(0)
