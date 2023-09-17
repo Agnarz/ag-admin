@@ -1,6 +1,7 @@
 import { theme } from './theme';
 import { MantineProvider } from '@mantine/core';
 import { fetchNui } from './utils/fetchNui';
+import AdminMenu from './AdminMenu';
 
 const App: React.FC = () => {
   fetchNui('init');
@@ -13,7 +14,7 @@ const App: React.FC = () => {
 
   return (
     <MantineProvider withNormalizeCSS theme={{ ...theme }}>
-
+      <AdminMenu />
     </MantineProvider>
   );
 };
