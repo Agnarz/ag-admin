@@ -31,9 +31,7 @@ local function toggleMenu(bool)
     updateMenu('toggleMenu', bool)
 end
 
-RegisterNetEvent('admin:toggleMenu', function(bool)
-    toggleMenu(bool)
-end)
+RegisterNetEvent('admin:toggleMenu', toggleMenu)
 
 RegisterNUICallback('closeMenu', function(_, cb)
     cb(1)
