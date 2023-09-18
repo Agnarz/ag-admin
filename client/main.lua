@@ -48,6 +48,10 @@ local function toggleMenu(bool)
     if not nuiReady then return end
     SetNuiFocus(bool, bool)
     updateMenu('toggleMenu', bool)
+    if bool == true then
+        updateMenu('setTargets', lib.callback.await('ag:getTargets', 100))
+        updateMenu('setPlayers', lib.callback.await('ag:getPlayers', 100))
+    end
 end
 
 RegisterCommand('admin', function() toggleMenu(true) end)
