@@ -25,6 +25,12 @@ local function loadJSON(directory)
 end
 
 local commands = loadJSON('commands')
+local vehicles = loadJSON('vehicles')
+local weapons = loadJSON('weapons')
+local pedmodels = loadJSON('pedmodels')
+local teleports = loadJSON('teleports')
+local timecycles = loadJSON('timecycles')
+local weather = loadJSON('weather')
 
 ---Update the menu with new data
 ---@param action string -- Action to perform
@@ -54,9 +60,18 @@ end)
 
 RegisterNuiCallback('init', function(_, cb)
     cb(1)
-    if lib.callback.await('ox_lib:checkPlayerAce', 250, 'command') then
+    if lib.callback.await('ox_lib:checkPlayerAce', false, 'command') then
         nuiReady = true
         updateMenu('setCommands', commands)
+        Wait(250)
+        updateMenu('setOptions', {
+            vehicles = vehicles,
+            weapons = weapons,
+            pedmodels = pedmodels,
+            teleports = teleports,
+            timecycles = timecycles,
+            weather = weather
+        })
     end
 end)
 
