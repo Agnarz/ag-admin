@@ -29,7 +29,7 @@ const useStyles = createStyles(() => ({
   }
 }));
 
-const CommandList: React.FC = () => {
+const CommandsList: React.FC = () => {
   const { classes } = useStyles();
   const [commands, setCommands] = useState<CommandProps[]>([]);
   useNuiEvent('setCommands', setCommands);
@@ -58,4 +58,4 @@ const CommandList: React.FC = () => {
   );
 };
 
-export default CommandList;
+export default CommandsList;

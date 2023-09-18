@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { createStyles, Tabs } from '@mantine/core';
 import { useNuiEvent } from '../hooks/useNuiEvent';
-import Commands from './components/Commands';
-
+import CommandsList from './components/Commands';
 const useStyles = createStyles((theme) => ({
   root: {
     position: 'absolute',
@@ -95,7 +94,7 @@ const AdminMenu: React.FC = () => {
           </Tabs.List>
 
           <Tabs.Panel value='Commands' className={classes.panel}>
-            <Commands />
+            <CommandsList />
           </Tabs.Panel>
 
           <Tabs.Panel value='Players' className={classes.panel}>
