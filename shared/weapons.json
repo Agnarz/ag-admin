@@ -1,0 +1,430 @@
+[
+  {
+    "label": "Advanced Rifle [Assault Rifle]",
+    "value": "weapon_advancedrifle"
+  },
+  {
+    "label": "AP Pistol [Handgun]",
+    "value": "weapon_appistol"
+  },
+  {
+    "label": "Assault Rifle [Assault Rifle]",
+    "value": "weapon_assaultrifle"
+  },
+  {
+    "label": "Assault Rifle Mk II [Assault Rifle]",
+    "value": "weapon_assaultrifle_mk2"
+  },
+  {
+    "label": "Assault Shotgun [Shotgun]",
+    "value": "weapon_assaultshotgun"
+  },
+  {
+    "label": "Assault SMG [SMG]",
+    "value": "weapon_assaultsmg"
+  },
+  {
+    "label": "Sweeper Shotgun [Shotgun]",
+    "value": "weapon_autoshotgun"
+  },
+  {
+    "label": "Baseball Bat [-728555052]",
+    "value": "weapon_bat"
+  },
+  {
+    "label": "Ball [Throwables]",
+    "value": "weapon_ball"
+  },
+  {
+    "label": "Battle Axe [-728555052]",
+    "value": "weapon_battleaxe"
+  },
+  {
+    "label": "Bottle [-728555052]",
+    "value": "weapon_bottle"
+  },
+  {
+    "label": "Bullpup Rifle [Assault Rifle]",
+    "value": "weapon_bullpuprifle"
+  },
+  {
+    "label": "Bullpup Rifle Mk II [Assault Rifle]",
+    "value": "weapon_bullpuprifle_mk2"
+  },
+  {
+    "label": "Bullpup Shotgun [Shotgun]",
+    "value": "weapon_bullpupshotgun"
+  },
+  {
+    "label": "BZ Gas [Throwables]",
+    "value": "weapon_bzgas"
+  },
+  {
+    "label": "Carbine Rifle [Assault Rifle]",
+    "value": "weapon_carbinerifle"
+  },
+  {
+    "label": "Carbine Rifle Mk II [Assault Rifle]",
+    "value": "weapon_carbinerifle_mk2"
+  },
+  {
+    "label": "Combat MG [LMG]",
+    "value": "weapon_combatmg"
+  },
+  {
+    "label": "Combat MG Mk II [LMG]",
+    "value": "weapon_combatmg_mk2"
+  },
+  {
+    "label": "Combat PDW [SMG]",
+    "value": "weapon_combatpdw"
+  },
+  {
+    "label": "Combat Pistol [Handgun]",
+    "value": "weapon_combatpistol"
+  },
+  {
+    "label": "Compact Grenade Launcher [Heavy]",
+    "value": "weapon_compactlauncher"
+  },
+  {
+    "label": "Compact Rifle [Assault Rifle]",
+    "value": "weapon_compactrifle"
+  },
+  {
+    "label": "Crowbar [-728555052]",
+    "value": "weapon_crowbar"
+  },
+  {
+    "label": "Antique Cavalry Dagger [-728555052]",
+    "value": "weapon_dagger"
+  },
+  {
+    "label": "Double Barrel Shotgun [Shotgun]",
+    "value": "weapon_dbshotgun"
+  },
+  {
+    "label": "Double-Action Revolver [Handgun]",
+    "value": "weapon_doubleaction"
+  },
+  {
+    "label": "Fire Extinguisher [-37788308]",
+    "value": "weapon_fireextinguisher"
+  },
+  {
+    "label": "Firework Launcher [Heavy]",
+    "value": "weapon_firework"
+  },
+  {
+    "label": "Flare [Throwables]",
+    "value": "weapon_flare"
+  },
+  {
+    "label": "Flare Gun [Handgun]",
+    "value": "weapon_flaregun"
+  },
+  {
+    "label": "Flashlight [-728555052]",
+    "value": "weapon_flashlight"
+  },
+  {
+    "label": "Golf Club [-728555052]",
+    "value": "weapon_golfclub"
+  },
+  {
+    "label": "Grenade [Throwables]",
+    "value": "weapon_grenade"
+  },
+  {
+    "label": "Grenade Launcher [Heavy]",
+    "value": "weapon_grenadelauncher"
+  },
+  {
+    "label": "Gusenberg Sweeper [LMG]",
+    "value": "weapon_gusenberg"
+  },
+  {
+    "label": "Hammer [-728555052]",
+    "value": "weapon_hammer"
+  },
+  {
+    "label": "Hatchet [-728555052]",
+    "value": "weapon_hatchet"
+  },
+  {
+    "label": "Heavy Pistol [Handgun]",
+    "value": "weapon_heavypistol"
+  },
+  {
+    "label": "Heavy Shotgun [Shotgun]",
+    "value": "weapon_heavyshotgun"
+  },
+  {
+    "label": "Heavy Sniper [Heavy Sniper]",
+    "value": "weapon_heavysniper"
+  },
+  {
+    "label": "Heavy Sniper Mk II [Heavy Sniper]",
+    "value": "weapon_heavysniper_mk2"
+  },
+  {
+    "label": "Homing Launcher [Heavy]",
+    "value": "weapon_hominglauncher"
+  },
+  {
+    "label": "Knife [-728555052]",
+    "value": "weapon_knife"
+  },
+  {
+    "label": "Knuckle Duster [Unarmed]",
+    "value": "weapon_knuckle"
+  },
+  {
+    "label": "Machete [-728555052]",
+    "value": "weapon_machete"
+  },
+  {
+    "label": "Machine Pistol [SMG]",
+    "value": "weapon_machinepistol"
+  },
+  {
+    "label": "Marksman Pistol [Handgun]",
+    "value": "weapon_marksmanpistol"
+  },
+  {
+    "label": "Marksman Rifle [Heavy Sniper]",
+    "value": "weapon_marksmanrifle"
+  },
+  {
+    "label": "Marksman Rifle Mk II [Heavy Sniper]",
+    "value": "weapon_marksmanrifle_mk2"
+  },
+  {
+    "label": "MG [LMG]",
+    "value": "weapon_mg"
+  },
+  {
+    "label": "Micro SMG [SMG]",
+    "value": "weapon_microsmg"
+  },
+  {
+    "label": "Minigun [Heavy]",
+    "value": "weapon_minigun"
+  },
+  {
+    "label": "Mini SMG [SMG]",
+    "value": "weapon_minismg"
+  },
+  {
+    "label": "Molotov [Throwables]",
+    "value": "weapon_molotov"
+  },
+  {
+    "label": "Musket [Heavy Sniper]",
+    "value": "weapon_musket"
+  },
+  {
+    "label": "Nightstick [-728555052]",
+    "value": "weapon_nightstick"
+  },
+  {
+    "label": "Jerry Can [Misc]",
+    "value": "weapon_petrolcan"
+  },
+  {
+    "label": "Pipe Bomb [Throwables]",
+    "value": "weapon_pipebomb"
+  },
+  {
+    "label": "Pistol [Handgun]",
+    "value": "weapon_pistol"
+  },
+  {
+    "label": "Pistol .50 [Handgun]",
+    "value": "weapon_pistol50"
+  },
+  {
+    "label": "Pistol Mk II [Handgun]",
+    "value": "weapon_pistol_mk2"
+  },
+  {
+    "label": "Pool Cue [-728555052]",
+    "value": "weapon_poolcue"
+  },
+  {
+    "label": "Proximity Mine [Throwables]",
+    "value": "weapon_proxmine"
+  },
+  {
+    "label": "Pump Shotgun [Shotgun]",
+    "value": "weapon_pumpshotgun"
+  },
+  {
+    "label": "Pump Shotgun Mk II [Shotgun]",
+    "value": "weapon_pumpshotgun_mk2"
+  },
+  {
+    "label": "Railgun [Heavy]",
+    "value": "weapon_railgun"
+  },
+  {
+    "label": "Heavy Revolver [Handgun]",
+    "value": "weapon_revolver"
+  },
+  {
+    "label": "Heavy Revolver Mk II [Handgun]",
+    "value": "weapon_revolver_mk2"
+  },
+  {
+    "label": "RPG [Heavy]",
+    "value": "weapon_rpg"
+  },
+  {
+    "label": "Sawed-Off Shotgun [Shotgun]",
+    "value": "weapon_sawnoffshotgun"
+  },
+  {
+    "label": "SMG [SMG]",
+    "value": "weapon_smg"
+  },
+  {
+    "label": "SMG Mk II [SMG]",
+    "value": "weapon_smg_mk2"
+  },
+  {
+    "label": "Tear Gas [Throwables]",
+    "value": "weapon_smokegrenade"
+  },
+  {
+    "label": "Sniper Rifle [Heavy Sniper]",
+    "value": "weapon_sniperrifle"
+  },
+  {
+    "label": "Snowball [Throwables]",
+    "value": "weapon_snowball"
+  },
+  {
+    "label": "SNS Pistol [Handgun]",
+    "value": "weapon_snspistol"
+  },
+  {
+    "label": "SNS Pistol Mk II [Handgun]",
+    "value": "weapon_snspistol_mk2"
+  },
+  {
+    "label": "Special Carbine [Assault Rifle]",
+    "value": "weapon_specialcarbine"
+  },
+  {
+    "label": "Special Carbine Mk II [Assault Rifle]",
+    "value": "weapon_specialcarbine_mk2"
+  },
+  {
+    "label": "Sticky Bomb [Throwables]",
+    "value": "weapon_stickybomb"
+  },
+  {
+    "label": "Stun Gun [690389602]",
+    "value": "weapon_stungun"
+  },
+  {
+    "label": "Switchblade [-728555052]",
+    "value": "weapon_switchblade"
+  },
+  {
+    "label": "Unarmed [Unarmed]",
+    "value": "weapon_unarmed"
+  },
+  {
+    "label": "Vintage Pistol [Handgun]",
+    "value": "weapon_vintagepistol"
+  },
+  {
+    "label": "Pipe Wrench [-728555052]",
+    "value": "weapon_wrench"
+  },
+  {
+    "label": "Up-n-Atomizer [Handgun]",
+    "value": "weapon_raypistol"
+  },
+  {
+    "label": "Unholy Hellbringer [LMG]",
+    "value": "weapon_raycarbine"
+  },
+  {
+    "label": "Widowmaker [Heavy]",
+    "value": "weapon_rayminigun"
+  },
+  {
+    "label": "Stone Hatchet [-728555052]",
+    "value": "weapon_stone_hatchet"
+  },
+  {
+    "label": "Ceramic Pistol [Handgun]",
+    "value": "weapon_ceramicpistol"
+  },
+  {
+    "label": "Navy Revolver [Handgun]",
+    "value": "weapon_navyrevolver"
+  },
+  {
+    "label": "Hazardous Jerry Can [Misc]",
+    "value": "weapon_hazardcan"
+  },
+  {
+    "label": "Perico Pistol [Handgun]",
+    "value": "weapon_gadgetpistol"
+  },
+  {
+    "label": "Military Rifle [Assault Rifle]",
+    "value": "weapon_militaryrifle"
+  },
+  {
+    "label": "Combat Shotgun [Shotgun]",
+    "value": "weapon_combatshotgun"
+  },
+  {
+    "label": "Compact EMP Launcher [Heavy]",
+    "value": "weapon_emplauncher"
+  },
+  {
+    "label": "Heavy Rifle [Assault Rifle]",
+    "value": "weapon_heavyrifle"
+  },
+  {
+    "label": "Fertilizer Can [Misc]",
+    "value": "weapon_fertilizercan"
+  },
+  {
+    "label": "Stun Gun [690389602]",
+    "value": "weapon_stungun_mp"
+  },
+  {
+    "label": "Service Carbine [Assault Rifle]",
+    "value": "weapon_tacticalrifle"
+  },
+  {
+    "label": "Precision Rifle [Heavy Sniper]",
+    "value": "weapon_precisionrifle"
+  },
+  {
+    "label": "WM 29 Pistol [Handgun]",
+    "value": "weapon_pistolxm3"
+  },
+  {
+    "label": "Candy Cane [-728555052]",
+    "value": "weapon_candycane"
+  },
+  {
+    "label": "Railgun [Heavy]",
+    "value": "weapon_railgunxm3"
+  },
+  {
+    "label": "Acid Package [Throwables]",
+    "value": "weapon_acidpackage"
+  },
+  {
+    "label": "Tactical SMG [SMG]",
+    "value": "weapon_tecpistol"
+  }
+]

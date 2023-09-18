@@ -1,0 +1,782 @@
+[
+  {
+    "label": "Abandoned Mineshaft",
+    "value": "abandoned_mineshaft",
+    "type": "outside",
+    "coords": {
+      "x": -598.4600219726563,
+      "y": 2095.75,
+      "z": 130.9600067138672
+    }
+  },
+  {
+    "label": "Ace Jones Drive",
+    "value": "ace_jones_drive",
+    "type": "outside",
+    "coords": {
+      "x": -1678.5999755859376,
+      "y": 490.0799865722656,
+      "z": 128.8800048828125
+    }
+  },
+  {
+    "label": "Airport Terminal",
+    "value": "airport",
+    "type": "outside",
+    "coords": {
+      "x": -992.2999877929688,
+      "y": -2989.919921875,
+      "z": 13.94999980926513
+    }
+  },
+  {
+    "label": "Alta Gazebo",
+    "value": "alta_gazebo",
+    "type": "outside",
+    "coords": {
+      "x": 389.30999755859377,
+      "y": -356.3299865722656,
+      "z": 48.02000045776367
+    }
+  },
+  {
+    "label": "Altruist Camp",
+    "value": "altruist_camp",
+    "type": "outside",
+    "coords": {
+      "x": -1170.489990234375,
+      "y": 4926.7998046875,
+      "z": 224.3300018310547
+    }
+  },
+  {
+    "label": "Banning Docks",
+    "value": "banning_docks",
+    "type": "outside",
+    "coords": {
+      "x": -117.02999877929688,
+      "y": -2251.179931640625,
+      "z": 7.80999994277954
+    }
+  },
+  {
+    "label": "Basketball Courts",
+    "value": "basketball_courts",
+    "type": "outside",
+    "coords": {
+      "x": -920.719970703125,
+      "y": -724.72998046875,
+      "z": 19.92000007629394
+    }
+  },
+  {
+    "label": "Benny's Motorworks",
+    "value": "bennys",
+    "type": "outside",
+    "coords": {
+      "x": -211.5500030517578,
+      "y": -1324.550048828125,
+      "z": 30.89999961853027
+    }
+  },
+  {
+    "label": "Black Diamond Casino",
+    "value": "blackdiamond_casino",
+    "type": "outside",
+    "coords": {
+      "x": 922.739990234375,
+      "y": 47.90999984741211,
+      "z": 81.11000061035156
+    }
+  },
+  {
+    "label": "Cayo Perico Airfield",
+    "value": "cayo_perico_airfield",
+    "type": "outside",
+    "coords": {
+      "x": 4465.93994140625,
+      "y": -4479.52978515625,
+      "z": 4.21999979019165
+    }
+  },
+  {
+    "label": "Cayo Perico Military Ship",
+    "value": "cayo_perico_militaryship",
+    "type": "outside",
+    "coords": {
+      "x": 3082.860107421875,
+      "y": -4728.39990234375,
+      "z": 15.26000022888183
+    }
+  },
+  {
+    "label": "Cayo Perico Villa",
+    "value": "cayo_perico_villa",
+    "type": "outside",
+    "coords": {
+      "x": 4977.7001953125,
+      "y": -5707.169921875,
+      "z": 19.88999938964843
+    }
+  },
+  {
+    "label": "Clinton Agency Offices",
+    "value": "clinton_agency_offices",
+    "type": "inside",
+    "coords": {
+      "x": -588.77001953125,
+      "y": -710.6699829101563,
+      "z": 113.01000213623047
+    }
+  },
+  {
+    "label": "Clucking Bell Farms",
+    "value": "clucking_bell_farms",
+    "type": "outside",
+    "coords": {
+      "x": -76.25,
+      "y": 6274.56005859375,
+      "z": 31.39999961853027
+    }
+  },
+  {
+    "label": "Coveted Cove",
+    "value": "coveted_cove",
+    "type": "outside",
+    "coords": {
+      "x": 3072.06005859375,
+      "y": 2129.469970703125,
+      "z": 2.53999996185302
+    }
+  },
+  {
+    "label": "Darnell Bros (Inside)",
+    "value": "darnell_bros_inside",
+    "type": "inside",
+    "coords": {
+      "x": 713.510009765625,
+      "y": -964.0399780273438,
+      "z": 30.39999961853027
+    }
+  },
+  {
+    "label": "Darnell Bros (Outside)",
+    "value": "darnell_bros_outside",
+    "type": "outside",
+    "coords": {
+      "x": 718.4600219726563,
+      "y": -983.5700073242188,
+      "z": 24.13999938964843
+    }
+  },
+  {
+    "label": "Dashhound Bus Station",
+    "value": "dashhound_bus_station",
+    "type": "outside",
+    "coords": {
+      "x": 422.010009765625,
+      "y": -643.6099853515625,
+      "z": 28.5
+    }
+  },
+  {
+    "label": "Del Perro Pier",
+    "value": "del_perro_pier",
+    "type": "outside",
+    "coords": {
+      "x": -1659.4200439453126,
+      "y": -1010.1400146484375,
+      "z": 13.01000022888183
+    }
+  },
+  {
+    "label": "Del Perro Tiny Garage",
+    "value": "del_perro_tiny_garage",
+    "type": "outside",
+    "coords": {
+      "x": -1345.6199951171876,
+      "y": -748.5399780273438,
+      "z": 22.31999969482422
+    }
+  },
+  {
+    "label": "El Burro Heights Parking",
+    "value": "el_burro_heights_parking",
+    "type": "outside",
+    "coords": {
+      "x": 1443.5899658203126,
+      "y": -2606.780029296875,
+      "z": 47.70999908447265
+    }
+  },
+  {
+    "label": "FIB Building Entrance",
+    "value": "fib_entrance",
+    "type": "outside",
+    "coords": {
+      "x": 98.4800033569336,
+      "y": -743.469970703125,
+      "z": 45.75
+    }
+  },
+  {
+    "label": "FIB Building Top",
+    "value": "fib_top",
+    "type": "inside",
+    "coords": {
+      "x": 135.92999267578126,
+      "y": -749.3499755859375,
+      "z": 258.1499938964844
+    }
+  },
+  {
+    "label": "Fort Zancudo Military Base",
+    "value": "military_base",
+    "type": "outside",
+    "coords": {
+      "x": -1840.280029296875,
+      "y": 2982.2099609375,
+      "z": 32.81000137329101
+    }
+  },
+  {
+    "label": "Franklin's House (Inside)",
+    "value": "franklins_inside",
+    "type": "inside",
+    "coords": {
+      "x": 5.15000009536743,
+      "y": 532.260009765625,
+      "z": 175.33999633789063
+    }
+  },
+  {
+    "label": "Franklin's House (Outside)",
+    "value": "franklins_outside",
+    "type": "outside",
+    "coords": {
+      "x": 11.90999984741211,
+      "y": 545.8800048828125,
+      "z": 175.88999938964845
+    }
+  },
+  {
+    "label": "GWC Country Club",
+    "value": "gwc_country_club",
+    "type": "outside",
+    "coords": {
+      "x": -1328.1600341796876,
+      "y": 59.54999923706055,
+      "z": 53.54999923706055
+    }
+  },
+  {
+    "label": "Galileo Observatory",
+    "value": "galileo_observatory",
+    "type": "outside",
+    "coords": {
+      "x": -425.510009765625,
+      "y": 1123.4599609375,
+      "z": 325.489990234375
+    }
+  },
+  {
+    "label": "Gentry Manor Parking",
+    "value": "gentry_manor_parking",
+    "type": "outside",
+    "coords": {
+      "x": -55.20999908447265,
+      "y": 394.5400085449219,
+      "z": 112.4000015258789
+    }
+  },
+  {
+    "label": "Grapeseed Airfield",
+    "value": "grapeseed_airfield",
+    "type": "outside",
+    "coords": {
+      "x": 2147.75,
+      "y": 4800.89990234375,
+      "z": 41.08000183105469
+    }
+  },
+  {
+    "label": "Higgins Helitours",
+    "value": "higgins_helitours",
+    "type": "outside",
+    "coords": {
+      "x": -699.5399780273438,
+      "y": -1415.3900146484376,
+      "z": 5.0
+    }
+  },
+  {
+    "label": "Humane Labs",
+    "value": "humane_labs",
+    "type": "outside",
+    "coords": {
+      "x": 3437.60009765625,
+      "y": 3767.719970703125,
+      "z": 30.51000022888183
+    }
+  },
+  {
+    "label": "Legion Square",
+    "value": "legion_square",
+    "type": "outside",
+    "coords": {
+      "x": 195.1699981689453,
+      "y": -933.77001953125,
+      "z": 29.70000076293945
+    }
+  },
+  {
+    "label": "Little Seoul",
+    "value": "little_seoul",
+    "type": "outside",
+    "coords": {
+      "x": -683.5800170898438,
+      "y": -886.5,
+      "z": 24.5
+    }
+  },
+  {
+    "label": "Lom Bank Office",
+    "value": "lom_bank_office",
+    "type": "inside",
+    "coords": {
+      "x": -1573.8199462890626,
+      "y": -571.1599731445313,
+      "z": 108.5199966430664
+    }
+  },
+  {
+    "label": "Los Santos Customs (Burton)",
+    "value": "lscustoms_burton",
+    "type": "outside",
+    "coords": {
+      "x": -369.1600036621094,
+      "y": -129.91000366210938,
+      "z": 38.68000030517578
+    }
+  },
+  {
+    "label": "Los Santos Customs (La Mesa)",
+    "value": "lscustoms_lamesa",
+    "type": "outside",
+    "coords": {
+      "x": 712.530029296875,
+      "y": -1083.93994140625,
+      "z": 22.3700008392334
+    }
+  },
+  {
+    "label": "Los Santos Department of Water & Power",
+    "value": "lsdwp",
+    "type": "outside",
+    "coords": {
+      "x": 742.530029296875,
+      "y": 128.22000122070313,
+      "z": 79.91999816894531
+    }
+  },
+  {
+    "label": "Lumberyard",
+    "value": "lumberyard",
+    "type": "outside",
+    "coords": {
+      "x": -596.3499755859375,
+      "y": 5281.4599609375,
+      "z": 70.30000305175781
+    }
+  },
+  {
+    "label": "MT Gordo Beach",
+    "value": "hidden_beach1",
+    "type": "outside",
+    "coords": {
+      "x": 2532.35009765625,
+      "y": 6616.25,
+      "z": 2.00999999046325
+    }
+  },
+  {
+    "label": "Maze Bank Arena",
+    "value": "maze_bank_arena",
+    "type": "outside",
+    "coords": {
+      "x": -237.6300048828125,
+      "y": -2041.5,
+      "z": 27.76000022888183
+    }
+  },
+  {
+    "label": "Maze Bank Fountain",
+    "value": "maze_bank_fountain",
+    "type": "outside",
+    "coords": {
+      "x": -151.69000244140626,
+      "y": -875.5499877929688,
+      "z": 29.5
+    }
+  },
+  {
+    "label": "Maze Bank Office",
+    "value": "maze_bank_office",
+    "type": "inside",
+    "coords": {
+      "x": -73.9800033569336,
+      "y": -819.6500244140625,
+      "z": 243.38999938964845
+    }
+  },
+  {
+    "label": "Merryweather Dock",
+    "value": "merryweather_dock",
+    "type": "outside",
+    "coords": {
+      "x": 472.94000244140627,
+      "y": -3035.9599609375,
+      "z": 6.19999980926513
+    }
+  },
+  {
+    "label": "Meth House",
+    "value": "meth_house",
+    "type": "outside",
+    "coords": {
+      "x": 2428.64990234375,
+      "y": 4982.169921875,
+      "z": 45.88999938964844
+    }
+  },
+  {
+    "label": "Michael's House (Inside)",
+    "value": "michaels_inside",
+    "type": "inside",
+    "coords": {
+      "x": -813.5900268554688,
+      "y": 179.35000610351563,
+      "z": 72.16000366210938
+    }
+  },
+  {
+    "label": "Michael's House (Outside)",
+    "value": "michaels_outside",
+    "type": "outside",
+    "coords": {
+      "x": -824.6300048828125,
+      "y": 180.4600067138672,
+      "z": 71.55999755859375
+    }
+  },
+  {
+    "label": "Mirror Park",
+    "value": "mirror_park",
+    "type": "outside",
+    "coords": {
+      "x": 1136.949951171875,
+      "y": -645.2000122070313,
+      "z": 56.7400016784668
+    }
+  },
+  {
+    "label": "Mission Row Police Department",
+    "value": "mrpd",
+    "type": "outside",
+    "coords": {
+      "x": 412.8800048828125,
+      "y": -967.4199829101563,
+      "z": 29.46999931335449
+    }
+  },
+  {
+    "label": "Mount Chiliad",
+    "value": "mt_chilad",
+    "type": "outside",
+    "coords": {
+      "x": 501.6700134277344,
+      "y": 5604.31982421875,
+      "z": 797.9099731445313
+    }
+  },
+  {
+    "label": "NOOSE Headquarters",
+    "value": "noose_hq",
+    "type": "outside",
+    "coords": {
+      "x": 2516.43994140625,
+      "y": -384.2900085449219,
+      "z": 93.13999938964844
+    }
+  },
+  {
+    "label": "Palemo Beach",
+    "value": "hidden_beach2",
+    "type": "outside",
+    "coords": {
+      "x": 2815.0400390625,
+      "y": -684.260009765625,
+      "z": 2.10999989509582
+    }
+  },
+  {
+    "label": "Pillbox Hill Hospital",
+    "value": "pillbox_hospital",
+    "type": "outside",
+    "coords": {
+      "x": 293.67999267578127,
+      "y": -583.1500244140625,
+      "z": 43.18999862670898
+    }
+  },
+  {
+    "label": "Pink Cage Motel",
+    "value": "pinkcage_motel",
+    "type": "outside",
+    "coords": {
+      "x": 327.55999755859377,
+      "y": -205.0800018310547,
+      "z": 53.08000183105469
+    }
+  },
+  {
+    "label": "Playboy Mansion",
+    "value": "playboy_mansion",
+    "type": "outside",
+    "coords": {
+      "x": -1530.0699462890626,
+      "y": 94.41999816894531,
+      "z": 56.6500015258789
+    }
+  },
+  {
+    "label": "Power Plant",
+    "value": "powerplant",
+    "type": "outside",
+    "coords": {
+      "x": 2675.3701171875,
+      "y": 1641.969970703125,
+      "z": 24.64999961853027
+    }
+  },
+  {
+    "label": "Prison",
+    "value": "prison",
+    "type": "outside",
+    "coords": {
+      "x": 1864.1500244140626,
+      "y": 2605.10009765625,
+      "z": 45.66999816894531
+    }
+  },
+  {
+    "label": "Rearwall Skatepark",
+    "value": "rearwall_skatepark",
+    "type": "outside",
+    "coords": {
+      "x": 764.7899780273438,
+      "y": -1219.1500244140626,
+      "z": 25.13999938964843
+    }
+  },
+  {
+    "label": "Rogers Salvage & Scrap",
+    "value": "rogers_salvage_front",
+    "type": "outside",
+    "coords": {
+      "x": -615.25,
+      "y": -1593.449951171875,
+      "z": 195.83999633789063
+    }
+  },
+  {
+    "label": "Rogers Salvage & Scrap (Back)",
+    "value": "rogers_salvage_back",
+    "type": "outside",
+    "coords": {
+      "x": -575.1400146484375,
+      "y": -1642.280029296875,
+      "z": 19.40999984741211
+    }
+  },
+  {
+    "label": "Sandy Shores Airfield",
+    "value": "sandyshores_airfield",
+    "type": "outside",
+    "coords": {
+      "x": 1752.72998046875,
+      "y": 3294.239990234375,
+      "z": 41.13000106811523
+    }
+  },
+  {
+    "label": "Scrapyard",
+    "value": "scrapyard",
+    "type": "outside",
+    "coords": {
+      "x": 2395.35009765625,
+      "y": 3116.969970703125,
+      "z": 49.18000030517578
+    }
+  },
+  {
+    "label": "Simeon's Garage",
+    "value": "simeons_garage",
+    "type": "outside",
+    "coords": {
+      "x": 1204.3199462890626,
+      "y": -3098.760009765625,
+      "z": 5.84999990463256
+    }
+  },
+  {
+    "label": "Small Cave",
+    "value": "small_cave",
+    "type": "inside",
+    "coords": {
+      "x": -1911.31005859375,
+      "y": 1388.4100341796876,
+      "z": 219.0
+    }
+  },
+  {
+    "label": "Terminal Dock",
+    "value": "terminal_dock",
+    "type": "outside",
+    "coords": {
+      "x": 1142.77001953125,
+      "y": -3338.72998046875,
+      "z": 6.01000022888183
+    }
+  },
+  {
+    "label": "Therapist Office",
+    "value": "therapist_office",
+    "type": "inside",
+    "coords": {
+      "x": -1905.1600341796876,
+      "y": -573.25,
+      "z": 19.10000038146972
+    }
+  },
+  {
+    "label": "Torture Room (Inside)",
+    "value": "torture_room_inside",
+    "type": "inside",
+    "coords": {
+      "x": 144.91000366210938,
+      "y": -2201.969970703125,
+      "z": 4.69000005722045
+    }
+  },
+  {
+    "label": "Torture Room (Outside)",
+    "value": "torture_room_outside",
+    "type": "outside",
+    "coords": {
+      "x": 128.3699951171875,
+      "y": -2191.2900390625,
+      "z": 6.01000022888183
+    }
+  },
+  {
+    "label": "Town Hall",
+    "value": "townhall",
+    "type": "outside",
+    "coords": {
+      "x": -538.3099975585938,
+      "y": -216.77999877929688,
+      "z": 37.6500015258789
+    }
+  },
+  {
+    "label": "Trevor's House",
+    "value": "trevors",
+    "type": "outside",
+    "coords": {
+      "x": 1987.0999755859376,
+      "y": 3810.860107421875,
+      "z": 32.11000061035156
+    }
+  },
+  {
+    "label": "Underpass Chill Spot",
+    "value": "underpass_chill_spot",
+    "type": "outside",
+    "coords": {
+      "x": 991.8099975585938,
+      "y": -2586.89990234375,
+      "z": 10.42000007629394
+    }
+  },
+  {
+    "label": "Vanilla Unicorn",
+    "value": "vanilla_unicorn",
+    "type": "outside",
+    "coords": {
+      "x": 125.75,
+      "y": -1309.1600341796876,
+      "z": 29.19000053405761
+    }
+  },
+  {
+    "label": "Vespucci Gazebo",
+    "value": "vespucci_gazebo",
+    "type": "outside",
+    "coords": {
+      "x": -889.4600219726563,
+      "y": -853.4199829101563,
+      "z": 20.56999969482422
+    }
+  },
+  {
+    "label": "Vespucci Police Department",
+    "value": "vespucci_pd",
+    "type": "outside",
+    "coords": {
+      "x": -1087.3199462890626,
+      "y": -791.9299926757813,
+      "z": 19.25
+    }
+  },
+  {
+    "label": "Vinewood Bowl",
+    "value": "vinewood_bowl",
+    "type": "outside",
+    "coords": {
+      "x": 662.8200073242188,
+      "y": 571.2100219726563,
+      "z": 129.0500030517578
+    }
+  },
+  {
+    "label": "Vinewood Sign",
+    "value": "vinewood_sign",
+    "type": "outside",
+    "coords": {
+      "x": 721.2999877929688,
+      "y": 1205.2900390625,
+      "z": 325.8900146484375
+    }
+  },
+  {
+    "label": "Vineyard",
+    "value": "vineyard",
+    "type": "outside",
+    "coords": {
+      "x": -1910.969970703125,
+      "y": 2063.679931640625,
+      "z": 140.64999389648438
+    }
+  },
+  {
+    "label": "Yellow Jack Bar",
+    "value": "yellow_jack_bar",
+    "type": "outside",
+    "coords": {
+      "x": 1995.1199951171876,
+      "y": 3061.39990234375,
+      "z": 47.04999923706055
+    }
+  }
+]

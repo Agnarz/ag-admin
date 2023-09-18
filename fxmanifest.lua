@@ -4,7 +4,7 @@ lua54 'yes'
 game 'gta5'
 
 name 'ag-admin'
-version '0.2.1'
+version '0.2.2'
 description 'FiveM Admin Menu'
 author 'Agnarz'
 repository 'https://github.com/Agnarz/ag-admin'

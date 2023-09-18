@@ -1,0 +1,16 @@
+[
+  { "label": "Blizzard", "value": "BLIZZARD" },
+  { "label": "Clear", "value": "CLEAR" },
+  { "label": "Clouds", "value": "CLOUDS" },
+  { "label": "Extra Sunny", "value": "EXTRASUNNY" },
+  { "label": "Foggy", "value": "FOGGY" },
+  { "label": "Halloween", "value": "HALLOWEEN" },
+  { "label": "Light Rain", "value": "CLEARING" },
+  { "label": "Overcast", "value": "OVERCAST" },
+  { "label": "Raining", "value": "RAINING" },
+  { "label": "Smog", "value": "SMOG" },
+  { "label": "Snowing", "value": "SNOWING" },
+  { "label": "Snowlight", "value": "SNOWLIGHT" },
+  { "label": "Thunder", "value": "THUNDER" },
+  { "label": "Xmas", "value": "XMAS" }
+]

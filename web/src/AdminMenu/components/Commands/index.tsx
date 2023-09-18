@@ -3,6 +3,7 @@ import { createStyles } from '@mantine/core';
 import { useNuiEvent } from '../../../hooks/useNuiEvent';
 import type { CommandProps } from './types';
 import ButtonCommand from './components/ButtonCommand';
+import FormCommand from './components/FormCommand';
 
 const useStyles = createStyles(() => ({
   root: {
@@ -48,6 +49,17 @@ const CommandsList: React.FC = () => {
                   type={v.type}
                   active={v.active}
                   close={v.close}
+                />
+              )}
+
+              {v.type == 'form' && (
+                <FormCommand
+                  id={index}
+                  label={v.label}
+                  command={v.command}
+                  type={v.type}
+                  args={v.args}
+                  buttons={v.buttons}
                 />
               )}
             </React.Fragment>
