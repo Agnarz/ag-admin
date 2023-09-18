@@ -60,6 +60,7 @@ const CommandsList: React.FC = () => {
                   type={v.type}
                   args={v.args}
                   buttons={v.buttons}
+                  close={v.close}
                 />
               )}
             </React.Fragment>
