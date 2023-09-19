@@ -4,18 +4,10 @@ lua54 'yes'
 game 'gta5'
 
 name 'ag-admin'
-version '0.2.9'
+version '0.3.0'
 description 'FiveM Admin Menu'
 author 'Agnarz'
 repository 'https://github.com/Agnarz/ag-admin'
-
-ui_page 'web/build/index.html'
-
-files {
-    'web/build/index.html',
-    'web/build/**/*',
-    'shared/*.json'
-}
 
 shared_script '@ox_lib/init.lua'
 
@@ -27,4 +19,12 @@ client_scripts {
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua'
+}
+
+ui_page 'web/build/index.html'
+
+files {
+    'web/build/index.html',
+    'web/build/**/*',
+    'shared/*.json'
 }

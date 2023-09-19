@@ -59,13 +59,168 @@
     "active": true
   },
   {
+    "label": "Set PedModel",
+    "command": "pedmodel",
+    "type": "form",
+    "args": [
+      {
+        "type": "select",
+        "label": "Model",
+        "options": [],
+        "optionsKey": "PedModels",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      },
+      {
+        "type": "select",
+        "label": "Target",
+        "options": [],
+        "optionsKey": "Targets",
+        "searchable": true,
+        "clearable": true,
+        "required": false
+      }
+    ]
+  },
+  {
+    "label": "Give Weapon",
+    "command": "giveweapon",
+    "type": "form",
+    "args": [
+      {
+        "type": "select",
+        "label": "Weapon",
+        "options": [],
+        "optionsKey": "Weapons",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      },
+      {
+        "type": "number",
+        "label": "Ammo",
+        "min": 50,
+        "max": 1000,
+        "step": 10,
+        "default": 250
+      },
+      {
+        "type": "select",
+        "label": "Target",
+        "options": [],
+        "optionsKey": "Targets",
+        "searchable": true,
+        "clearable": true
+      }
+    ]
+  },
+  {
+    "label": "Spawn Vehicle",
+    "command": "car",
+    "type": "form",
+    "args": [
+      {
+        "type": "select",
+        "label": "Vehicle",
+        "options": [],
+        "optionsKey": "Vehicles",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      }
+    ],
+    "buttons": {
+      "execute": "Spawn",
+      "extra": [
+        { "label": "Mod", "command": "mod", "color": "blue" },
+        { "label": "Delete", "command": "dv", "color": "red" }
+      ]
+    }
+  },
+  {
+    "label": "Set Engine Audio",
+    "command": "engineaudio",
+    "type": "form",
+    "args": [
+      {
+        "type": "select",
+        "label": "Engine",
+        "options": [],
+        "optionsKey": "Vehicles",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      }
+    ]
+  },
+  {
     "label": "Repair Vehicle",
     "command": "fix",
     "type": "button"
   },
   {
-    "label": "Teleport to Waypoint",
+    "label": "Teleport to Marker",
     "command": "tpm",
     "type": "button"
+  },
+  {
+    "label": "Teleport to Coords",
+    "command": "tpc",
+    "type": "form",
+    "args": [
+      {
+        "type": "input",
+        "label": "Coords",
+        "placeholder": "x y z",
+        "required": true
+      }
+    ]
+  },
+  {
+    "label": "Teleport to Location",
+    "command": "tpl",
+    "type": "form",
+    "args": [
+      {
+        "type": "select",
+        "label": "Location",
+        "options": [],
+        "optionsKey": "Teleports",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      },
+      { "type": "checkbox", "label": "Keep Vehicle", "checked": true }
+    ]
+  },
+  {
+    "label": "Set Timecycle Modifier",
+    "command": "timecycle",
+    "type": "form",
+    "args": [
+      {
+        "type": "select",
+        "label": "Timecycle",
+        "options": [],
+        "optionsKey": "Timecycles",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      },
+      {
+        "type": "slider",
+        "label": "Strength",
+        "default": 0.5,
+        "min": 0,
+        "max": 1,
+        "step": 0.1
+      }
+    ],
+    "buttons": {
+      "extra": [
+        { "label": "Clear", "command": "timecycle 'clear'", "color": "red" }
+      ]
+    }
   }
 ]
