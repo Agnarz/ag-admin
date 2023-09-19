@@ -28,7 +28,7 @@ local commands = loadJSON('commands')
 local vehicles = loadJSON('vehicles')
 local weapons = loadJSON('weapons')
 local pedmodels = loadJSON('pedmodels')
-local teleports = loadJSON('teleports')
+teleports = loadJSON('teleports')
 local timecycles = loadJSON('timecycles')
 local weather = loadJSON('weather')
 
