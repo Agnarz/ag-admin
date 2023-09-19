@@ -3,7 +3,7 @@ lib.callback.register('ag:getTargets', function()
 
     for i, v in ipairs(targets) do
         local target = {
-            label = "(" .. v .. ") " .. GetPlayerName(v),
+            label = '(' .. v.. ') ' .. GetPlayerName(v),
             value = v
         }
         targets[i] = target
@@ -18,11 +18,41 @@ lib.callback.register('ag:getPlayers', function()
     for i, v in ipairs(players) do
         players[i] = {
             source = v,
-            label = "(" .. v .. ") " .. GetPlayerName(v),
-            license = GetPlayerIdentifierByType(v, 'license'),
+            label = '(' .. v .. ') ' .. GetPlayerName(v),
+            license = GetPlayerIdentifierByType(v, 'license')
         }
     end
 
     return players
 end)
 
+lib.addCommand('pedmodel', {
+    help = 'Change target ped model',
+    params = {
+        {name = 'model', help = 'The model to change to', type = 'string'},
+        {name = 'target', help = 'Target player (not requied)', type = 'number', optional = true},
+    },
+    restricted = 'group.admin'
+}, function(source, args)
+    if args.target == nil then
+        args.target = source
+    end
+
+    TriggerClientEvent('ag:setPedModel', args.target, args.model)
+end)
+
+lib.addCommand('giveweapon', {
+    help = 'Give a weapon to a player',
+    params = {
+        {name = 'weapon', help = 'The weapon to give', type = 'string'},
+        {name = 'ammo', help = 'The amount of ammo to give', type = 'number', optional = true},
+        {name = 'target', help = 'Target player (not requied)', type = 'number', optional = true},
+    },
+    restricted = 'group.admin'
+}, function(source, args)
+    if args.target == nil then
+        args.target = source
+    end
+    GiveWeaponToPed(GetPlayerPed(args.target), args.weapon, args.ammo or 1000, false, false)
+    SetCurrentPedWeapon(GetPlayerPed(args.target), args.weapon, true)
+end)

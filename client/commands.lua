@@ -9,6 +9,15 @@ local infiniteStamina = false
 local nightVision = false
 local thermalVision = false
 
+local function indexOf(t, v)
+    for i = 1, #t do
+        if t[i].value == v then
+            return t[i]
+        end
+    end
+    return nil
+end
+
 RegisterCommand('armour', function()
     SetPedArmour(cache.ped, 100)
 end)
@@ -112,6 +121,103 @@ RegisterCommand('thermalv', function()
     end
 end)
 
+RegisterNetEvent('ag:setPedModel', function(model)
+    local health = GetEntityHealth(cache.ped)
+    local armour = GetPedArmour(cache.ped)
+    lib.requestModel(model)
+
+    SetPlayerModel(cache.playerId, model)
+    SetPedComponentVariation(cache.ped, 0, 0, 0, 2)
+    SetEntityMaxHealth(cache.ped, 200)
+    SetPlayerMaxArmour(cache.playerId, 100)
+
+    Wait(100)
+
+    SetEntityHealth(cache.ped, health)
+    SetPedArmour(cache.ped, armour)
+end)
+
+RegisterCommand('mod', function()
+    local vehicle = GetVehiclePedIsIn(cache.ped, false)
+    local props = {
+        modFrame = 1,
+        modTurbo = true,
+        modXenon = true,
+        wheelColor = 0,
+        modFrontWheels = 20,
+        wheels = 11,
+        windowTint = 1
+    }
+    lib.setVehicleProperties(vehicle, props)
+    local performanceMods = { 4, 11, 12, 13, 15, 16 }
+    customWheels = customWheels or false
+    if DoesEntityExist(vehicle) and IsEntityAVehicle(vehicle) then
+        SetVehicleModKit(vehicle, 0)
+        local max
+        for _, modType in ipairs(performanceMods) do
+            max = GetNumVehicleMods(vehicle, tonumber(modType)) - 1
+            SetVehicleMod(vehicle, modType, max, customWheels)
+        end
+    end
+end)
+
+RegisterCommand('engineaudio', function(_, args)
+    local veh = GetVehiclePedIsIn(cache.ped, false)
+    if veh == 0 then return end
+    local hash = args[1]
+    if hash then
+        ForceVehicleEngineAudio(veh, hash)
+    end
+end)
+
+RegisterCommand('tpc', function(_, args)
+    local x = tonumber(args[1])
+    local y = tonumber(args[2])
+    local z = tonumber(args[3])
+    local keepVehicle = args[4] == 'true' and true or false
+    if coords.x and coords.y and coords.z then
+        if keepVehicle == false then
+            SetEntityCoords(ped, x, y, z)
+        else
+            SetPedCoordsKeepVehicle(cache.ped, x, y, z)
+        end
+    else
+        error('Invalid coordinates provided')
+    end
+end)
+
+RegisterCommand('tpl', function(_, args)
+    local loc = indexOf(teleports, args[1])
+    local keepVehicle = args[2] == 'true' and true or false
+    local coords = loc.coords
+    if loc ~= nil then
+        if keepVehicle == false or loc.type == 'inside' then
+            SetEntityCoords(cache.ped, coords.x, coords.y, coords.z)
+        else
+            SetPedCoordsKeepVehicle(cache.ped, coords.x, coords.y, coords.z)
+        end
+    else
+        error('Location not found')
+    end
+end)
+
+RegisterCommand('tpv', function()
+    local veh = GetVehiclePedIsIn(cache.ped, true)
+    if veh == 0 then return end
+    TaskWarpPedIntoVehicle(cache.ped, veh, -1)
+end)
+
+RegisterCommand('timecycle', function(_, args)
+    local timecycle = args[1]
+    local strength = args[2]
+    if timecycle ~= 'clear' then
+        SetTimecycleModifier(timecycle)
+        SetTimecycleModifierStrength(tonumber(strength))
+    else
+        SetTimecycleModifier('default')
+    end
+end)
+
 AddEventHandler('onResourceStop', function(resourceName)
     if resourceName == Resource then
         SetPlayerInvincible(cache.playerId, false)
@@ -120,5 +226,6 @@ AddEventHandler('onResourceStop', function(resourceName)
         SetEntityVisible(cache.ped, true, true)
         SetNightvision(false)
         SetSeethrough(false)
+        SetTimecycleModifier('default')
     end
 end)
