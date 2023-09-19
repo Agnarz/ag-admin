@@ -189,8 +189,8 @@ end)
 RegisterCommand('tpl', function(_, args)
     local loc = indexOf(teleports, args[1])
     local keepVehicle = args[2] == 'true' and true or false
-    local coords = loc.coords
     if loc ~= nil then
+        local coords = loc.coords
         if keepVehicle == false or loc.type == 'inside' then
             SetEntityCoords(cache.ped, coords.x, coords.y, coords.z)
         else
