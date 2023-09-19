@@ -180,7 +180,7 @@ RegisterCommand('tpc', function(_, args)
     local keepVehicle = args[4] == 'true' and true or false
     if coords.x and coords.y and coords.z then
         if keepVehicle == false then
-            SetEntityCoords(ped, x, y, z)
+            SetEntityCoords(cache.ped, x, y, z)
         else
             SetPedCoordsKeepVehicle(cache.ped, x, y, z)
         end
