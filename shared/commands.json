@@ -152,7 +152,12 @@
         "clearable": true,
         "required": true
       }
-    ]
+    ],
+    "buttons": {
+      "extra": [
+        { "label": "Reset", "command": "engineaudio 'reset'", "color": "red" }
+      ]
+    }
   },
   {
     "label": "Repair Vehicle",

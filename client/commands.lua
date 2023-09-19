@@ -164,9 +164,12 @@ end)
 RegisterCommand('engineaudio', function(_, args)
     local veh = GetVehiclePedIsIn(cache.ped, false)
     if veh == 0 then return end
-    local hash = args[1]
-    if hash then
-        ForceVehicleEngineAudio(veh, hash)
+    local model = args[1]
+    if model == 'reset' then
+        model = veh
+    end
+    if model then
+        ForceVehicleEngineAudio(veh, model)
     end
 end)
 
