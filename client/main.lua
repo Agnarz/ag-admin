@@ -57,7 +57,7 @@ end
 RegisterCommand('admin', function() toggleMenu(true) end)
 RegisterKeyMapping('admin', 'Open Admin Menu', 'keyboard', 'U')
 RegisterNetEvent('admin:toggleMenu', toggleMenu)
-RegisterNUICallback('closeMenu', function(_, cb)
+RegisterNuiCallback('closeMenu', function(_, cb)
     cb(1)
     toggleMenu(false)
 end)
