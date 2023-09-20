@@ -91,3 +91,17 @@ RegisterNUICallback('triggerCommand', function(data, cb)
         })
     end
 end)
+
+lib.callback.register('ag:GetPedheadshotTxdString', function(player)
+    local ped = GetPlayerPed(GetPlayerFromServerId(player))
+    local headshot = RegisterPedheadshot(ped)
+
+    while not IsPedheadshotReady(headshot) do
+        Wait(0)
+    end
+
+    local txd = GetPedheadshotTxdString(headshot)
+
+    UnregisterPedheadshot(headshot)
+    return txd
+end)

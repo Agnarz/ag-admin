@@ -19,7 +19,7 @@ lib.callback.register('ag:getPlayers', function()
         players[i] = {
             source = v,
             label = '(' .. v .. ') ' .. GetPlayerName(v),
-            license = GetPlayerIdentifierByType(v, 'license')
+            headshot = lib.callback.await('ag:GetPedheadshotTxdString', source, v)
         }
     end
 
