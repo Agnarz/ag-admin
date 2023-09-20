@@ -3,7 +3,7 @@ lib.callback.register('ag:getTargets', function()
 
     for i, v in ipairs(targets) do
         local target = {
-            label = '(' .. v.. ') ' .. GetPlayerName(v),
+            label = ('(%s) %s'):format(v, GetPlayerName(v)),
             value = v
         }
         targets[i] = target
@@ -18,7 +18,7 @@ lib.callback.register('ag:getPlayers', function()
     for i, v in ipairs(players) do
         players[i] = {
             source = v,
-            label = '(' .. v .. ') ' .. GetPlayerName(v),
+            label = ('(%s) %s'):format(v, GetPlayerName(v)),
             headshot = lib.callback.await('ag:GetPedheadshotTxdString', source, v)
         }
     end
