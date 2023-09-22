@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
 import { createStyles } from '@mantine/core';
-import { useNuiEvent } from '../../../hooks/useNuiEvent';
-import type { PlayerProps } from './types';
-import Player from './components/Player';
 
 const useStyles = createStyles(() => ({
   root: {
@@ -29,20 +25,26 @@ const useStyles = createStyles(() => ({
   }
 }));
 
-const PlayersList: React.FC = () => {
+interface ListProps {
+  children: React.ReactNode;
+};
+
+const DataList: React.FC<ListProps> = (props) => {
   const { classes } = useStyles();
-  const [players, setPlayers] = useState<PlayerProps[]>([]);
-  useNuiEvent('setPlayers', setPlayers);
+  const { children } = props;
 
   return (
     <div className={classes.root}>
       <div className={classes.container}>
         <div className={classes.list}>
-
+          {children}
         </div>
       </div>
     </div>
   );
 };
 
-export default PlayersList;
+export default DataList;
+
+
+

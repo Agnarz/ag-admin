@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { createStyles } from '@mantine/core';
+import type { ButtonCommandProps } from '../../types';
 import { fetchNui } from '../../../../../utils/fetchNui';
 import { useNuiEvent } from '../../../../../hooks/useNuiEvent';
-import type { ButtonCommandProps } from '../../types';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -20,10 +20,7 @@ const useStyles = createStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    height: '2.25rem',
-    padding: 4,
-    paddingLeft: 12,
-    paddingRight: 12,
+    height: '2.75rem',
     borderRadius: 0,
     transition: 'all 0.2s ease',
     overflowX: 'hidden',
@@ -36,13 +33,14 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center',
-    height: '100%',
     width: '100%',
+    height: '100%',
+    alignItems: 'center',
     fontWeight: 500,
+    paddingLeft: 8,
     fontSize: 14,
     textAlign: 'left',
-    overflow: 'hidden'
+    overflow: 'hidden',
   }
 }));
 

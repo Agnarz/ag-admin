@@ -2,7 +2,7 @@ import { theme } from './theme';
 import { MantineProvider } from '@mantine/core';
 import { fetchNui } from './utils/fetchNui';
 import AdminMenu from './AdminMenu';
-import { SetOptions } from './AdminMenu/components/Commands/options';
+import { SetOptions } from './AdminMenu/lists/Commands/options';
 import { useNuiEvent } from './hooks/useNuiEvent';
 const App: React.FC = () => {
   fetchNui('init');

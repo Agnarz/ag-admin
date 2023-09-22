@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import { createStyles, Button, Divider, Stack, Group, Collapse } from '@mantine/core';
-import type { PlayerProps } from '../types';
-import { fetchNui } from '../../../../utils/fetchNui';
+import { useState } from 'react';
+import { createStyles, Collapse } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   container: {
@@ -10,7 +8,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     width: '100%',
     height: 'min-content',
-    overflowY: 'visible',
+    overflowY: 'visible'
   },
   header: {
     color: 'white',
@@ -18,39 +16,28 @@ const useStyles = createStyles((theme) => ({
     position: 'inherit',
     display: 'flex',
     flexDirection: 'row',
-    height: '3rem',
-
+    height: '2.75rem',
     alignItems: 'center',
     overflowX: 'hidden',
     transition: 'all 0.2s ease',
     borderRadius: 0,
     ':hover': {
       background: theme.colors.ag[3],
-      cursor: 'pointer',
-    },
+      cursor: 'pointer'
+    }
   },
   label: {
-    paddingLeft: 8,
-    position: 'inherit',
+    position: 'relative',
     display: 'flex',
     flexDirection: 'row',
     width: '100%',
     height: '100%',
     alignItems: 'center',
     fontWeight: 500,
+    paddingLeft: 8,
     fontSize: 14,
     textAlign: 'left',
-    overflow: 'hidden',
-  },
-  expandIcon: {
-    position: 'absolute',
-    display: 'flex',
-    flexDirection: 'row',
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    right: 12,
-    paddingRight: 8,
+    overflow: 'hidden'
   },
   expand: {
     background: theme.colors.ag[5],
@@ -61,17 +48,27 @@ const useStyles = createStyles((theme) => ({
     textAlign: 'left',
     alignContent: 'center',
     padding: 12,
-    gap: 6,
+    gap: 6
   },
-  headshot: {
-    position: 'inherit',
-    height: '100%',
-  }
+  expandIcon: {
+    position: 'absolute',
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    right: 12
+  },
 }));
 
-const Player: React.FC<PlayerProps> = ((props) => {
+interface ExpandProps {
+  label: string | React.ReactNode;
+  children: React.ReactNode;
+};
+
+const Expand: React.FC<ExpandProps> = (props) => {
   const { classes } = useStyles();
-  const { source, label, headshot } = props;
+  const { label, children } = props;
   const [isExpanded, setExpand] = useState<boolean>(false);
 
   const handleClick = () => {
@@ -89,10 +86,6 @@ const Player: React.FC<PlayerProps> = ((props) => {
     fontSize: 14,
   };
 
-  const triggerCommand = (command: string) => {
-    fetchNui('triggerCommand', `${command} ${source}`);
-  };
-
   return (
     <div className={classes.container}>
 
@@ -100,10 +93,6 @@ const Player: React.FC<PlayerProps> = ((props) => {
         <div className={classes.expandIcon}>
           <i className='fas fa-chevron-down' style={expandIcon} />
         </div>
-        <img
-          className={classes.headshot}
-          src={`https://nui-img/${headshot}/${headshot}?v=${Date.now()}`}
-        />
         <div className={classes.label} onClick={handleClick}>
           {label}
         </div>
@@ -111,26 +100,11 @@ const Player: React.FC<PlayerProps> = ((props) => {
 
       <Collapse transitionDuration={200} in={isExpanded}>
         <div className={classes.expand}>
-          <Group spacing='xs'>
-            <Button variant='light' color='blue' onClick={() => {triggerCommand('revive')}}>
-              Revive
-            </Button>
-            <Button variant='light' color='red' onClick={() => {triggerCommand('kill')}}>
-              Kill
-            </Button>
-            <Button variant='light' color='red' onClick={() => {triggerCommand('kick')}}>
-              Kick
-            </Button>
-            <Button variant='light' color='red' onClick={() => {triggerCommand('ban')}}>
-              Ban
-            </Button>
-          </Group>
+          {children}
         </div>
-
       </Collapse>
-
     </div>
   );
-});
+};
 
-export default Player;
+export default Expand;
