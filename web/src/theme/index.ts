@@ -15,50 +15,60 @@ export const theme: MantineThemeOverride = {
   components: {
     Checkbox: {
       styles: {
-        input: { background: '#ffffff14' },
+        input: { background: '#ffffff14' }
       }
     },
     TextInput: {
       styles: {
-        input: { background: '#ffffff14', borderColor: '#ffffff14' },
+        input: { background: '#ffffff14', borderColor: '#ffffff14' }
       }
     },
     NumberInput: {
       styles: {
         input: { background: '#ffffff14', borderColor: '#ffffff14' },
         controlDown: { borderColor: '#ffffff14' },
-        controlUp: { borderColor: '#ffffff14' },
+        controlUp: { borderColor: '#ffffff14' }
       }
     },
     Select: {
       styles: {
         input: { background: '#ffffff14', borderColor: '#ffffff14' },
-        itemsWrapper: { background: '#0d1117' },
+        itemsWrapper: { background: '#0d1117' }
       }
     },
     MultiSelect: {
       styles: {
         input: { background: '#ffffff14', borderColor: '#ffffff14' },
-        itemsWrapper: { background: '#0d1117' },
+        itemsWrapper: { background: '#0d1117' }
       }
     },
     Autocomplete: {
       styles: {
         input: { background: '#ffffff14', borderColor: '#ffffff14' },
-        itemsWrapper: { background: '#0d1117' },
+        itemsWrapper: { background: '#0d1117' }
       }
     },
     Text: {
       styles: {
-        root: { color: '#c1c2c5' },
+        root: { color: '#c1c2c5' }
       }
     },
     Slider: {
       styles: {
         marksContainer: { color: '#c1c2c5' },
-        markWrapper: { color: '#c1c2c5' },
+        markWrapper: { color: '#c1c2c5' }
       }
     },
+    Tooltip: {
+      styles: {
+        tooltip: { background: '#0d1117', color: '#c1c2c5' }
+      }
+    },
+    Menu: {
+      styles: {
+        dropdown: { background: '#0d1117' }
+      }
+    }
   }
 }
 // Customizations

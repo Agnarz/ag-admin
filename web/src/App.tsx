@@ -4,6 +4,7 @@ import { fetchNui } from './utils/fetchNui';
 import AdminMenu from './AdminMenu';
 import { SetOptions } from './AdminMenu/lists/Commands/options';
 import { useNuiEvent } from './hooks/useNuiEvent';
+import { setClipboard } from './utils/setClipboard';
 const App: React.FC = () => {
   fetchNui('init');
 
@@ -12,6 +13,8 @@ const App: React.FC = () => {
       fetchNui('closeMenu');
     }
   });
+
+  useNuiEvent('setClipboard', setClipboard);
 
   useNuiEvent('setOptions', (data) => {
     SetOptions('Vehicles', data.vehicles);

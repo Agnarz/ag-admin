@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { createStyles, Tabs } from '@mantine/core';
+import { createStyles, Tabs, Divider } from '@mantine/core';
+import QuickAction from './components/QuickAction';
 import Commands from './lists/Commands';
 import Players from './lists/Players';
 import { useNuiEvent } from '../hooks/useNuiEvent';
@@ -72,10 +73,15 @@ const AdminMenu: React.FC = () => {
     }
   });
 
-  const tabs = [
+  const tabs: Array<{ name: string; icon: string; }> = [
     { name: 'Commands', icon: 'fas fa-hat-wizard' },
     { name: 'Players', icon: 'fas fa-users' }
   ];
+
+  const [quickActions, setQuickactions] = useState<Array<{
+    command: string; icon: string; active?: boolean; type: string; items?: Array<{ label: string; command: string; }>;
+  }>>([]);
+  useNuiEvent('setQuickactions', setQuickactions);
 
   return (
     <div className={classes.root} style={{ opacity: visible }}>
@@ -90,6 +96,18 @@ const AdminMenu: React.FC = () => {
                   icon={
                     <i className={v.icon} style={{ color: 'white', fontSize: 18 }} />
                   }
+                />
+              </React.Fragment>
+            ))}
+            <Divider my='sm' />
+            {quickActions.map((v, index) => (
+              <React.Fragment key={index}>
+                <QuickAction
+                  command={v.command}
+                  icon={v.icon}
+                  active={v.active}
+                  type={v.type}
+                  items={v.items}
                 />
               </React.Fragment>
             ))}

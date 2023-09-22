@@ -224,7 +224,7 @@
     ],
     "buttons": {
       "extra": [
-        { "label": "Clear", "command": "timecycle 'clear'", "color": "red" }
+        { "label": "Clear", "command": "timecycle clear", "color": "red" }
       ]
     }
   }

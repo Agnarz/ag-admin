@@ -25,6 +25,7 @@ local function loadJSON(directory)
 end
 
 local commands = loadJSON('commands')
+local quickactions = loadJSON('quickactions')
 local vehicles = loadJSON('vehicles')
 local weapons = loadJSON('weapons')
 local pedmodels = loadJSON('pedmodels')
@@ -67,6 +68,7 @@ RegisterNuiCallback('init', function(_, cb)
     if lib.callback.await('ox_lib:checkPlayerAce', false, 'command') then
         nuiReady = true
         updateMenu('setCommands', commands)
+        updateMenu('setQuickactions', quickactions)
         Wait(250)
         updateMenu('setOptions', {
             vehicles = vehicles,
@@ -79,7 +81,7 @@ RegisterNuiCallback('init', function(_, cb)
     end
 end)
 
-RegisterNUICallback('triggerCommand', function(data, cb)
+RegisterNuiCallback('triggerCommand', function(data, cb)
     cb(1)
     if lib.callback.await('ox_lib:checkPlayerAce', 250, 'command') then
         ExecuteCommand(data)
@@ -87,7 +89,7 @@ RegisterNUICallback('triggerCommand', function(data, cb)
         lib.notify({
             type = 'error',
             title = 'Admin',
-            desription = 'You do not have permission to use this command.'
+            description = 'You do not have permission to use this command.'
         })
     end
 end)

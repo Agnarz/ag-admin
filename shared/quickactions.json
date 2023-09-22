@@ -1,0 +1,16 @@
+[
+  {
+    "command": "dev",
+    "icon": "fas fa-terminal",
+    "active": true,
+    "type": "button"
+  },
+  {
+    "icon": "fas fa-copy",
+    "type": "menu",
+    "items": [
+      { "label": "Copy vector3", "command": "copycoords vec3" },
+      { "label": "Copy vector4", "command": "copycoords vec4" }
+    ]
+  }
+]

@@ -8,6 +8,7 @@ local increasedSpeed = false
 local infiniteStamina = false
 local nightVision = false
 local thermalVision = false
+local customWheels = false
 
 local function indexOf(t, v)
     for i = 1, #t do
@@ -16,6 +17,11 @@ local function indexOf(t, v)
         end
     end
     return nil
+end
+
+local function round(num, numDecimalPlaces)
+    local mult = 10 ^ (numDecimalPlaces or 0)
+    return math.floor(num * mult + 0.5) / mult
 end
 
 RegisterCommand('armour', function()
@@ -178,7 +184,7 @@ RegisterCommand('tpc', function(_, args)
     local y = tonumber(args[2])
     local z = tonumber(args[3])
     local keepVehicle = args[4] == 'true' and true or false
-    if coords.x and coords.y and coords.z then
+    if x and y and z then
         if keepVehicle == false then
             SetEntityCoords(cache.ped, x, y, z)
         else
@@ -218,6 +224,23 @@ RegisterCommand('timecycle', function(_, args)
         SetTimecycleModifierStrength(tonumber(strength))
     else
         SetTimecycleModifier('default')
+    end
+end)
+
+RegisterCommand('copycoords', function (_, args)
+    if args[1] == 'vec3' then
+        lib.setClipboard(('%s %s %s'):format(
+            round(GetEntityCoords(cache.ped).x, 3),
+            round(GetEntityCoords(cache.ped).y, 3),
+            round(GetEntityCoords(cache.ped).z, 3)
+        ))
+    elseif args[1] == 'vec4' then
+        lib.setClipboard(('%s %s %s %s'):format(
+            round(GetEntityCoords(cache.ped).x, 3),
+            round(GetEntityCoords(cache.ped).y, 3),
+            round(GetEntityCoords(cache.ped).z, 3),
+            round(GetEntityHeading(cache.ped), 3)
+        ))
     end
 end)
 
