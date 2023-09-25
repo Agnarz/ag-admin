@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { createStyles, Tabs, Divider } from '@mantine/core';
 import QuickAction from './components/QuickAction';
-import Commands from './lists/Commands';
-import Players from './lists/Players';
+import { CommandsList } from './lists/Commands';
+import { PlayersList } from './lists/Players';
 import { useNuiEvent } from '../hooks/useNuiEvent';
 
 const useStyles = createStyles((theme) => ({
@@ -60,7 +60,16 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
-const AdminMenu: React.FC = () => {
+
+interface QuickActionProps {
+  icon: string;
+  command: string;
+  type: string;
+  active?: boolean;
+  items?: Array<{ label: string; command: string; }>;
+}
+
+export const AdminMenu: React.FC = () => {
   const { classes } = useStyles();
   const [visible, setVisible] = useState(0);
 
@@ -78,9 +87,7 @@ const AdminMenu: React.FC = () => {
     { name: 'Players', icon: 'fas fa-users' }
   ];
 
-  const [quickActions, setQuickactions] = useState<Array<{
-    command: string; icon: string; active?: boolean; type: string; items?: Array<{ label: string; command: string; }>;
-  }>>([]);
+  const [quickActions, setQuickactions] = useState<QuickActionProps[]>([]);
   useNuiEvent('setQuickactions', setQuickactions);
 
   return (
@@ -114,16 +121,14 @@ const AdminMenu: React.FC = () => {
           </Tabs.List>
 
           <Tabs.Panel value='Commands' className={classes.panel}>
-            <Commands />
+            <CommandsList />
           </Tabs.Panel>
 
           <Tabs.Panel value='Players' className={classes.panel}>
-            <Players />
+            <PlayersList />
           </Tabs.Panel>
         </Tabs>
       </div>
     </div>
   );
 };
-
-export default AdminMenu;

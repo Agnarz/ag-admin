@@ -1,4 +1,3 @@
-import { Provider } from 'jotai';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { isEnvBrowser } from './utils/misc';
@@ -17,8 +16,6 @@ if (isEnvBrowser()) {
 const root = document.getElementById('root');
 ReactDOM.createRoot(root!).render(
   <React.StrictMode>
-    <Provider>
-      <App />
-    </Provider>
+    <App />
   </React.StrictMode>
 );

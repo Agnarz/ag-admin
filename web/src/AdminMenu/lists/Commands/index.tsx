@@ -1,24 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import type { CommandProps } from './types';
-import DataList from '../../components/DataList';
+import { DataList } from '../../components/DataList';
 import ButtonCommand from './components/ButtonCommand';
 import FormCommand from './components/FormCommand';
 import { useNuiEvent } from '../../../hooks/useNuiEvent';
 
-const CommandsList: React.FC = () => {
+export const CommandsList: React.FC = () => {
   const [commands, setCommands] = useState<CommandProps[]>([]);
   useNuiEvent('setCommands', setCommands);
 
+  const [filter, setFilter] = useState<string>('all');
+  const [search, setSearch] = useState<string>('');
+
+  const searchedCommands = useMemo(() => {
+    if (search.length > 0) {
+      return commands.filter((v) => v.label.toLowerCase().includes(search.toLowerCase()));
+    } else {
+      return commands;
+    }
+  }, [commands, search]);
+
+  const filteredCommands = useMemo(() => {
+    if (filter == 'all') {
+      return searchedCommands;
+    } else {
+      return searchedCommands.filter((v) => v.filter == filter);
+    }
+  }, [searchedCommands, filter]);
+
+  const context = {
+    list: 'commands',
+    filter: filter,
+    filters: [
+      { label: 'All', value: 'all' },
+      { label: 'Player', value: 'player' },
+      { label: 'Vehicle', value: 'vehicle' },
+      { label: 'Utility', value: 'utility' },
+      { label: 'Server', value: 'server' },
+    ],
+    setFilter: setFilter,
+    search: search,
+    setSearch: setSearch,
+  }
   return (
-    <DataList>
-      {commands.map((v, index) => (
-        <React.Fragment key={index}>
+    <DataList context={context}>
+      {filteredCommands.map((v) => (
+        <React.Fragment key={v.command + v.id}>
           {v.type == 'button' && (
             <ButtonCommand
-              id={index}
+              id={v.id}
               label={v.label}
               command={v.command}
               type={v.type}
+              filter={v.filter}
               active={v.active}
               close={v.close}
             />
@@ -26,10 +60,11 @@ const CommandsList: React.FC = () => {
 
           {v.type == 'form' && (
             <FormCommand
-              id={index}
+              id={v.id}
               label={v.label}
               command={v.command}
               type={v.type}
+              filter={v.filter}
               args={v.args}
               buttons={v.buttons}
               close={v.close}
@@ -40,5 +75,3 @@ const CommandsList: React.FC = () => {
     </DataList>
   );
 };
-
-export default CommandsList;

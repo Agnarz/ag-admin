@@ -1,67 +1,89 @@
 [
   {
+    "id": 1,
     "label": "Revive Self",
     "command": "revive",
-    "type": "button"
+    "type": "button",
+    "filter": "player"
   },
   {
+    "id": 2,
     "label": "Give Armour",
     "command": "armour",
-    "type": "button"
+    "type": "button",
+    "filter": "player"
   },
   {
+    "id": 3,
     "label": "GodMode",
     "command": "godmode",
     "type": "button",
+    "filter": "utility",
     "active": true
   },
   {
+    "id": 4,
     "label": "NoClip",
     "command": "noclip",
     "type": "button",
+    "filter": "utility",
     "active": true,
     "close": true
   },
   {
+    "id": 5,
     "label": "Cloak",
     "command": "cloak",
     "type": "button",
+    "filter": "utility",
     "active": true
   },
   {
+    "id": 6,
     "label": "Increased Run Speed",
     "command": "godspeed",
     "type": "button",
+    "filter": "utility",
     "active": true
   },
   {
+    "id": 7,
     "label": "Unlimited Stamina",
     "command": "godstam",
     "type": "button",
+    "filter": "utility",
     "active": true
   },
   {
+    "id": 8,
     "label": "Superjump",
     "command": "superjump",
     "type": "button",
+    "filter": "utility",
     "active": true
   },
   {
+    "id": 9,
     "label": "Night Vision",
     "command": "nightv",
     "type": "button",
+    "filter": "utility",
     "active": true
   },
   {
+    "id": 10,
     "label": "Thermal Vision",
     "command": "thermalv",
     "type": "button",
+    "filter": "utility",
     "active": true
   },
   {
+    "id": 11,
     "label": "Set PedModel",
     "command": "pedmodel",
     "type": "form",
+    "filter": "player",
     "args": [
       {
         "type": "select",
@@ -84,9 +106,11 @@
     ]
   },
   {
+    "id": 12,
     "label": "Give Weapon",
     "command": "giveweapon",
     "type": "form",
+    "filter": "player",
     "args": [
       {
         "type": "select",
@@ -116,9 +140,11 @@
     ]
   },
   {
+    "id": 13,
     "label": "Spawn Vehicle",
     "command": "car",
     "type": "form",
+    "filter": "vehicle",
     "args": [
       {
         "type": "select",
@@ -139,9 +165,11 @@
     }
   },
   {
+    "id": 14,
     "label": "Set Engine Audio",
     "command": "engineaudio",
     "type": "form",
+    "filter": "vehicle",
     "args": [
       {
         "type": "select",
@@ -160,19 +188,25 @@
     }
   },
   {
+    "id": 15,
     "label": "Repair Vehicle",
     "command": "fix",
-    "type": "button"
+    "type": "button",
+    "filter": "vehicle"
   },
   {
+    "id": 16,
     "label": "Teleport to Marker",
     "command": "tpm",
-    "type": "button"
+    "type": "button",
+    "filter": "utility"
   },
   {
+    "id": 17,
     "label": "Teleport to Coords",
     "command": "tpc",
     "type": "form",
+    "filter": "utility",
     "args": [
       {
         "type": "input",
@@ -183,9 +217,11 @@
     ]
   },
   {
+    "id": 18,
     "label": "Teleport to Location",
     "command": "tpl",
     "type": "form",
+    "filter": "utility",
     "args": [
       {
         "type": "select",
@@ -200,9 +236,11 @@
     ]
   },
   {
+    "id": 19,
     "label": "Set Timecycle Modifier",
     "command": "timecycle",
     "type": "form",
+    "filter": "utility",
     "args": [
       {
         "type": "select",

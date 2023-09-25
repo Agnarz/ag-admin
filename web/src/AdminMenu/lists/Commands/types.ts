@@ -5,6 +5,7 @@ type BaseCommand<T> = {
   type: T;
   label: string;
   command: string;
+  filter: string;
   close?: boolean;
 };
 

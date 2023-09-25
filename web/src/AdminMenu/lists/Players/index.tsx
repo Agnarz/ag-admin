@@ -1,16 +1,38 @@
-import React, { useState } from "react";
-import DataList from "../../components/DataList";
-import type { PlayerProps } from "./types";
-import Player from "./components/Player";
-import { useNuiEvent } from "../../../hooks/useNuiEvent";
+import React, { useState, useMemo } from 'react';
+import { DataList } from '../../components/DataList';
+import type { PlayerProps } from './types';
+import Player from './components/Player';
+import { useNuiEvent } from '../../../hooks/useNuiEvent';
 
-const PlayersList: React.FC = () => {
+export const PlayersList: React.FC = () => {
   const [players, setPlayers] = useState<PlayerProps[]>([]);
+  useNuiEvent('setPlayers', setPlayers);
 
-  useNuiEvent("setPlayers", setPlayers);
+  const [filter, setFilter] = useState<string>('all');
+  const [search, setSearch] = useState<string>('');
+
+  const searchedPlayers = useMemo(() => {
+    if (search.length > 0) {
+      return players.filter((v) => v.label.toLowerCase().includes(search.toLowerCase()));
+    } else {
+      return players;
+    }
+  }, [players, search]);
+
+  const context = {
+    list: 'players',
+    filter: filter,
+    filters: [
+      { label: 'All', value: 'all' },
+    ],
+    setFilter: setFilter,
+    search: search,
+    setSearch: setSearch,
+  }
+
   return (
-    <DataList>
-      {players.map((v, index) => (
+    <DataList context={context}>
+      {searchedPlayers.map((v, index) => (
         <React.Fragment key={index}>
           <Player
             source={v.source}
@@ -22,5 +44,3 @@ const PlayersList: React.FC = () => {
     </DataList>
   );
 };
-
-export default PlayersList;

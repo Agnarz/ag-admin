@@ -60,7 +60,7 @@ const QuickAction: React.FC<QuickActionProps> = (props) => {
       )}
 
       {type === 'menu' && (
-        <Menu position="left-start" withArrow shadow="md" width={200} trigger="hover" openDelay={100} closeDelay={250}>
+        <Menu position='left-start' withArrow shadow='md' width={200} trigger='hover' openDelay={100} closeDelay={250}>
             <Menu.Target>
               <ActionIcon className={classes.button} size={42}>
                 <i style={{ fontSize: 18 }} className={icon}  />
