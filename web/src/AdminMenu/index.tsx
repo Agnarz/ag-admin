@@ -11,7 +11,7 @@ const useStyles = createStyles((theme) => ({
     transform: 'translate(-0%, -50%)',
     top: '50%',
     right: '0.5%',
-    width: 440,
+    width: 446,
     height: '75vh',
     display: 'flex',
     flexDirection: 'column',
@@ -34,8 +34,8 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'top',
-    width: 44,
-    padding: 4,
+    width: 48,
+    padding: 8,
     gap: 4
   },
   panel: {

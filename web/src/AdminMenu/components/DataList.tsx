@@ -42,8 +42,7 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 4
+    alignItems: 'center'
   },
   list: {
     position: 'relative',
@@ -52,7 +51,7 @@ const useStyles = createStyles((theme) => ({
     height: '100%',
     overflowY: 'auto',
     overflowX: 'hidden',
-    padding: 12,
+    padding: 8,
     gap: 4
   }
 }));
@@ -112,9 +111,19 @@ export const DataList: React.FC<ListProps> = ({children, context}) => {
             onChange={(event) => setSearch(event.currentTarget.value)}
           />
         </div>
-        <div className={classes.list}>
-          {children}
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          position: 'relative',
+          flex: 1,
+          padding: 8,
+          overflow: 'hidden',
+        }}>
+          <div className={classes.list}>
+            {children}
+          </div>
         </div>
+
       </div>
     </div>
   );
