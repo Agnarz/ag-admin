@@ -60,6 +60,16 @@
     }
   },
   {
+    "label": "Baseball Field",
+    "value": "baseball_field",
+    "type": "outside",
+    "coords": {
+      "x": -302.676,
+      "y": -1641.547,
+      "z": 32.171
+    }
+  },
+  {
     "label": "Basketball Courts",
     "value": "basketball_courts",
     "type": "outside",
