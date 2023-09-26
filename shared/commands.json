@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "label": "Revive Self",
     "command": "revive",
     "type": "button",
@@ -8,7 +7,6 @@
     "fav": false
   },
   {
-    "id": 2,
     "label": "Give Armour",
     "command": "armour",
     "type": "button",
@@ -16,7 +14,6 @@
     "fav": false
   },
   {
-    "id": 3,
     "label": "GodMode",
     "command": "godmode",
     "type": "button",
@@ -25,7 +22,6 @@
     "active": true
   },
   {
-    "id": 4,
     "label": "NoClip",
     "command": "noclip",
     "type": "button",
@@ -35,7 +31,6 @@
     "close": true
   },
   {
-    "id": 5,
     "label": "Cloak",
     "command": "cloak",
     "type": "button",
@@ -44,7 +39,6 @@
     "active": true
   },
   {
-    "id": 6,
     "label": "Increased Run Speed",
     "command": "godspeed",
     "type": "button",
@@ -53,7 +47,6 @@
     "active": true
   },
   {
-    "id": 7,
     "label": "Unlimited Stamina",
     "command": "godstam",
     "type": "button",
@@ -62,7 +55,6 @@
     "active": true
   },
   {
-    "id": 8,
     "label": "Superjump",
     "command": "superjump",
     "type": "button",
@@ -71,7 +63,6 @@
     "active": true
   },
   {
-    "id": 9,
     "label": "Night Vision",
     "command": "nightv",
     "type": "button",
@@ -80,7 +71,6 @@
     "active": true
   },
   {
-    "id": 10,
     "label": "Thermal Vision",
     "command": "thermalv",
     "type": "button",
@@ -89,7 +79,6 @@
     "active": true
   },
   {
-    "id": 11,
     "label": "Set PedModel",
     "command": "pedmodel",
     "type": "form",
@@ -117,7 +106,6 @@
     ]
   },
   {
-    "id": 12,
     "label": "Give Weapon",
     "command": "giveweapon",
     "type": "form",
@@ -152,7 +140,6 @@
     ]
   },
   {
-    "id": 13,
     "label": "Spawn Vehicle",
     "command": "car",
     "type": "form",
@@ -178,7 +165,6 @@
     }
   },
   {
-    "id": 14,
     "label": "Set Engine Audio",
     "command": "engineaudio",
     "type": "form",
@@ -202,7 +188,6 @@
     }
   },
   {
-    "id": 15,
     "label": "Repair Vehicle",
     "command": "fix",
     "type": "button",
@@ -210,7 +195,6 @@
     "fav": false
   },
   {
-    "id": 16,
     "label": "Teleport to Marker",
     "command": "tpm",
     "type": "button",
@@ -218,7 +202,6 @@
     "fav": false
   },
   {
-    "id": 17,
     "label": "Teleport to Coords",
     "command": "tpc",
     "type": "form",
@@ -234,7 +217,6 @@
     ]
   },
   {
-    "id": 18,
     "label": "Teleport to Location",
     "command": "tpl",
     "type": "form",
@@ -254,7 +236,6 @@
     ]
   },
   {
-    "id": 19,
     "label": "Set Timecycle Modifier",
     "command": "timecycle",
     "type": "form",
