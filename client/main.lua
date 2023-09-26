@@ -79,8 +79,14 @@ RegisterNuiCallback('favCommand', function(data, cb)
 end)
 
 RegisterCommand('commands-r', function ()
-    DeleteResourceKvp('commands')
-    updateMenu('resetCommands')
+    if lib.alertDialog({
+        header = 'Admin Menu',
+        content = 'Are you sure you want to reload the commands?',
+        cancel = true
+    }) == 'confirm' then
+        DeleteResourceKvp('commands')
+        updateMenu('resetCommands')
+    end
 end)
 
 RegisterNuiCallback('init', function(_, cb)
