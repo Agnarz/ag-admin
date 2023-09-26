@@ -44,7 +44,6 @@ const useStyles = createStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     borderRadius: 0,
-    padding: 8,
     overflow: 'hidden'
   },
   tabBtn: {
