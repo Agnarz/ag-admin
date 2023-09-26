@@ -67,7 +67,7 @@ end)
 local function loadCommands()
     local savedCommands = GetResourceKvpString('commands')
     if not savedCommands then return end
-				commands = json.decode(savedCommands)
+	commands = json.decode(savedCommands)
 end
 
 loadCommands()
