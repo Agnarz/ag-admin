@@ -4,14 +4,16 @@
     "label": "Revive Self",
     "command": "revive",
     "type": "button",
-    "filter": "player"
+    "filter": "player",
+    "fav": false
   },
   {
     "id": 2,
     "label": "Give Armour",
     "command": "armour",
     "type": "button",
-    "filter": "player"
+    "filter": "player",
+    "fav": false
   },
   {
     "id": 3,
@@ -19,6 +21,7 @@
     "command": "godmode",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true
   },
   {
@@ -27,6 +30,7 @@
     "command": "noclip",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true,
     "close": true
   },
@@ -36,6 +40,7 @@
     "command": "cloak",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true
   },
   {
@@ -44,6 +49,7 @@
     "command": "godspeed",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true
   },
   {
@@ -52,6 +58,7 @@
     "command": "godstam",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true
   },
   {
@@ -60,6 +67,7 @@
     "command": "superjump",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true
   },
   {
@@ -68,6 +76,7 @@
     "command": "nightv",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true
   },
   {
@@ -76,6 +85,7 @@
     "command": "thermalv",
     "type": "button",
     "filter": "utility",
+    "fav": false,
     "active": true
   },
   {
@@ -84,6 +94,7 @@
     "command": "pedmodel",
     "type": "form",
     "filter": "player",
+    "fav": false,
     "args": [
       {
         "type": "select",
@@ -111,6 +122,7 @@
     "command": "giveweapon",
     "type": "form",
     "filter": "player",
+    "fav": false,
     "args": [
       {
         "type": "select",
@@ -145,6 +157,7 @@
     "command": "car",
     "type": "form",
     "filter": "vehicle",
+    "fav": false,
     "args": [
       {
         "type": "select",
@@ -170,6 +183,7 @@
     "command": "engineaudio",
     "type": "form",
     "filter": "vehicle",
+    "fav": false,
     "args": [
       {
         "type": "select",
@@ -192,14 +206,16 @@
     "label": "Repair Vehicle",
     "command": "fix",
     "type": "button",
-    "filter": "vehicle"
+    "filter": "vehicle",
+    "fav": false
   },
   {
     "id": 16,
     "label": "Teleport to Marker",
     "command": "tpm",
     "type": "button",
-    "filter": "utility"
+    "filter": "utility",
+    "fav": false
   },
   {
     "id": 17,
@@ -207,6 +223,7 @@
     "command": "tpc",
     "type": "form",
     "filter": "utility",
+    "fav": false,
     "args": [
       {
         "type": "input",
@@ -222,6 +239,7 @@
     "command": "tpl",
     "type": "form",
     "filter": "utility",
+    "fav": false,
     "args": [
       {
         "type": "select",
@@ -241,6 +259,7 @@
     "command": "timecycle",
     "type": "form",
     "filter": "utility",
+    "fav": false,
     "args": [
       {
         "type": "select",

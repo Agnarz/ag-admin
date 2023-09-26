@@ -1,5 +1,10 @@
 [
   {
+    "command": "commands-r",
+    "icon": "fas fa-sync-alt",
+    "type": "button"
+  },
+  {
     "command": "dev",
     "icon": "fas fa-terminal",
     "active": true,

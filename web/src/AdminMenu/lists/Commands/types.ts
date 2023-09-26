@@ -6,7 +6,9 @@ type BaseCommand<T> = {
   label: string;
   command: string;
   filter: string;
+  fav: boolean;
   close?: boolean;
+  setFav(id: number): void;
 };
 
 export interface ButtonCommandProps extends BaseCommand<'button'> {

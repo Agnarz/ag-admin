@@ -4,6 +4,7 @@ import { DataList } from '../../components/DataList';
 import ButtonCommand from './components/ButtonCommand';
 import FormCommand from './components/FormCommand';
 import { useNuiEvent } from '../../../hooks/useNuiEvent';
+import { fetchNui } from '../../../utils/fetchNui';
 
 export const CommandsList: React.FC = () => {
   const [commands, setCommands] = useState<CommandProps[]>([]);
@@ -12,21 +13,52 @@ export const CommandsList: React.FC = () => {
   const [filter, setFilter] = useState<string>('all');
   const [search, setSearch] = useState<string>('');
 
+  const sortedCommands = useMemo(() => {
+    return commands.sort((a, b) => {
+      if (a.fav && !b.fav) return -1;
+      if (!a.fav && b.fav) return 1;
+      if (a.id < b.id) {return -1;}
+      if (a.id > b.id) {return 1;}
+      return 0;
+    });
+  }, [commands]);
+
   const searchedCommands = useMemo(() => {
     if (search.length > 0) {
-      return commands.filter((v) => v.label.toLowerCase().includes(search.toLowerCase()));
+      return sortedCommands.filter((v) => v.label.toLowerCase().includes(search.toLowerCase()));
     } else {
-      return commands;
+      return sortedCommands;
     }
-  }, [commands, search]);
+  }, [sortedCommands, search]);
 
   const filteredCommands = useMemo(() => {
+
     if (filter == 'all') {
       return searchedCommands;
     } else {
       return searchedCommands.filter((v) => v.filter == filter);
     }
   }, [searchedCommands, filter]);
+
+  const setFav = ((id: number) => {
+    const newCommands = [...commands];
+    const index = commands.findIndex((v) => v.id == id);
+    newCommands[index].fav = !newCommands[index].fav;
+    setCommands(newCommands);
+    fetchNui('favCommand', id);
+  });
+
+  const resetCommands = () => {
+    const newCommands = [...commands];
+    newCommands.forEach((v) => {
+      v.fav = false;
+
+    });
+    setCommands(newCommands);
+    fetchNui('resetCommands');
+  };
+
+  useNuiEvent('resetCommands', resetCommands);
 
   const context = {
     list: 'commands',
@@ -41,7 +73,8 @@ export const CommandsList: React.FC = () => {
     setFilter: setFilter,
     search: search,
     setSearch: setSearch,
-  }
+  };
+
   return (
     <DataList context={context}>
       {filteredCommands.map((v) => (
@@ -53,6 +86,8 @@ export const CommandsList: React.FC = () => {
               command={v.command}
               type={v.type}
               filter={v.filter}
+              fav={v.fav}
+              setFav={() => setFav(v.id)}
               active={v.active}
               close={v.close}
             />
@@ -65,6 +100,8 @@ export const CommandsList: React.FC = () => {
               command={v.command}
               type={v.type}
               filter={v.filter}
+              fav={v.fav}
+              setFav={() => setFav(v.id)}
               args={v.args}
               buttons={v.buttons}
               close={v.close}

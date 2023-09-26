@@ -3,11 +3,12 @@ import { Button, Divider, Stack, Group } from '@mantine/core';
 import { useFieldArray, useForm } from 'react-hook-form';
 import { FormCheckbox, FormInput, FormNumber, FormSelect, FormAutoComplete, FormSlider } from './components';
 import type { FormCommandProps, ArgsProps } from '../../types';
+import { CommandLabel } from '../CommandLabel';
 import Expand from '../../../../components/Expand';
 import { fetchNui } from '../../../../../utils/fetchNui';
 
 const FormCommand: React.FC<FormCommandProps> = (props) => {
-  const { label, command, args, buttons, close } = props;
+  const { label, id, command, args, buttons, close, fav, setFav } = props;
   const [fields, setFields] = useState<ArgsProps>(props.args ? props.args : []);
   const form = useForm<{ test: { value: any }[] }>({});
   const fieldForm = useFieldArray({
@@ -40,7 +41,11 @@ const FormCommand: React.FC<FormCommandProps> = (props) => {
   });
 
   return (
-    <Expand label={label}>
+    <Expand label={
+      <CommandLabel command_id={id} fav={fav} setFav={setFav}>
+        {label}
+      </CommandLabel>
+    }>
       <form onSubmit={onSubmit}>
         <Stack spacing='xs'>
           {fieldForm.fields.map((row, index) => {

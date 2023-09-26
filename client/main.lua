@@ -35,7 +35,7 @@ local weather = loadJSON('weather')
 
 ---Update the menu with new data
 ---@param action string -- Action to perform
----@param data string | table | number | boolean -- Data to send to the menu
+---@param data string | table | number | boolean | nil -- Data to send to the menu
 function updateMenu(action, data)
     SendNUIMessage({
         action = action,
@@ -62,6 +62,28 @@ RegisterNetEvent('admin:toggleMenu', toggleMenu)
 RegisterNuiCallback('closeMenu', function(_, cb)
     cb(1)
     toggleMenu(false)
+end)
+
+local function loadCommands()
+    local savedCommands = GetResourceKvpString('commands')
+    if savedCommands then
+        commands = json.decode(savedCommands)
+        return
+    end
+    commands = loadJSON('commands')
+end
+
+loadCommands()
+
+RegisterNuiCallback('favCommand', function(data, cb)
+    cb(1)
+    commands[data].fav = not commands[data].fav
+    SetResourceKvp('commands', json.encode(commands))
+end)
+
+RegisterCommand('commands-r', function ()
+    DeleteResourceKvp('commands')
+    updateMenu('resetCommands')
 end)
 
 RegisterNuiCallback('init', function(_, cb)

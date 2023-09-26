@@ -3,6 +3,7 @@ import { createStyles } from '@mantine/core';
 import type { ButtonCommandProps } from '../../types';
 import { fetchNui } from '../../../../../utils/fetchNui';
 import { useNuiEvent } from '../../../../../hooks/useNuiEvent';
+import { CommandLabel } from '../CommandLabel';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -27,28 +28,17 @@ const useStyles = createStyles((theme) => ({
     ':hover': {
       background: theme.colors.ag[3],
       cursor: 'pointer'
-    }
-  },
-  label: {
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'row',
-    width: '100%',
-    height: '100%',
-    alignItems: 'center',
-    fontWeight: 500,
+    },
     paddingLeft: 8,
-    fontSize: 14,
-    textAlign: 'left',
-    overflow: 'hidden',
   }
 }));
 
 const ButtonCommand: React.FC<ButtonCommandProps> = ((props) => {
   const { classes } = useStyles();
-  const { label, command, active, close } = props;
+  const { label, id, command, active, close, fav, setFav } = props;
 
-  const handleClick = () => {
+  const handleClick = (e: any) => {
+    e.stopPropagation();
     fetchNui('triggerCommand', command);
   };
 
@@ -65,10 +55,10 @@ const ButtonCommand: React.FC<ButtonCommandProps> = ((props) => {
 
   return (
     <div className={classes.root}>
-      <div className={classes.container} style={activeStyle}>
-        <div className={classes.label} onClick={handleClick}>
+      <div className={classes.container} style={activeStyle} onClick={handleClick}>
+        <CommandLabel command_id={id} fav={fav} setFav={setFav}>
           {label}
-        </div>
+        </CommandLabel>
       </div>
     </div>
   );
