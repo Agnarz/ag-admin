@@ -8,7 +8,12 @@ import { fetchNui } from '../../../utils/fetchNui';
 
 export const CommandsList: React.FC = () => {
   const [commands, setCommands] = useState<CommandProps[]>([]);
-  useNuiEvent('setCommands', setCommands);
+  useNuiEvent<CommandProps[]>('setCommands', (data) => {
+    data.forEach((v, index) => {
+      v.id = index + 1;
+    });
+    setCommands(data);
+  });
 
   const [filter, setFilter] = useState<string>('all');
   const [search, setSearch] = useState<string>('');
@@ -52,7 +57,6 @@ export const CommandsList: React.FC = () => {
     const newCommands = [...commands];
     newCommands.forEach((v) => {
       v.fav = false;
-
     });
     setCommands(newCommands);
     fetchNui('resetCommands');
@@ -74,6 +78,7 @@ export const CommandsList: React.FC = () => {
     search: search,
     setSearch: setSearch,
   };
+
 
   return (
     <DataList context={context}>
