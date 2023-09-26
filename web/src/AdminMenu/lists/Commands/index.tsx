@@ -77,7 +77,6 @@ export const CommandsList: React.FC = () => {
     setSearch: setSearch,
   };
 
-
   return (
     <DataList context={context}>
       {filteredCommands.map((v) => (
