@@ -53,16 +53,14 @@ export const CommandsList: React.FC = () => {
     fetchNui('favCommand', id);
   });
 
-  const resetCommands = () => {
+  useNuiEvent('resetCommands', () => {
     const newCommands = [...commands];
     newCommands.forEach((v) => {
       v.fav = false;
     });
     setCommands(newCommands);
     fetchNui('resetCommands');
-  };
-
-  useNuiEvent('resetCommands', resetCommands);
+  });
 
   const context = {
     list: 'commands',
