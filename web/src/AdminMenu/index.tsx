@@ -59,7 +59,6 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
-
 interface QuickActionProps {
   icon: string;
   command: string;
