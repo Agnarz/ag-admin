@@ -43,7 +43,7 @@ end)
 RegisterCommand('noclip', function()
     noClip = not noClip
     updateMenu('setActive:noclip', noClip)
-    --freecam?
+    SetFreecamActive(noClip)
 end)
 
 RegisterCommand('cloak', function()
