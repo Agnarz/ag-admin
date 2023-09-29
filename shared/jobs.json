@@ -1,0 +1,66 @@
+[
+  {
+    "label": "Bus",
+    "value": "bus"
+  },
+  {
+    "label": "Civilian",
+    "value": "unemployed"
+  },
+  {
+    "label": "EMS",
+    "value": "ambulance"
+  },
+  {
+    "label": "Garbage",
+    "value": "garbage"
+  },
+  {
+    "label": "Honorary",
+    "value": "judge"
+  },
+  {
+    "label": "Hotdog",
+    "value": "hotdog"
+  },
+  {
+    "label": "Law Enforcement",
+    "value": "police"
+  },
+  {
+    "label": "Law Firm",
+    "value": "lawyer"
+  },
+  {
+    "label": "Mechanic",
+    "value": "mechanic"
+  },
+  {
+    "label": "Real Estate",
+    "value": "realestate"
+  },
+  {
+    "label": "Reporter",
+    "value": "reporter"
+  },
+  {
+    "label": "Taxi",
+    "value": "taxi"
+  },
+  {
+    "label": "Towing",
+    "value": "tow"
+  },
+  {
+    "label": "Trucker",
+    "value": "trucker"
+  },
+  {
+    "label": "Vehicle Dealer",
+    "value": "cardealer"
+  },
+  {
+    "label": "Vineyard",
+    "value": "vineyard"
+  }
+]

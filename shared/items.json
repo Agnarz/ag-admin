@@ -1,0 +1,902 @@
+[
+  {
+    "label": "10k Gold Chain",
+    "value": "10kgoldchain"
+  },
+  {
+    "label": "2Brothers",
+    "value": "firework1"
+  },
+  {
+    "label": "AK47 2g",
+    "value": "weed_ak47"
+  },
+  {
+    "label": "AK47 Seed",
+    "value": "weed_ak47_seed"
+  },
+  {
+    "label": "Advanced Lockpick",
+    "value": "advancedlockpick"
+  },
+  {
+    "label": "Advanced Repairkit",
+    "value": "advancedrepairkit"
+  },
+  {
+    "label": "Aluminium",
+    "value": "aluminum"
+  },
+  {
+    "label": "Aluminium Powder",
+    "value": "aluminumoxide"
+  },
+  {
+    "label": "Amnesia 2g",
+    "value": "weed_amnesia"
+  },
+  {
+    "label": "Amnesia Seed",
+    "value": "weed_amnesia_seed"
+  },
+  {
+    "label": "Antipatharia",
+    "value": "antipatharia_coral"
+  },
+  {
+    "label": "Armor",
+    "value": "armor"
+  },
+  {
+    "label": "Army Tint",
+    "value": "weapontint_army"
+  },
+  {
+    "label": "Bag of Coke",
+    "value": "cokebaggy"
+  },
+  {
+    "label": "Bag of Crack",
+    "value": "crack_baggy"
+  },
+  {
+    "label": "Bag of XTC",
+    "value": "xtcbaggy"
+  },
+  {
+    "label": "Bandage",
+    "value": "bandage"
+  },
+  {
+    "label": "Beer",
+    "value": "beer"
+  },
+  {
+    "label": "Binoculars",
+    "value": "binoculars"
+  },
+  {
+    "label": "Boom Microphone",
+    "value": "newsbmic"
+  },
+  {
+    "label": "Bottle of Water",
+    "value": "water_bottle"
+  },
+  {
+    "label": "Casino Chips",
+    "value": "casinochips"
+  },
+  {
+    "label": "Certificate",
+    "value": "certificate"
+  },
+  {
+    "label": "Cleaning Kit",
+    "value": "cleaningkit"
+  },
+  {
+    "label": "Coffee",
+    "value": "coffee"
+  },
+  {
+    "label": "Coke Brick",
+    "value": "coke_brick"
+  },
+  {
+    "label": "Coke Package",
+    "value": "coke_small_brick"
+  },
+  {
+    "label": "Cola",
+    "value": "kurkakola"
+  },
+  {
+    "label": "Copper",
+    "value": "copper"
+  },
+  {
+    "label": "Crypto Stick",
+    "value": "cryptostick"
+  },
+  {
+    "label": "Default Tint",
+    "value": "weapontint_black"
+  },
+  {
+    "label": "Dendrogyra",
+    "value": "dendrogyra_coral"
+  },
+  {
+    "label": "Diamond",
+    "value": "diamond"
+  },
+  {
+    "label": "Diamond Ring",
+    "value": "diamond_ring"
+  },
+  {
+    "label": "Diving Gear",
+    "value": "diving_gear"
+  },
+  {
+    "label": "Diving Tube",
+    "value": "diving_fill"
+  },
+  {
+    "label": "Document",
+    "value": "printerdocument"
+  },
+  {
+    "label": "Drill",
+    "value": "drill"
+  },
+  {
+    "label": "Drivers License",
+    "value": "driver_license"
+  },
+  {
+    "label": "EMP Ammo",
+    "value": "emp_ammo"
+  },
+  {
+    "label": "Electronic Kit",
+    "value": "electronickit"
+  },
+  {
+    "label": "Empty Evidence Bag",
+    "value": "empty_evidence_bag"
+  },
+  {
+    "label": "Empty Weed Bag",
+    "value": "empty_weed_bag"
+  },
+  {
+    "label": "Evidence Bag",
+    "value": "filled_evidence_bag"
+  },
+  {
+    "label": "First Aid",
+    "value": "firstaid"
+  },
+  {
+    "label": "Fitbit",
+    "value": "fitbit"
+  },
+  {
+    "label": "Gatecrack",
+    "value": "gatecrack"
+  },
+  {
+    "label": "Glass",
+    "value": "glass"
+  },
+  {
+    "label": "Gold Bar",
+    "value": "goldbar"
+  },
+  {
+    "label": "Gold Tint",
+    "value": "weapontint_gold"
+  },
+  {
+    "label": "Golden Chain",
+    "value": "goldchain"
+  },
+  {
+    "label": "Golden Watch",
+    "value": "rolex"
+  },
+  {
+    "label": "Grape",
+    "value": "grape"
+  },
+  {
+    "label": "Grape Juice",
+    "value": "grapejuice"
+  },
+  {
+    "label": "Green Tint",
+    "value": "weapontint_green"
+  },
+  {
+    "label": "Grilled Cheese Sandwich",
+    "value": "tosti"
+  },
+  {
+    "label": "Handcuffs",
+    "value": "handcuffs"
+  },
+  {
+    "label": "Heavy Armor",
+    "value": "heavyarmor"
+  },
+  {
+    "label": "ID Card",
+    "value": "id_card"
+  },
+  {
+    "label": "Iron",
+    "value": "iron"
+  },
+  {
+    "label": "Iron Powder",
+    "value": "ironoxide"
+  },
+  {
+    "label": "Jerrycan 20L",
+    "value": "jerry_can"
+  },
+  {
+    "label": "Joint",
+    "value": "joint"
+  },
+  {
+    "label": "Key",
+    "value": "labkey"
+  },
+  {
+    "label": "LSPD Tint",
+    "value": "weapontint_lspd"
+  },
+  {
+    "label": "Laptop",
+    "value": "laptop"
+  },
+  {
+    "label": "Lawyer Pass",
+    "value": "lawyerpass"
+  },
+  {
+    "label": "Lighter",
+    "value": "lighter"
+  },
+  {
+    "label": "Lockpick",
+    "value": "lockpick"
+  },
+  {
+    "label": "MG ammo",
+    "value": "mg_ammo"
+  },
+  {
+    "label": "Marked Money",
+    "value": "markedbills"
+  },
+  {
+    "label": "Master Card",
+    "value": "mastercard"
+  },
+  {
+    "label": "Metal Scrap",
+    "value": "metalscrap"
+  },
+  {
+    "label": "Meth",
+    "value": "meth"
+  },
+  {
+    "label": "Money Bag",
+    "value": "moneybag"
+  },
+  {
+    "label": "News Camera",
+    "value": "newscam"
+  },
+  {
+    "label": "News Microphone",
+    "value": "newsmic"
+  },
+  {
+    "label": "Nitrous",
+    "value": "nitrous"
+  },
+  {
+    "label": "OGKush 2g",
+    "value": "weed_og-kush"
+  },
+  {
+    "label": "OGKush Seed",
+    "value": "weed_og-kush_seed"
+  },
+  {
+    "label": "Orange Tint",
+    "value": "weapontint_orange"
+  },
+  {
+    "label": "Painkillers",
+    "value": "painkillers"
+  },
+  {
+    "label": "Parachute",
+    "value": "parachute"
+  },
+  {
+    "label": "Phone",
+    "value": "phone"
+  },
+  {
+    "label": "Pinger",
+    "value": "pinger"
+  },
+  {
+    "label": "Pink Tint",
+    "value": "weapontint_pink"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "revolver_defaultclip"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "pistol_defaultclip"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "heavypistol_defaultclip"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "snspistol_defaultclip"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "combatpistol_defaultclip"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "vintagepistol_defaultclip"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "appistol_defaultclip"
+  },
+  {
+    "label": "Pistol Clip",
+    "value": "pistol50_defaultclip"
+  },
+  {
+    "label": "Pistol EXT Clip",
+    "value": "pistol_extendedclip"
+  },
+  {
+    "label": "Pistol EXT Clip",
+    "value": "appistol_extendedclip"
+  },
+  {
+    "label": "Pistol EXT Clip",
+    "value": "vintagepistol_extendedclip"
+  },
+  {
+    "label": "Pistol EXT Clip",
+    "value": "pistol50_extendedclip"
+  },
+  {
+    "label": "Pistol EXT Clip",
+    "value": "combatpistol_extendedclip"
+  },
+  {
+    "label": "Pistol EXT Clip",
+    "value": "snspistol_extendedclip"
+  },
+  {
+    "label": "Pistol EXT Clip",
+    "value": "heavypistol_extendedclip"
+  },
+  {
+    "label": "Pistol Finish",
+    "value": "pistol50_luxuryfinish"
+  },
+  {
+    "label": "Pistol Finish",
+    "value": "appistol_luxuryfinish"
+  },
+  {
+    "label": "Pistol Finish",
+    "value": "combatpistol_luxuryfinish"
+  },
+  {
+    "label": "Pistol Finish",
+    "value": "pistol_luxuryfinish"
+  },
+  {
+    "label": "Pistol Flashlight",
+    "value": "pistol_flashlight"
+  },
+  {
+    "label": "Pistol Grip",
+    "value": "snspistol_grip"
+  },
+  {
+    "label": "Pistol Grip",
+    "value": "heavypistol_grip"
+  },
+  {
+    "label": "Pistol Suppressor",
+    "value": "pistol_suppressor"
+  },
+  {
+    "label": "Pistol Variant",
+    "value": "revolver_vipvariant"
+  },
+  {
+    "label": "Pistol Variant",
+    "value": "revolver_bodyguardvariant"
+  },
+  {
+    "label": "Pistol ammo",
+    "value": "pistol_ammo"
+  },
+  {
+    "label": "Plant Fertilizer",
+    "value": "weed_nutrition"
+  },
+  {
+    "label": "Plastic",
+    "value": "plastic"
+  },
+  {
+    "label": "Platinum Tint",
+    "value": "weapontint_plat"
+  },
+  {
+    "label": "Poppelers",
+    "value": "firework2"
+  },
+  {
+    "label": "Prescription Oxy",
+    "value": "oxy"
+  },
+  {
+    "label": "Purple Haze 2g",
+    "value": "weed_purple-haze"
+  },
+  {
+    "label": "Purple Haze Seed",
+    "value": "weed_purple-haze_seed"
+  },
+  {
+    "label": "Race Harness",
+    "value": "harness"
+  },
+  {
+    "label": "Radio",
+    "value": "radio"
+  },
+  {
+    "label": "Radio Scanner",
+    "value": "radioscanner"
+  },
+  {
+    "label": "Repairkit",
+    "value": "repairkit"
+  },
+  {
+    "label": "Rifle Clip",
+    "value": "gusenberg_defaultclip"
+  },
+  {
+    "label": "Rifle Clip",
+    "value": "assaultrifle_defaultclip"
+  },
+  {
+    "label": "Rifle Clip",
+    "value": "bullpuprifle_defaultclip"
+  },
+  {
+    "label": "Rifle Clip",
+    "value": "specialcarbine_defaultclip"
+  },
+  {
+    "label": "Rifle Clip",
+    "value": "carbinerifle_defaultclip"
+  },
+  {
+    "label": "Rifle Clip",
+    "value": "advancedrifle_defaultclip"
+  },
+  {
+    "label": "Rifle Clip",
+    "value": "compactrifle_defaultclip"
+  },
+  {
+    "label": "Rifle Drum",
+    "value": "assaultrifle_drum"
+  },
+  {
+    "label": "Rifle Drum",
+    "value": "specialcarbine_drum"
+  },
+  {
+    "label": "Rifle Drum",
+    "value": "compactrifle_drum"
+  },
+  {
+    "label": "Rifle Drum",
+    "value": "carbinerifle_drum"
+  },
+  {
+    "label": "Rifle EXT Clip",
+    "value": "compactrifle_extendedclip"
+  },
+  {
+    "label": "Rifle EXT Clip",
+    "value": "assaultrifle_extendedclip"
+  },
+  {
+    "label": "Rifle EXT Clip",
+    "value": "carbinerifle_extendedclip"
+  },
+  {
+    "label": "Rifle EXT Clip",
+    "value": "specialcarbine_extendedclip"
+  },
+  {
+    "label": "Rifle EXT Clip",
+    "value": "bullpuprifle_extendedclip"
+  },
+  {
+    "label": "Rifle EXT Clip",
+    "value": "gusenberg_extendedclip"
+  },
+  {
+    "label": "Rifle EXT Clip",
+    "value": "advancedrifle_extendedclip"
+  },
+  {
+    "label": "Rifle Finish",
+    "value": "advancedrifle_luxuryfinish"
+  },
+  {
+    "label": "Rifle Finish",
+    "value": "bullpuprifle_luxuryfinish"
+  },
+  {
+    "label": "Rifle Finish",
+    "value": "assaultrifle_luxuryfinish"
+  },
+  {
+    "label": "Rifle Finish",
+    "value": "specialcarbine_luxuryfinish"
+  },
+  {
+    "label": "Rifle Finish",
+    "value": "carbinerifle_luxuryfinish"
+  },
+  {
+    "label": "Rifle Flashlight",
+    "value": "rifle_flashlight"
+  },
+  {
+    "label": "Rifle Grip",
+    "value": "rifle_grip"
+  },
+  {
+    "label": "Rifle Scope",
+    "value": "carbinerifle_scope"
+  },
+  {
+    "label": "Rifle Suppressor",
+    "value": "rifle_suppressor"
+  },
+  {
+    "label": "Rifle ammo",
+    "value": "rifle_ammo"
+  },
+  {
+    "label": "Rolling Paper",
+    "value": "rolling_paper"
+  },
+  {
+    "label": "Rubber",
+    "value": "rubber"
+  },
+  {
+    "label": "SMG Clip",
+    "value": "assaultsmg_defaultclip"
+  },
+  {
+    "label": "SMG Clip",
+    "value": "machinepistol_defaultclip"
+  },
+  {
+    "label": "SMG Clip",
+    "value": "combatpdw_defaultclip"
+  },
+  {
+    "label": "SMG Clip",
+    "value": "smg_defaultclip"
+  },
+  {
+    "label": "SMG Clip",
+    "value": "microsmg_defaultclip"
+  },
+  {
+    "label": "SMG Clip",
+    "value": "minismg_defaultclip"
+  },
+  {
+    "label": "SMG Drum",
+    "value": "combatpdw_drum"
+  },
+  {
+    "label": "SMG Drum",
+    "value": "machinepistol_drum"
+  },
+  {
+    "label": "SMG Drum",
+    "value": "smg_drum"
+  },
+  {
+    "label": "SMG EXT Clip",
+    "value": "combatpdw_extendedclip"
+  },
+  {
+    "label": "SMG EXT Clip",
+    "value": "assaultsmg_extendedclip"
+  },
+  {
+    "label": "SMG EXT Clip",
+    "value": "microsmg_extendedclip"
+  },
+  {
+    "label": "SMG EXT Clip",
+    "value": "smg_extendedclip"
+  },
+  {
+    "label": "SMG EXT Clip",
+    "value": "minismg_extendedclip"
+  },
+  {
+    "label": "SMG EXT Clip",
+    "value": "machinepistol_extendedclip"
+  },
+  {
+    "label": "SMG Finish",
+    "value": "assaultsmg_luxuryfinish"
+  },
+  {
+    "label": "SMG Finish",
+    "value": "microsmg_luxuryfinish"
+  },
+  {
+    "label": "SMG Finish",
+    "value": "smg_luxuryfinish"
+  },
+  {
+    "label": "SMG Grip",
+    "value": "combatpdw_grip"
+  },
+  {
+    "label": "SMG Scope",
+    "value": "smg_scope"
+  },
+  {
+    "label": "SMG Scope",
+    "value": "microsmg_scope"
+  },
+  {
+    "label": "SMG Scope",
+    "value": "combatpdw_scope"
+  },
+  {
+    "label": "SMG Suppressor",
+    "value": "smg_suppressor"
+  },
+  {
+    "label": "SMG ammo",
+    "value": "smg_ammo"
+  },
+  {
+    "label": "Samsung S10",
+    "value": "samsungphone"
+  },
+  {
+    "label": "Sandwich",
+    "value": "sandwich"
+  },
+  {
+    "label": "Security Card A",
+    "value": "security_card_01"
+  },
+  {
+    "label": "Security Card B",
+    "value": "security_card_02"
+  },
+  {
+    "label": "Shotgun Clip",
+    "value": "heavyshotgun_defaultclip"
+  },
+  {
+    "label": "Shotgun Clip",
+    "value": "assaultshotgun_defaultclip"
+  },
+  {
+    "label": "Shotgun Drum",
+    "value": "heavyshotgun_drum"
+  },
+  {
+    "label": "Shotgun EXT Clip",
+    "value": "heavyshotgun_extendedclip"
+  },
+  {
+    "label": "Shotgun EXT Clip",
+    "value": "assaultshotgun_extendedclip"
+  },
+  {
+    "label": "Shotgun Finish",
+    "value": "sawnoffshotgun_luxuryfinish"
+  },
+  {
+    "label": "Shotgun Finish",
+    "value": "pumpshotgun_luxuryfinish"
+  },
+  {
+    "label": "Shotgun Suppressor",
+    "value": "shotgun_suppressor"
+  },
+  {
+    "label": "Shotgun ammo",
+    "value": "shotgun_ammo"
+  },
+  {
+    "label": "Skunk 2g",
+    "value": "weed_skunk"
+  },
+  {
+    "label": "Skunk Seed",
+    "value": "weed_skunk_seed"
+  },
+  {
+    "label": "Snikkel",
+    "value": "snikkel_candy"
+  },
+  {
+    "label": "Sniper Clip",
+    "value": "marksmanrifle_defaultclip"
+  },
+  {
+    "label": "Sniper Clip",
+    "value": "heavysniper_defaultclip"
+  },
+  {
+    "label": "Sniper EXT Clip",
+    "value": "marksmanrifle_extendedclip"
+  },
+  {
+    "label": "Sniper Finish",
+    "value": "marksmanrifle_luxuryfinish"
+  },
+  {
+    "label": "Sniper Grip",
+    "value": "sniper_grip"
+  },
+  {
+    "label": "Sniper Max Scope",
+    "value": "snipermax_scope"
+  },
+  {
+    "label": "Sniper Scope",
+    "value": "sniper_scope"
+  },
+  {
+    "label": "Sniper Scope",
+    "value": "marksmanrifle_scope"
+  },
+  {
+    "label": "Sniper Suppressor",
+    "value": "sniperrifle_defaultclip"
+  },
+  {
+    "label": "Sniper ammo",
+    "value": "snp_ammo"
+  },
+  {
+    "label": "Steel",
+    "value": "steel"
+  },
+  {
+    "label": "Sticky note",
+    "value": "stickynote"
+  },
+  {
+    "label": "Stormram",
+    "value": "police_stormram"
+  },
+  {
+    "label": "Tablet",
+    "value": "tablet"
+  },
+  {
+    "label": "Thermite",
+    "value": "thermite"
+  },
+  {
+    "label": "Toolkit",
+    "value": "screwdriverset"
+  },
+  {
+    "label": "Trojan USB",
+    "value": "trojan_usb"
+  },
+  {
+    "label": "Tunerchip",
+    "value": "tunerlaptop"
+  },
+  {
+    "label": "Twerks",
+    "value": "twerks_candy"
+  },
+  {
+    "label": "Visa Card",
+    "value": "visa"
+  },
+  {
+    "label": "Vodka",
+    "value": "vodka"
+  },
+  {
+    "label": "Walking Stick",
+    "value": "walkstick"
+  },
+  {
+    "label": "Weapon License",
+    "value": "weaponlicense"
+  },
+  {
+    "label": "Weed Brick",
+    "value": "weed_brick"
+  },
+  {
+    "label": "Weeping Willow",
+    "value": "firework4"
+  },
+  {
+    "label": "Whiskey",
+    "value": "whiskey"
+  },
+  {
+    "label": "White Widow 2g",
+    "value": "weed_white-widow"
+  },
+  {
+    "label": "White Widow Seed",
+    "value": "weed_white-widow_seed"
+  },
+  {
+    "label": "Wine",
+    "value": "wine"
+  },
+  {
+    "label": "WipeOut",
+    "value": "firework3"
+  },
+  {
+    "label": "iPhone",
+    "value": "iphone"
+  },
+  {
+    "label": "ifaks",
+    "value": "ifaks"
+  }
+]

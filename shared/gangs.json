@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Ballas",
+    "value": "ballas"
+  },
+  {
+    "label": "Cartel",
+    "value": "cartel"
+  },
+  {
+    "label": "Families",
+    "value": "families"
+  },
+  {
+    "label": "No Gang",
+    "value": "none"
+  },
+  {
+    "label": "The Lost MC",
+    "value": "lostmc"
+  },
+  {
+    "label": "Triads",
+    "value": "triads"
+  },
+  {
+    "label": "Vagos",
+    "value": "vagos"
+  }
+]
