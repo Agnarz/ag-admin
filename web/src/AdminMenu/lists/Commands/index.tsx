@@ -70,6 +70,7 @@ export const CommandsList: React.FC = () => {
         { label: 'Player', value: 'player' },
         { label: 'Vehicle', value: 'vehicle' },
         { label: 'Utility', value: 'utility' },
+        { label: 'User', value: 'user' },
         { label: 'Server', value: 'server' }
       ],
       setFilter: setFilter,
