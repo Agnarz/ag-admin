@@ -1,7 +1,6 @@
 import { MultiSelect, Select } from '@mantine/core';
-import React, {useEffect} from 'react';
 import { Control, useController } from 'react-hook-form';
-import { FormValues, ArgSelect } from '../../../types';
+import { FormValues, ArgSelect } from '../../../../../../types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 interface Props {
   args: ArgSelect;

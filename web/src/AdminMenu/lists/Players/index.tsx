@@ -1,11 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import { DataList } from '../../components/DataList';
-import type { PlayerProps } from './types';
+import { PlayerProps } from '../../../types';
 import Player from './components/Player';
 import { useNuiEvent } from '../../../hooks/useNuiEvent';
+import { usePlayers } from '../../../state/players';
 
 export const PlayersList: React.FC = () => {
-  const [players, setPlayers] = useState<PlayerProps[]>([]);
+  const [players, setPlayers] = usePlayers();
   useNuiEvent('setPlayers', setPlayers);
 
   const [filter, setFilter] = useState<string>('all');

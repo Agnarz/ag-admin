@@ -1,7 +1,6 @@
-import React from 'react';
 import { Box, Slider, Text } from '@mantine/core';
 import { Control, useController } from 'react-hook-form';
-import { FormValues, ArgSlider } from '../../../types';
+import { FormValues, ArgSlider } from '../../../../../../types';
 interface Props {
   args: ArgSlider;
   index: number;

@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 import { createStyles, ActionIcon, Tooltip, Menu } from '@mantine/core';
 import { useNuiEvent } from '../../hooks/useNuiEvent';
 import { fetchNui } from '../../utils/fetchNui';
-
-interface QuickActionProps {
-  command: string;
-  icon: string;
-  type: string;
-  items?: Array<{ label: string; command: string; }>;
-  active?: boolean;
-};
+import { QuickActionProps } from '../../types';
 
 const useStyles = createStyles((theme) => ({
   button: {
@@ -30,10 +23,12 @@ const useStyles = createStyles((theme) => ({
 
 const QuickAction: React.FC<QuickActionProps> = (props) => {
   const { classes } = useStyles();
-  const { command, icon, type, active, items } = props;
+  const { command, icon, type, close, active, items } = props;
 
   const handleClick = (action: any) => {
     fetchNui('triggerCommand', action);
+
+    if (close) fetchNui('closeMenu');
   };
 
   // eg. setActive:dev

@@ -1,13 +1,14 @@
 import React, { useState, useMemo } from 'react';
-import type { CommandProps } from './types';
+import type { CommandProps } from '../../../types';
 import { DataList } from '../../components/DataList';
 import ButtonCommand from './components/ButtonCommand';
 import FormCommand from './components/FormCommand';
 import { useNuiEvent } from '../../../hooks/useNuiEvent';
 import { fetchNui } from '../../../utils/fetchNui';
+import { useCommands } from '../../../state';
 
 export const CommandsList: React.FC = () => {
-  const [commands, setCommands] = useState<CommandProps[]>([]);
+  const [commands, setCommands] = useCommands();
   useNuiEvent<CommandProps[]>('setCommands', (data) => {
     data.forEach((v, index) => {
       v.id = index + 1;

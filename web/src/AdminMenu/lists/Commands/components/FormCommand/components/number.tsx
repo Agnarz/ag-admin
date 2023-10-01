@@ -1,7 +1,7 @@
 import { NumberInput } from '@mantine/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Control, useController } from 'react-hook-form';
-import { FormValues, ArgNumber } from '../../../types';
+import { FormValues, ArgNumber } from '../../../../../../types';
 
 interface Props {
   args: ArgNumber;

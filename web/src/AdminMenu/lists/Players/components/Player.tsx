@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react';
 import { Button, Group } from '@mantine/core';
-import type { PlayerProps } from '../types';
+import { PlayerProps } from '../../../../types';
 import Expand from '../../../components/Expand';
 import { fetchNui } from '../../../../utils/fetchNui';
 
-const Player: React.FC<PlayerProps> = forwardRef((props) => {
+const Player: React.FC<PlayerProps> = (props) => {
   const { source, label, headshot } = props;
 
   const triggerCommand = (command: string) => {
@@ -41,6 +41,6 @@ const Player: React.FC<PlayerProps> = forwardRef((props) => {
       </Group>
     </Expand>
   );
-});
+};
 
 export default Player;

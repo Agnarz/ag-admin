@@ -1,6 +1,6 @@
 import { Checkbox } from '@mantine/core';
 import { UseFormRegisterReturn } from 'react-hook-form';
-import { ArgCheckbox } from '../../../types';
+import { ArgCheckbox } from '../../../../../../types';
 
 interface Props {
   args: ArgCheckbox;

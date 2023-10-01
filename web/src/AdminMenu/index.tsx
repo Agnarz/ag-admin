@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createStyles, Tabs, Divider } from '@mantine/core';
+import { QuickActionProps } from '../types/quickaction';
 import QuickAction from './components/QuickAction';
 import { CommandsList } from './lists/Commands';
 import { PlayersList } from './lists/Players';
@@ -47,7 +48,7 @@ const useStyles = createStyles((theme) => ({
     overflow: 'hidden'
   },
   tabBtn: {
-    background: theme.colors.ag[8] + 'f2',
+    background: theme.colors.ag[8],
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -59,14 +60,6 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
-interface QuickActionProps {
-  icon: string;
-  command: string;
-  type: string;
-  active?: boolean;
-  items?: Array<{ label: string; command: string; }>;
-}
-
 export const AdminMenu: React.FC = () => {
   const { classes } = useStyles();
   const [visible, setVisible] = useState(0);
@@ -74,7 +67,7 @@ export const AdminMenu: React.FC = () => {
   // Using opacity instead of display: none; because we want to keep the menu mounted
   useNuiEvent('toggleMenu', (data) => {
     if (data) {
-      setVisible(0.95);
+      setVisible(1);
     } else {
       setVisible(0);
     }

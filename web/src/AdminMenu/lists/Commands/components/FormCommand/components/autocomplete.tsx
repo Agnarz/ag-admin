@@ -1,7 +1,6 @@
 import { createStyles, Autocomplete  } from '@mantine/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import { ArgAutoComplete, FormValues } from '../../../types';
+import { ArgAutoComplete, FormValues } from '../../../../../../types';
 import { Control, useController } from 'react-hook-form';
 import { GetOptions } from '../../../options';
 
