@@ -265,5 +265,63 @@
         { "label": "Clear", "command": "timecycle clear", "color": "red" }
       ]
     }
+  },
+  {
+    "label": "Kick Player",
+    "command": "kick",
+    "type": "form",
+    "filter": "user",
+    "fav": false,
+    "args": [
+      {
+        "type": "select",
+        "label": "Target",
+        "options": [],
+        "optionsKey": "Targets",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      },
+      {
+        "type": "input",
+        "label": "Reason",
+        "required": true
+      }
+    ]
+  },
+  {
+    "label": "Kick All",
+    "command": "kick",
+    "type": "button",
+    "filter": "server",
+    "fav": false
+  },
+  {
+    "label": "Ban Player",
+    "command": "ban",
+    "type": "form",
+    "filter": "user",
+    "fav": false,
+    "args": [
+      {
+        "type": "select",
+        "label": "Target",
+        "options": [],
+        "optionsKey": "Targets",
+        "searchable": true,
+        "clearable": true,
+        "required": true
+      },
+      {
+        "type": "input",
+        "label": "Reason",
+        "required": true
+      },
+      {
+        "type": "number",
+        "label": "Ban Length",
+        "required": true
+      }
+    ]
   }
 ]
