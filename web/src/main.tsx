@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'jotai';
 import { isEnvBrowser } from './utils/misc';
 import './index.css';
 import App from './App';
@@ -16,6 +17,8 @@ if (isEnvBrowser()) {
 const root = document.getElementById('root');
 ReactDOM.createRoot(root!).render(
   <React.StrictMode>
-    <App />
+    <Provider>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
