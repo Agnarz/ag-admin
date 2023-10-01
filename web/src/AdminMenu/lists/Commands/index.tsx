@@ -28,22 +28,21 @@ export const CommandsList: React.FC = () => {
     });
   }, [commands]);
 
-  const searchedCommands = useMemo(() => {
+  const searchCommands = sortedCommands.filter((v) => {
     if (search.length > 0) {
-      return sortedCommands.filter((v) => v.label.toLowerCase().includes(search.toLowerCase()));
+      return v.label.toLowerCase().includes(search.toLowerCase());
     } else {
-      return sortedCommands;
+      return true;
     }
-  }, [sortedCommands, search]);
+  });
 
-  const filteredCommands = useMemo(() => {
-
+  const filteredCommands = searchCommands.filter((v) => {
     if (filter == 'all') {
-      return searchedCommands;
+      return true;
     } else {
-      return searchedCommands.filter((v) => v.filter == filter);
+      return v.filter == filter;
     }
-  }, [searchedCommands, filter]);
+  });
 
   const setFav = ((id: number) => {
     const newCommands = [...commands];
@@ -62,23 +61,21 @@ export const CommandsList: React.FC = () => {
     fetchNui('resetCommands');
   });
 
-  const context = {
-    list: 'commands',
-    filter: filter,
-    filters: [
-      { label: 'All', value: 'all' },
-      { label: 'Player', value: 'player' },
-      { label: 'Vehicle', value: 'vehicle' },
-      { label: 'Utility', value: 'utility' },
-      { label: 'Server', value: 'server' },
-    ],
-    setFilter: setFilter,
-    search: search,
-    setSearch: setSearch,
-  };
-
   return (
-    <DataList context={context}>
+    <DataList context={{
+      list: 'commands',
+      filter: filter,
+      filters: [
+        { label: 'All', value: 'all' },
+        { label: 'Player', value: 'player' },
+        { label: 'Vehicle', value: 'vehicle' },
+        { label: 'Utility', value: 'utility' },
+        { label: 'Server', value: 'server' }
+      ],
+      setFilter: setFilter,
+      search: search,
+      setSearch: setSearch
+    }}>
       {filteredCommands.map((v) => (
         <React.Fragment key={v.command + v.id}>
           {v.type == 'button' && (
