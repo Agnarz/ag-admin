@@ -30,6 +30,7 @@ const FormNumber: React.FC<Props> = (props) => {
       min={props.args.min}
       max={props.args.max}
       precision={props.args.precision}
+      step={props.args.step}
       disabled={props.args.disabled}
       icon={props.args.icon && <FontAwesomeIcon icon={props.args.icon} fixedWidth />}
       withAsterisk={props.args.required}

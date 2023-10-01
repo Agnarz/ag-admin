@@ -60,6 +60,7 @@ export interface ArgNumber extends BaseArg<'number', number> {
   precision?: number;
   min?: number;
   max?: number;
+  step?: number;
 };
 
 export type ArgValue = Array<{ value: string; label?: string }>;
