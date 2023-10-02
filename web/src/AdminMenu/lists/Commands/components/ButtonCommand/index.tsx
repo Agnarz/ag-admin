@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createStyles } from '@mantine/core';
-import type { ButtonCommand } from '../../../../../types';
+import type { ButtonCommandProps } from '../../../../../types';
 import { fetchNui } from '../../../../../utils/fetchNui';
 import { useNuiEvent } from '../../../../../hooks/useNuiEvent';
 import { CommandLabel } from '../CommandLabel';
@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
-const ButtonCommand: React.FC<ButtonCommand> = ((props) => {
+const ButtonCommand: React.FC<ButtonCommandProps> = ((props) => {
   const { classes } = useStyles();
   const { label, id, command, active, close, fav, setFav } = props;
 
