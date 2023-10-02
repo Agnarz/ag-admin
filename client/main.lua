@@ -26,12 +26,7 @@ end
 
 local commands = loadJSON('commands')
 local quickactions = loadJSON('quickactions')
-local vehicles = loadJSON('vehicles')
-local weapons = loadJSON('weapons')
-local pedmodels = loadJSON('pedmodels')
 teleports = loadJSON('teleports')
-local timecycles = loadJSON('timecycles')
-local weather = loadJSON('weather')
 
 ---Update the menu with new data
 ---@param action string -- Action to perform
@@ -64,47 +59,39 @@ RegisterNuiCallback('closeMenu', function(_, cb)
     toggleMenu(false)
 end)
 
-local function loadCommands()
-    local savedCommands = GetResourceKvpString('commands')
-    if not savedCommands then return end
-	commands = json.decode(savedCommands)
+local favorites = {}
+
+local function loadFavorites()
+    local savedFavorites = GetResourceKvpString('favorites')
+    if not savedFavorites then return end
+    favorites = json.decode(savedFavorites)
 end
 
-loadCommands()
+loadFavorites()
 
-RegisterNuiCallback('favCommand', function(data, cb)
+RegisterNuiCallback('favorite', function(data, cb)
     cb(1)
-    commands[data].fav = not commands[data].fav
-    SetResourceKvp('commands', json.encode(commands))
+    SetResourceKvp('favorites', json.encode(data))
 end)
 
-RegisterCommand('commands-r', function ()
+RegisterCommand('commands-r', function()
     if lib.alertDialog({
         header = 'Admin Menu',
         content = 'Are you sure you want to reload the commands?',
         cancel = true
     }) == 'confirm' then
-        DeleteResourceKvp('commands')
+        DeleteResourceKvp('favorites')
         updateMenu('resetCommands')
     end
 end)
 
 RegisterNuiCallback('init', function(_, cb)
-    cb(1)
-    if lib.callback.await('ox_lib:checkPlayerAce', false, 'command') then
-        nuiReady = true
-        updateMenu('setCommands', commands)
-        updateMenu('setQuickactions', quickactions)
-        Wait(250)
-        updateMenu('setOptions', {
-            vehicles = vehicles,
-            weapons = weapons,
-            pedmodels = pedmodels,
-            teleports = teleports,
-            timecycles = timecycles,
-            weather = weather
-        })
-    end
+    updateMenu('setQuickactions', quickactions)
+    cb({
+        commands = commands,
+        favorites = favorites
+    })
+    nuiReady = true
 end)
 
 RegisterNuiCallback('triggerCommand', function(data, cb)

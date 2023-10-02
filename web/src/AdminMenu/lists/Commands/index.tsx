@@ -5,16 +5,12 @@ import ButtonCommand from './components/ButtonCommand';
 import FormCommand from './components/FormCommand';
 import { useNuiEvent } from '../../../hooks/useNuiEvent';
 import { fetchNui } from '../../../utils/fetchNui';
-import { useCommands } from '../../../state';
+import { useCommands, useFavorites } from '../../../state';
 
 export const CommandsList: React.FC = () => {
   const [commands, setCommands] = useCommands();
-  useNuiEvent<CommandProps[]>('setCommands', (data) => {
-    data.forEach((v, index) => {
-      v.id = index + 1;
-    });
-    setCommands(data);
-  });
+  const [favorites, setFavorites] = useFavorites();
+
 
   const [filter, setFilter] = useState<string>('all');
   const [search, setSearch] = useState<string>('');
@@ -45,12 +41,20 @@ export const CommandsList: React.FC = () => {
     }
   });
 
-  const setFav = ((id: number) => {
+  const setFav = ((command: string) => {
     const newCommands = [...commands];
-    const index = commands.findIndex((v) => v.id == id);
+    const index = commands.findIndex((v) => v.command == command);
     newCommands[index].fav = !newCommands[index].fav;
     setCommands(newCommands);
-    fetchNui('favCommand', id);
+
+    const newFavorites = [...favorites];
+    if (newFavorites.includes(command)) {
+      newFavorites.splice(newFavorites.indexOf(command), 1);
+    } else {
+      newFavorites.push(command);
+    }
+    setFavorites(newFavorites);
+    fetchNui('favorite', newFavorites);
   });
 
   useNuiEvent('resetCommands', () => {
@@ -59,6 +63,7 @@ export const CommandsList: React.FC = () => {
       v.fav = false;
     });
     setCommands(newCommands);
+    setFavorites([]);
     fetchNui('resetCommands');
   });
 
@@ -88,7 +93,7 @@ export const CommandsList: React.FC = () => {
               type={v.type}
               filter={v.filter}
               fav={v.fav}
-              setFav={() => setFav(v.id)}
+              setFav={() => setFav(v.command)}
               active={v.active}
               close={v.close}
             />
@@ -102,7 +107,7 @@ export const CommandsList: React.FC = () => {
               type={v.type}
               filter={v.filter}
               fav={v.fav}
-              setFav={() => setFav(v.id)}
+              setFav={() => setFav(v.command)}
               args={v.args}
               buttons={v.buttons}
               close={v.close}
