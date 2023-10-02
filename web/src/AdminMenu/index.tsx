@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createStyles, Tabs, Divider } from '@mantine/core';
 import { QuickActionProps } from '../types/quickaction';
 import QuickAction from './components/QuickAction';
 import { CommandsList } from './lists/Commands';
 import { PlayersList } from './lists/Players';
 import { useNuiEvent } from '../hooks/useNuiEvent';
+import { fetchNui } from '../utils/fetchNui';
+import { CommandProps } from '../types';
+import { useSetCommands, useSetFavorites } from '../state';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -63,6 +66,23 @@ const useStyles = createStyles((theme) => ({
 export const AdminMenu: React.FC = () => {
   const { classes } = useStyles();
   const [visible, setVisible] = useState(0);
+
+  const setCommands = useSetCommands();
+  const setFavorites = useSetFavorites();
+
+  useEffect(() => {
+    fetchNui<{
+      commands: CommandProps[];
+      favorites: string[];
+    }>('init').then((data) => {
+      setFavorites(data.favorites);
+      data.commands.forEach((v, index) => {
+        v.id = index + 1;
+        v.fav = data.favorites.includes(v.command);
+      });
+      setCommands(data.commands);
+    });
+  }, []);
 
   // Using opacity instead of display: none; because we want to keep the menu mounted
   useNuiEvent('toggleMenu', (data) => {

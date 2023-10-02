@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'jotai';
+import { theme } from './theme';
+import { MantineProvider } from '@mantine/core'
 import { isEnvBrowser } from './utils/misc';
 import './index.css';
 import App from './App';
@@ -17,8 +19,10 @@ if (isEnvBrowser()) {
 const root = document.getElementById('root');
 ReactDOM.createRoot(root!).render(
   <React.StrictMode>
-    <Provider>
-      <App />
-    </Provider>
+    <MantineProvider withNormalizeCSS theme={{ ...theme }}>
+      <Provider>
+        <App />
+      </Provider>
+    </MantineProvider>
   </React.StrictMode>
 );
