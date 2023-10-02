@@ -1,5 +1,5 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-export type CommandProps = ButtonCommand | FormCommand;
+export type CommandProps = ButtonCommandProps | FormCommandProps;
 type BaseCommand<T> = {
   id: number;
   type: T;
@@ -11,13 +11,13 @@ type BaseCommand<T> = {
   setFav(id: number): void;
 };
 
-export interface ButtonCommand extends BaseCommand<'button'> {
+export interface ButtonCommandProps extends BaseCommand<'button'> {
   active?: boolean;
 };
 
 export type ArgsProps = Array<ArgInput | ArgCheckbox | ArgSelect | ArgNumber | ArgSlider | ArgAutoComplete>;
 type ExtraButtonProps = Array<{label: string; command: string; color: string;}>;
-export interface FormCommand extends BaseCommand<'form'> {
+export interface FormCommandProps extends BaseCommand<'form'> {
   args: ArgsProps;
   buttons?: {
     execute?: string;
@@ -63,7 +63,7 @@ export interface ArgNumber extends BaseArg<'number', number> {
   step?: number;
 };
 
-export type ArgValue = Array<{ value: string; label?: string }>;
+export type ArgValue = Array<{ value: string; label?: string }> | Array<string>;
 export interface ArgSelect extends BaseArg<'select' | 'multi-select', string | string[]> {
   options: ArgValue;
   optionsKey?: string;
