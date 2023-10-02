@@ -3,22 +3,19 @@
     "label": "Revive Self",
     "command": "revive",
     "type": "button",
-    "filter": "player",
-    "fav": false
+    "filter": "player"
   },
   {
     "label": "Give Armour",
     "command": "armour",
     "type": "button",
-    "filter": "player",
-    "fav": false
+    "filter": "player"
   },
   {
     "label": "GodMode",
     "command": "godmode",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true
   },
   {
@@ -26,7 +23,6 @@
     "command": "noclip",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true,
     "close": true
   },
@@ -35,7 +31,6 @@
     "command": "cloak",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true
   },
   {
@@ -43,7 +38,6 @@
     "command": "godspeed",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true
   },
   {
@@ -51,7 +45,6 @@
     "command": "godstam",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true
   },
   {
@@ -59,7 +52,6 @@
     "command": "superjump",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true
   },
   {
@@ -67,7 +59,6 @@
     "command": "nightv",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true
   },
   {
@@ -75,7 +66,6 @@
     "command": "thermalv",
     "type": "button",
     "filter": "utility",
-    "fav": false,
     "active": true
   },
   {
@@ -83,7 +73,6 @@
     "command": "pedmodel",
     "type": "form",
     "filter": "player",
-    "fav": false,
     "args": [
       {
         "type": "select",
@@ -110,7 +99,6 @@
     "command": "giveweapon",
     "type": "form",
     "filter": "player",
-    "fav": false,
     "args": [
       {
         "type": "select",
@@ -144,7 +132,6 @@
     "command": "car",
     "type": "form",
     "filter": "vehicle",
-    "fav": false,
     "args": [
       {
         "type": "select",
@@ -169,7 +156,6 @@
     "command": "engineaudio",
     "type": "form",
     "filter": "vehicle",
-    "fav": false,
     "args": [
       {
         "type": "select",
@@ -191,22 +177,19 @@
     "label": "Repair Vehicle",
     "command": "fix",
     "type": "button",
-    "filter": "vehicle",
-    "fav": false
+    "filter": "vehicle"
   },
   {
     "label": "Teleport to Marker",
     "command": "tpm",
     "type": "button",
-    "filter": "utility",
-    "fav": false
+    "filter": "utility"
   },
   {
     "label": "Teleport to Coords",
     "command": "tpc",
     "type": "form",
     "filter": "utility",
-    "fav": false,
     "args": [
       {
         "type": "input",
@@ -240,7 +223,6 @@
     "command": "timecycle",
     "type": "form",
     "filter": "utility",
-    "fav": false,
     "args": [
       {
         "type": "select",
@@ -271,7 +253,6 @@
     "command": "kick",
     "type": "form",
     "filter": "user",
-    "fav": false,
     "args": [
       {
         "type": "select",
@@ -285,6 +266,7 @@
       {
         "type": "input",
         "label": "Reason",
+        "default": "You have been kicked from the server.",
         "required": true
       }
     ]
@@ -293,15 +275,13 @@
     "label": "Kick All",
     "command": "kick",
     "type": "button",
-    "filter": "server",
-    "fav": false
+    "filter": "server"
   },
   {
     "label": "Ban Player",
     "command": "ban",
     "type": "form",
     "filter": "user",
-    "fav": false,
     "args": [
       {
         "type": "select",
