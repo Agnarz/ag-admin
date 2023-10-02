@@ -123,7 +123,6 @@ export const DataList: React.FC<ListProps> = ({children, context}) => {
             {children}
           </div>
         </div>
-
       </div>
     </div>
   );
