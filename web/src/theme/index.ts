@@ -2,7 +2,17 @@ import { MantineThemeOverride } from '@mantine/core';
 
 export const theme: MantineThemeOverride = {
   colors: {
-    ag: ['#b1bac4', '#8b949e', '#6e7681', '#484f58', '#30363d', '#21262d', '#161b22', '#0d1117', '#010409']
+    ag: [
+      '#b1bac4',
+      '#8b949e',
+      '#6e7681',
+      '#484f58',
+      '#30363d',
+      '#21262d',
+      '#161b22',
+      '#0d1117',
+      '#010409',
+    ]
   },
   colorScheme: 'dark',
   primaryColor: 'blue',
@@ -33,7 +43,7 @@ export const theme: MantineThemeOverride = {
     Select: {
       styles: {
         input: { background: '#ffffff14', borderColor: '#ffffff14' },
-        itemsWrapper: { background: '#0d1117' }
+        itemsWrapper: { background: '#0d1117' },
       }
     },
     MultiSelect: {
