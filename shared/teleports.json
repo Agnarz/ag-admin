@@ -440,6 +440,16 @@
     }
   },
   {
+    "label": "Maze Bank Helipad",
+    "value": "maze_bank_helipad",
+    "type": "outside",
+    "coords": {
+      "x": -75.072,
+      "y": -819.495,
+      "z": 326.175
+    }
+  },
+  {
     "label": "Merryweather Dock",
     "value": "merryweather_dock",
     "type": "outside",
