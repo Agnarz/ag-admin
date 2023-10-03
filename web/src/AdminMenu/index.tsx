@@ -66,7 +66,7 @@ const useStyles = createStyles((theme) => ({
 export const AdminMenu: React.FC = () => {
   const { classes } = useStyles();
   const [visible, setVisible] = useState(0);
-
+  const [quickActions, setQuickactions] = useState<QuickActionProps[]>([]);
   const setCommands = useSetCommands();
   const setFavorites = useSetFavorites();
 
@@ -74,7 +74,9 @@ export const AdminMenu: React.FC = () => {
     fetchNui<{
       commands: CommandProps[];
       favorites: string[];
+      quickactions: QuickActionProps[];
     }>('init').then((data) => {
+      setQuickactions(data.quickactions);
       setFavorites(data.favorites);
       data.commands.forEach((v, index) => {
         v.id = index + 1;
@@ -98,8 +100,7 @@ export const AdminMenu: React.FC = () => {
     { name: 'Players', icon: 'fas fa-users' }
   ];
 
-  const [quickActions, setQuickactions] = useState<QuickActionProps[]>([]);
-  useNuiEvent('setQuickactions', setQuickactions);
+
 
   return (
     <div className={classes.root} style={{ opacity: visible }}>

@@ -86,10 +86,10 @@ RegisterCommand('commands-r', function()
 end)
 
 RegisterNuiCallback('init', function(_, cb)
-    updateMenu('setQuickactions', quickactions)
     cb({
         commands = commands,
-        favorites = favorites
+        favorites = favorites,
+        quickactions = quickactions,
     })
     nuiReady = true
 end)

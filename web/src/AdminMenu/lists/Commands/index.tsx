@@ -11,7 +11,6 @@ export const CommandsList: React.FC = () => {
   const [commands, setCommands] = useCommands();
   const [favorites, setFavorites] = useFavorites();
 
-
   const [filter, setFilter] = useState<string>('all');
   const [search, setSearch] = useState<string>('');
 
