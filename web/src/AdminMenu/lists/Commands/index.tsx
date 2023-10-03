@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react';
-import type { CommandProps } from '../../../types';
 import { DataList } from '../../components/DataList';
 import ButtonCommand from './components/ButtonCommand';
 import FormCommand from './components/FormCommand';
