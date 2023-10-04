@@ -1,151 +1,151 @@
 [
   {
     "label": "APC (Military)",
-    "value": "APC"
+    "value": "apc"
   },
   {
     "label": "Airport Bus (Service)",
-    "value": "AIRBUS"
+    "value": "airbus"
   },
   {
     "label": "Airtug (Utility)",
-    "value": "AIRTUG"
+    "value": "airtug"
   },
   {
     "label": "Akula (Helicopters)",
-    "value": "AKULA"
+    "value": "akula"
   },
   {
     "label": "Albany Alpha (Sports)",
-    "value": "ALPHA"
+    "value": "alpha"
   },
   {
     "label": "Albany Emperor (Sedans)",
-    "value": "EMPEROR"
+    "value": "emperor"
   },
   {
     "label": "Albany Emperor (Sedans)",
-    "value": "EMPEROR"
+    "value": "emperor"
   },
   {
     "label": "Albany Emperor (Sedans)",
-    "value": "EMPEROR"
+    "value": "emperor"
   },
   {
     "label": "Albany Franken Stange (Sports Classics)",
-    "value": "BTYPE2"
+    "value": "btype2"
   },
   {
     "label": "Albany Hermes (Muscle)",
-    "value": "HERMES"
+    "value": "hermes"
   },
   {
     "label": "Albany Manana (Sports Classics)",
-    "value": "MANANA"
+    "value": "manana"
   },
   {
     "label": "Albany Manana Custom (Muscle)",
-    "value": "MANANA2"
+    "value": "manana2"
   },
   {
     "label": "Albany Primo (Sedans)",
-    "value": "PRIMO"
+    "value": "primo"
   },
   {
     "label": "Albany Primo Custom (Sedans)",
-    "value": "PRIMO2"
+    "value": "primo2"
   },
   {
     "label": "Albany V-STR (Sports)",
-    "value": "VSTR"
+    "value": "vstr"
   },
   {
     "label": "Albany Virgo (Muscle)",
-    "value": "VIRGO"
+    "value": "virgo"
   },
   {
     "label": "Ambulance (Emergency)",
-    "value": "AMBULAN"
+    "value": "ambulan"
   },
   {
     "label": "Annihilator (Helicopters)",
-    "value": "ANNIHL"
+    "value": "annihl"
   },
   {
     "label": "Annihilator Stealth (Helicopters)",
-    "value": "ANNIHLATOR2"
+    "value": "annihlator2"
   },
   {
     "label": "Annis 300R (Sports)",
-    "value": "R300"
+    "value": "r300"
   },
   {
     "label": "Annis Bifta (Off-road)",
-    "value": "BIFTA"
+    "value": "bifta"
   },
   {
     "label": "Annis Blazer (Off-road)",
-    "value": "BLAZER"
+    "value": "blazer"
   },
   {
     "label": "Annis Blazer Sport (Off-road)",
-    "value": "BLAZER4"
+    "value": "blazer4"
   },
   {
     "label": "Annis Brawler (Off-road)",
-    "value": "BRAWLER"
+    "value": "brawler"
   },
   {
     "label": "Annis Dubsta 6x6 (Off-road)",
-    "value": "DUBSTA3"
+    "value": "dubsta3"
   },
   {
     "label": "Annis Dune Buggy (Off-road)",
-    "value": "DUNE"
+    "value": "dune"
   },
   {
     "label": "Annis Elegy RH8 (Sports)",
-    "value": "ELEGY2"
+    "value": "elegy2"
   },
   {
     "label": "Annis Elegy Retro Custom (Sports)",
-    "value": "ELEGY"
+    "value": "elegy"
   },
   {
     "label": "Annis Euros (Sports)",
-    "value": "EUROS"
+    "value": "euros"
   },
   {
     "label": "Annis Hellion (Off-road)",
-    "value": "HELLION"
+    "value": "hellion"
   },
   {
     "label": "Annis RE-7B (Super)",
-    "value": "LE7B"
+    "value": "le7b"
   },
   {
     "label": "Annis Remus (Sports)",
-    "value": "REMUS"
+    "value": "remus"
   },
   {
     "label": "Annis S80RR (Super)",
-    "value": "S80"
+    "value": "s80"
   },
   {
     "label": "Annis Savestra (Sports Classics)",
-    "value": "SAVESTRA"
+    "value": "savestra"
   },
   {
     "label": "Annis ZR350 (Sports)",
-    "value": "ZR350"
+    "value": "zr350"
   },
   {
     "label": "Apocalypse Bruiser (Off-road)",
-    "value": "BRUISER"
+    "value": "bruiser"
   },
   {
     "label": "Apocalypse Brutus (Off-road)",
-    "value": "BRUTUS"
+    "value": "brutus"
   },
   {
     "label": "Apocalypse Cerberus (Commercial)",
@@ -153,107 +153,107 @@
   },
   {
     "label": "Apocalypse Sasquatch (Off-road)",
-    "value": "MONSTER3"
+    "value": "monster3"
   },
   {
     "label": "Apocalypse Scarab (Military)",
-    "value": "SCARAB"
+    "value": "scarab"
   },
   {
     "label": "Apocalypse Slamvan (Muscle)",
-    "value": "SLAMVAN4"
+    "value": "slamvan4"
   },
   {
     "label": "Apocalypse ZR380 (Sports)",
-    "value": "ZR380"
+    "value": "zr380"
   },
   {
     "label": "Asterope (Sedans)",
-    "value": "ASTROPE"
+    "value": "astrope"
   },
   {
     "label": "Atomic Blimp (Planes)",
-    "value": "BLIMP"
+    "value": "blimp"
   },
   {
     "label": "Avenger (Planes)",
-    "value": "AVENGER3"
+    "value": "avenger3"
   },
   {
     "label": "Avenger (Planes)",
-    "value": "AVENGER"
+    "value": "avenger"
   },
   {
     "label": "Avenger (Planes)",
-    "value": "AVENGER"
+    "value": "avenger"
   },
   {
     "label": "Avenger (Planes)",
-    "value": "AVENGER3"
+    "value": "avenger3"
   },
   {
     "label": "Avisa (Boats)",
-    "value": "AVISA"
+    "value": "avisa"
   },
   {
     "label": "B-11 Strikeforce (Planes)",
-    "value": "STRIKEFORCE"
+    "value": "strikeforce"
   },
   {
     "label": "BF Club (Compacts)",
-    "value": "CLUB"
+    "value": "club"
   },
   {
     "label": "BF Raptor (Sports)",
-    "value": "RAPTOR"
+    "value": "raptor"
   },
   {
     "label": "BF Surfer (Vans)",
-    "value": "SURFER"
+    "value": "surfer"
   },
   {
     "label": "BF Surfer Custom (Vans)",
-    "value": "SURFER3"
+    "value": "surfer3"
   },
   {
     "label": "BF Weevil (Compacts)",
-    "value": "WEEVIL"
+    "value": "weevil"
   },
   {
     "label": "BF Weevil Custom (Muscle)",
-    "value": "WEEVIL2"
+    "value": "weevil2"
   },
   {
     "label": "Barracks (Military)",
-    "value": "BARRACKS"
+    "value": "barracks"
   },
   {
     "label": "Barracks (Military)",
-    "value": "BARRACKS"
+    "value": "barracks"
   },
   {
     "label": "Barracks Semi (Military)",
-    "value": "BARRACKS2"
+    "value": "barracks2"
   },
   {
     "label": "Barrage (Military)",
-    "value": "BARRAGE"
+    "value": "barrage"
   },
   {
     "label": "Benefactor Dubsta (SUVs)",
-    "value": "DUBSTA"
+    "value": "dubsta"
   },
   {
     "label": "Benefactor Dubsta (SUVs)",
-    "value": "DUBSTA"
+    "value": "dubsta"
   },
   {
     "label": "Benefactor Glendale (Sedans)",
-    "value": "GLENDALE"
+    "value": "glendale"
   },
   {
     "label": "Benefactor Glendale Custom (Sedans)",
-    "value": "GLENDALE2"
+    "value": "glendale2"
   },
   {
     "label": "Benefactor Krieger (Super)",
@@ -261,631 +261,631 @@
   },
   {
     "label": "Benefactor LM87 (Super)",
-    "value": "LM87"
+    "value": "lm87"
   },
   {
     "label": "Benefactor Panto (Compacts)",
-    "value": "PANTO"
+    "value": "panto"
   },
   {
     "label": "Benefactor SM722 (Sports)",
-    "value": "SM722"
+    "value": "sm722"
   },
   {
     "label": "Benefactor Schafter LWB (Sports)",
-    "value": "SCHAFTER4"
+    "value": "schafter4"
   },
   {
     "label": "Benefactor Schafter V12 (Sports)",
-    "value": "SCHAFTER3"
+    "value": "schafter3"
   },
   {
     "label": "Benefactor Schlagen GT (Sports)",
-    "value": "SCHLAGEN"
+    "value": "schlagen"
   },
   {
     "label": "Benefactor Serrano (SUVs)",
-    "value": "SERRANO"
+    "value": "serrano"
   },
   {
     "label": "Benefactor Stirling GT (Sports Classics)",
-    "value": "FELTZER3"
+    "value": "feltzer3"
   },
   {
     "label": "Benefactor Streiter (Sports)",
-    "value": "STREITER"
+    "value": "streiter"
   },
   {
     "label": "Benefactor Surano (Sports)",
-    "value": "SURANO"
+    "value": "surano"
   },
   {
     "label": "Benefactor XLS (SUVs)",
-    "value": "XLS"
+    "value": "xls"
   },
   {
     "label": "Besra (Planes)",
-    "value": "BESRA"
+    "value": "besra"
   },
   {
     "label": "Bike BMX (Cycles)",
-    "value": "BMX"
+    "value": "bmx"
   },
   {
     "label": "Bike Cruiser (Cycles)",
-    "value": "CRUISER"
+    "value": "cruiser"
   },
   {
     "label": "Bike Endurex Race Bike (Cycles)",
-    "value": "TRIBIKE2"
+    "value": "tribike2"
   },
   {
     "label": "Bike Fixter (Cycles)",
-    "value": "FIXTER"
+    "value": "fixter"
   },
   {
     "label": "Bike Scorcher (Cycles)",
-    "value": "SCORCHER"
+    "value": "scorcher"
   },
   {
     "label": "Bike Tri-Cycles Race Bike (Cycles)",
-    "value": "TRIBIKE3"
+    "value": "tribike3"
   },
   {
     "label": "Bike Whippet Race Bike (Cycles)",
-    "value": "TRIBIKE"
+    "value": "tribike"
   },
   {
     "label": "Blimp (Planes)",
-    "value": "BLIMP3"
+    "value": "blimp3"
   },
   {
     "label": "Bodhi (Off-road)",
-    "value": "BODHI2"
+    "value": "bodhi2"
   },
   {
     "label": "Bollokan Prairie (Compacts)",
-    "value": "PRAIRIE"
+    "value": "prairie"
   },
   {
     "label": "Bravado Banshee (Sports)",
-    "value": "BANSHEE"
+    "value": "banshee"
   },
   {
     "label": "Bravado Banshee 900R (Super)",
-    "value": "BANSHEE2"
+    "value": "banshee2"
   },
   {
     "label": "Bravado Bison (Vans)",
-    "value": "BISON"
+    "value": "bison"
   },
   {
     "label": "Bravado Bison (Vans)",
-    "value": "BISON"
+    "value": "bison"
   },
   {
     "label": "Bravado Bison (Vans)",
-    "value": "BISON"
+    "value": "bison"
   },
   {
     "label": "Bravado Buffalo (Sports)",
-    "value": "BUFFALO"
+    "value": "buffalo"
   },
   {
     "label": "Bravado Buffalo STX (Muscle)",
-    "value": "BUFFALO4"
+    "value": "buffalo4"
   },
   {
     "label": "Bravado Classic Gauntlet (Muscle)",
-    "value": "GAUNTLET3"
+    "value": "gauntlet3"
   },
   {
     "label": "Bravado Gauntlet (Muscle)",
-    "value": "GAUNTLET"
+    "value": "gauntlet"
   },
   {
     "label": "Bravado Gauntlet Classic Custom (Muscle)",
-    "value": "GAUNTLET5"
+    "value": "gauntlet5"
   },
   {
     "label": "Bravado Gauntlet Hellfire (Muscle)",
-    "value": "GAUNTLET4"
+    "value": "gauntlet4"
   },
   {
     "label": "Bravado Greenwood (Muscle)",
-    "value": "Greenwood"
+    "value": "greenwood"
   },
   {
     "label": "Bravado Gresley (SUVs)",
-    "value": "GRESLEY"
+    "value": "gresley"
   },
   {
     "label": "Bravado Lurcher (Muscle)",
-    "value": "LURCHER"
+    "value": "lurcher"
   },
   {
     "label": "Bravado Paradise (Vans)",
-    "value": "PARADISE"
+    "value": "paradise"
   },
   {
     "label": "Bravado Redwood Gauntlet (Muscle)",
-    "value": "GAUNTLET2"
+    "value": "gauntlet2"
   },
   {
     "label": "Bravado Rumpo (Vans)",
-    "value": "RUMPO"
+    "value": "rumpo"
   },
   {
     "label": "Bravado Rumpo (Vans)",
-    "value": "RUMPO"
+    "value": "rumpo"
   },
   {
     "label": "Bravado Rumpo Custom (Vans)",
-    "value": "RUMPO3"
+    "value": "rumpo3"
   },
   {
     "label": "Bravado Youga (Vans)",
-    "value": "YOUGA"
+    "value": "youga"
   },
   {
     "label": "Bravado Youga Classic (Vans)",
-    "value": "YOUGA2"
+    "value": "youga2"
   },
   {
     "label": "Bravado Youga Classic 4x4 (Vans)",
-    "value": "YOUGA3"
+    "value": "youga3"
   },
   {
     "label": "Bravado Youga Custom (Vans)",
-    "value": "YOUGA4"
+    "value": "youga4"
   },
   {
     "label": "Brickade (Service)",
-    "value": "BRICKADE"
+    "value": "brickade"
   },
   {
     "label": "Brickade 6x6 (Service)",
-    "value": "BRICKADE2"
+    "value": "brickade2"
   },
   {
     "label": "Brigham (Muscle)",
-    "value": "BRIGHAM"
+    "value": "brigham"
   },
   {
     "label": "Brute Armored Boxville (Vans)",
-    "value": "BOXVILLE5"
+    "value": "boxville5"
   },
   {
     "label": "Brute Biff (Commercial)",
-    "value": "BIFF"
+    "value": "biff"
   },
   {
     "label": "Brute Boxville LSDWP (Vans)",
-    "value": "BOXVILLE"
+    "value": "boxville"
   },
   {
     "label": "Brute Boxville LSDWP (Vans)",
-    "value": "BOXVILLE"
+    "value": "boxville"
   },
   {
     "label": "Brute Boxville LSDWP (Vans)",
-    "value": "BOXVILLE"
+    "value": "boxville"
   },
   {
     "label": "Brute Boxville LSDWP (Vans)",
-    "value": "BOXVILLE"
+    "value": "boxville"
   },
   {
     "label": "Brute Dump Truck (Street Legal) (Industrial)",
-    "value": "TIPTRUCK"
+    "value": "tiptruck"
   },
   {
     "label": "Brute Pony (Vans)",
-    "value": "PONY"
+    "value": "pony"
   },
   {
     "label": "Brute Pony (Vans)",
-    "value": "PONY"
+    "value": "pony"
   },
   {
     "label": "Brute Stockade (Commercial)",
-    "value": "STOCKADE"
+    "value": "stockade"
   },
   {
     "label": "Brute Stockade (Commercial)",
-    "value": "STOCKADE"
+    "value": "stockade"
   },
   {
     "label": "Brute Taco Truck (Vans)",
-    "value": "TACO"
+    "value": "taco"
   },
   {
     "label": "Buccaneer (Muscle)",
-    "value": "BUCCANEE"
+    "value": "buccanee"
   },
   {
     "label": "Buccaneer Custom (Muscle)",
-    "value": "BUCCANEE2"
+    "value": "buccanee2"
   },
   {
     "label": "Buckingham Alpha-Z1 (Planes)",
-    "value": "ALPHAZ1"
+    "value": "alphaz1"
   },
   {
     "label": "Buckingham Conada (Helicopters)",
-    "value": "Conada"
+    "value": "conada"
   },
   {
     "label": "Buckingham Howard NX-25 (Planes)",
-    "value": "HOWARD"
+    "value": "howard"
   },
   {
     "label": "Buckingham Luxor (Planes)",
-    "value": "LUXOR"
+    "value": "luxor"
   },
   {
     "label": "Buckingham Luxor Deluxe (Planes)",
-    "value": "LUXOR2"
+    "value": "luxor2"
   },
   {
     "label": "Buckingham Nimbus (Planes)",
-    "value": "NIMBUS"
+    "value": "nimbus"
   },
   {
     "label": "Buckingham Shamal (Planes)",
-    "value": "SHAMAL"
+    "value": "shamal"
   },
   {
     "label": "Buckingham Swift (Helicopters)",
-    "value": "SWIFT"
+    "value": "swift"
   },
   {
     "label": "Buckingham Swift Deluxe (Helicopters)",
-    "value": "SWIFT2"
+    "value": "swift2"
   },
   {
     "label": "Buckingham Vestra (Planes)",
-    "value": "VESTRA"
+    "value": "vestra"
   },
   {
     "label": "Buckingham Volatus (Helicopters)",
-    "value": "VOLATUS"
+    "value": "volatus"
   },
   {
     "label": "Buffalo EVX (Muscle)",
-    "value": "BUFFALO5"
+    "value": "buffalo5"
   },
   {
     "label": "Buffalo S (Sports)",
-    "value": "BUFFALO02"
+    "value": "buffalo02"
   },
   {
     "label": "Bugstars Burrito (Vans)",
-    "value": "BURRITO2"
+    "value": "burrito2"
   },
   {
     "label": "Burrito (Vans)",
-    "value": "BURRITO"
+    "value": "burrito"
   },
   {
     "label": "Burrito (Vans)",
-    "value": "BURRITO"
+    "value": "burrito"
   },
   {
     "label": "Burrito (Vans)",
-    "value": "BURRITO"
+    "value": "burrito"
   },
   {
     "label": "Burrito (Vans)",
-    "value": "BURRITO"
+    "value": "burrito"
   },
   {
     "label": "Bus (Service)",
-    "value": "BUS"
+    "value": "bus"
   },
   {
     "label": "Buzzard Attack Chopper (Helicopters)",
-    "value": "BUZZARD"
+    "value": "buzzard"
   },
   {
     "label": "Cable Car (Trains)",
-    "value": "CABLECAR"
+    "value": "cablecar"
   },
   {
     "label": "Caddy (Utility)",
-    "value": "CADDY3"
+    "value": "caddy"
   },
   {
     "label": "Caddy (Utility)",
-    "value": "CADDY"
+    "value": "caddy3"
   },
   {
     "label": "Caddy (Utility)",
-    "value": "CADDY"
+    "value": "caddy"
   },
   {
     "label": "Camper (Vans)",
-    "value": "CAMPER"
+    "value": "camper"
   },
   {
     "label": "Canis Freecrawler (Off-road)",
-    "value": "FREECRAWLER"
+    "value": "freecrawler"
   },
   {
     "label": "Canis Kalahari (Off-road)",
-    "value": "KALAHARI"
+    "value": "kalahari"
   },
   {
     "label": "Canis Kamacho (Off-road)",
-    "value": "KAMACHO"
+    "value": "kamacho"
   },
   {
     "label": "Canis Mesa (Off-road)",
-    "value": "MESA"
+    "value": "mesa"
   },
   {
     "label": "Canis Mesa (SUVs)",
-    "value": "MESA"
+    "value": "mesa"
   },
   {
     "label": "Canis Mesa (SUVs)",
-    "value": "MESA"
+    "value": "mesa"
   },
   {
     "label": "Canis Seminole (SUVs)",
-    "value": "SEMINOLE"
+    "value": "seminole"
   },
   {
     "label": "Canis Seminole Frontier (SUVs)",
-    "value": "SEMINOLE2"
+    "value": "seminole2"
   },
   {
     "label": "Carbon RS (Motorcycles)",
-    "value": "CARBON"
+    "value": "carbon"
   },
   {
     "label": "Carbonizzare (Sports)",
-    "value": "CARBONIZ"
+    "value": "carboniz"
   },
   {
     "label": "Cargo Plane (Planes)",
-    "value": "CARGOPL"
+    "value": "cargopl"
   },
   {
     "label": "Cargo Plane (Planes)",
-    "value": "CARGOPL"
+    "value": "cargopl"
   },
   {
     "label": "Cargobob (Helicopters)",
-    "value": "CARGOBOB"
+    "value": "cargobob"
   },
   {
     "label": "Cargobob (Helicopters)",
-    "value": "CARGOBOB"
+    "value": "cargobob"
   },
   {
     "label": "Cargobob (Helicopters)",
-    "value": "CARGOBOB"
+    "value": "cargobob"
   },
   {
     "label": "Cargobob (Helicopters)",
-    "value": "CARGOBOB"
+    "value": "cargobob"
   },
   {
     "label": "Cavalcade (SUVs)",
-    "value": "CAVCADE"
+    "value": "cavcade"
   },
   {
     "label": "Cavalcade (SUVs)",
-    "value": "CAVCADE"
+    "value": "cavcade"
   },
   {
     "label": "Chernobog (Military)",
-    "value": "CHERNOBOG"
+    "value": "chernobog"
   },
   {
     "label": "Cheval Fugitive (Sedans)",
-    "value": "FUGITIVE"
+    "value": "fugitive"
   },
   {
     "label": "Cheval Picador (Muscle)",
-    "value": "PICADOR"
+    "value": "picador"
   },
   {
     "label": "Cheval Surge (Sedans)",
-    "value": "SURGE"
+    "value": "surge"
   },
   {
     "label": "Cheval Taipan (Super)",
-    "value": "TAIPAN"
+    "value": "taipan"
   },
   {
     "label": "Cinquemila Lampadati (Sedans)",
-    "value": "CINQUEMILA"
+    "value": "cinquemila"
   },
   {
     "label": "Classique Broadway (Muscle)",
-    "value": "BROADWAY"
+    "value": "broadway"
   },
   {
     "label": "Clique Wagon (Muscle)",
-    "value": "CLIQUE2"
+    "value": "clique2"
   },
   {
     "label": "Clown Van (Vans)",
-    "value": "SPEEDO2"
+    "value": "speedo2"
   },
   {
     "label": "Cognoscenti (Armored) (Sedans)",
-    "value": "COGNOSC2"
+    "value": "cognosc2"
   },
   {
     "label": "Cognoscenti (Sedans)",
-    "value": "COGNOSC"
+    "value": "cognosc"
   },
   {
     "label": "Cognoscenti 55 (Armored) (Sedans)",
-    "value": "COG552"
+    "value": "cog552"
   },
   {
     "label": "Cognoscenti Cabrio (Coupes)",
-    "value": "COGCABRI"
+    "value": "cogcabri"
   },
   {
     "label": "Coil Cyclone (Super)",
-    "value": "CYCLONE"
+    "value": "cyclone"
   },
   {
     "label": "Coil Rocket Voltic (Super)",
-    "value": "VOLTIC2"
+    "value": "voltic2"
   },
   {
     "label": "Coil Voltic (Super)",
-    "value": "VOLTIC"
+    "value": "voltic"
   },
   {
     "label": "Crusader (Military)",
-    "value": "CRUSADER"
+    "value": "crusader"
   },
   {
     "label": "Cuban 800 (Planes)",
-    "value": "CUBAN800"
+    "value": "cuban800"
   },
   {
     "label": "Dashound (Service)",
-    "value": "COACH"
+    "value": "coach"
   },
   {
     "label": "Deathbike Deathbike Apocalypse (Motorcycles)",
-    "value": "DEATHBIKE"
+    "value": "deathbike"
   },
   {
     "label": "Deathbike Deathbike Future Shock (Motorcycles)",
-    "value": "DEATHBIKE2"
+    "value": "deathbike2"
   },
   {
     "label": "Deathbike Deathbike Nightmare (Motorcycles)",
-    "value": "DEATHBIKE3"
+    "value": "deathbike3"
   },
   {
     "label": "Declasse Asea (Sedans)",
-    "value": "ASEA"
+    "value": "asea"
   },
   {
     "label": "Declasse Asea (Sedans)",
-    "value": "ASEA"
+    "value": "asea"
   },
   {
     "label": "Declasse Burrito Custom (Vans)",
-    "value": "GBURRITO2"
+    "value": "gburrito2"
   },
   {
     "label": "Declasse Draugur (Off-road)",
-    "value": "DRAUGUR"
+    "value": "draugur"
   },
   {
     "label": "Declasse Drift Tampa (Sports)",
-    "value": "TAMPA2"
+    "value": "tampa2"
   },
   {
     "label": "Declasse Granger (SUVs)",
-    "value": "GRANGER"
+    "value": "granger"
   },
   {
     "label": "Declasse Granger 3600LX (SUVs)",
-    "value": "GRANGER2"
+    "value": "granger2"
   },
   {
     "label": "Declasse Mamba (Sports Classics)",
-    "value": "MAMBA"
+    "value": "mamba"
   },
   {
     "label": "Declasse Moonbeam (Muscle)",
-    "value": "MOONBEAM"
+    "value": "moonbeam"
   },
   {
     "label": "Declasse Moonbeam Custom (Muscle)",
-    "value": "MOONBEAM2"
+    "value": "moonbeam2"
   },
   {
     "label": "Declasse Premier (Sedans)",
-    "value": "PREMIER"
+    "value": "premier"
   },
   {
     "label": "Declasse Rhapsody (Compacts)",
-    "value": "RHAPSODY"
+    "value": "rhapsody"
   },
   {
     "label": "Declasse Sabre GT Turbo (Muscle)",
-    "value": "SABREGT"
+    "value": "sabregt"
   },
   {
     "label": "Declasse Sabre GT Turbo Custom (Muscle)",
-    "value": "SABREGT2"
+    "value": "sabregt2"
   },
   {
     "label": "Declasse Stallion (Muscle)",
-    "value": "STALION"
+    "value": "stalion"
   },
   {
     "label": "Declasse Stallion Burgershot (Muscle)",
-    "value": "STALION2"
+    "value": "stalion2"
   },
   {
     "label": "Declasse Tahoma Coupe (Muscle)",
-    "value": "TAHOMA"
+    "value": "tahoma"
   },
   {
     "label": "Declasse Tampa (Muscle)",
-    "value": "TAMPA"
+    "value": "tampa"
   },
   {
     "label": "Declasse Tornado (Sports Classics)",
-    "value": "TORNADO"
+    "value": "tornado"
   },
   {
     "label": "Declasse Tornado (Sports Classics)",
-    "value": "TORNADO"
+    "value": "tornado"
   },
   {
     "label": "Declasse Tornado Convertible (Sports Classics)",
-    "value": "TORNADO2"
+    "value": "tornado2"
   },
   {
     "label": "Declasse Tornado Custom (Sports Classics)",
-    "value": "TORNADO5"
+    "value": "tornado5"
   },
   {
     "label": "Declasse Tulip (Muscle)",
-    "value": "TULIP"
+    "value": "tulip"
   },
   {
     "label": "Declasse Tulip M-100 (Muscle)",
-    "value": "TULIP2"
+    "value": "tulip2"
   },
   {
     "label": "Declasse Vamos (Muscle)",
-    "value": "VAMOS"
+    "value": "vamos"
   },
   {
     "label": "Declasse Vigero (Muscle)",
-    "value": "VIGERO"
+    "value": "vigero"
   },
   {
     "label": "Declasse Vigero ZX (Muscle)",
-    "value": "VIGERO2"
+    "value": "vigero2"
   },
   {
     "label": "Declasse Voodoo (Muscle)",
-    "value": "VOODOO"
+    "value": "voodoo"
   },
   {
     "label": "Declasse Yosemite (Muscle)",
-    "value": "YOSEMITE"
+    "value": "yosemite"
   },
   {
     "label": "Declasse Yosemite Drift (Muscle)",
-    "value": "YOSEMITE2"
+    "value": "yosemite2"
   },
   {
     "label": "Declasse Yosemite Rancher (Off-road)",
@@ -893,323 +893,323 @@
   },
   {
     "label": "Desert Raid (Off-road)",
-    "value": "TROPHY2"
+    "value": "trophy2"
   },
   {
     "label": "Dewbauchee Champion (Super)",
-    "value": "CHAMPION"
+    "value": "champion"
   },
   {
     "label": "Dewbauchee Exemplar (Coupes)",
-    "value": "EXEMPLAR"
+    "value": "exemplar"
   },
   {
     "label": "Dewbauchee JB 700 (Sports Classics)",
-    "value": "JB700"
+    "value": "jb700"
   },
   {
     "label": "Dewbauchee JB 700W (Sports Classics)",
-    "value": "JB7002"
+    "value": "jb7002"
   },
   {
     "label": "Dewbauchee Massacro (Sports)",
-    "value": "MASSACRO"
+    "value": "massacro"
   },
   {
     "label": "Dewbauchee Massacro Racecar (Sports)",
-    "value": "MASSACRO2"
+    "value": "massacro2"
   },
   {
     "label": "Dewbauchee Rapid GT (Sports)",
-    "value": "RAPIDGT"
+    "value": "rapidgt"
   },
   {
     "label": "Dewbauchee Rapid GT (Sports)",
-    "value": "RAPIDGT"
+    "value": "rapidgt"
   },
   {
     "label": "Dewbauchee Rapid GT Classic (Sports Classics)",
-    "value": "RAPIDGT3"
+    "value": "rapidgt3"
   },
   {
     "label": "Dewbauchee Seven-70 (Sports)",
-    "value": "SEVEN70"
+    "value": "seven70"
   },
   {
     "label": "Dewbauchee Specter (Sports)",
-    "value": "SPECTER"
+    "value": "specter"
   },
   {
     "label": "Dewbauchee Vagner (Super)",
-    "value": "VAGNER"
+    "value": "vagner"
   },
   {
     "label": "Dilettante (Compacts)",
-    "value": "DILETTAN"
+    "value": "dilettan"
   },
   {
     "label": "Dilettante (Compacts)",
-    "value": "DILETTAN"
+    "value": "dilettan"
   },
   {
     "label": "Dinka Akuma (Motorcycles)",
-    "value": "AKUMA"
+    "value": "akuma"
   },
   {
     "label": "Dinka Blista (Compacts)",
-    "value": "BLISTA"
+    "value": "blista"
   },
   {
     "label": "Dinka Blista Compact (Sports)",
-    "value": "BLISTA2"
+    "value": "blista2"
   },
   {
     "label": "Dinka Blista Go Go Monkey (Sports)",
-    "value": "BLISTA3"
+    "value": "blista3"
   },
   {
     "label": "Dinka Blista Kanjo (Compacts)",
-    "value": "KANJO"
+    "value": "kanjo"
   },
   {
     "label": "Dinka Double-T (Motorcycles)",
-    "value": "DOUBLE"
+    "value": "double"
   },
   {
     "label": "Dinka Enduro (Motorcycles)",
-    "value": "ENDURO"
+    "value": "enduro"
   },
   {
     "label": "Dinka Jester (Sports)",
-    "value": "JESTER"
+    "value": "jester"
   },
   {
     "label": "Dinka Jester Classic (Sports)",
-    "value": "JESTER3"
+    "value": "jester3"
   },
   {
     "label": "Dinka Jester RR (Sports)",
-    "value": "JESTER4"
+    "value": "jester4"
   },
   {
     "label": "Dinka Jester Racecar (Sports)",
-    "value": "JESTER2"
+    "value": "jester2"
   },
   {
     "label": "Dinka Kanjo SJ (Coupes)",
-    "value": "KANJOSJ"
+    "value": "kanjosj"
   },
   {
     "label": "Dinka Marquis (Boats)",
-    "value": "MARQUIS"
+    "value": "marquis"
   },
   {
     "label": "Dinka Postlude (Coupes)",
-    "value": "POSTLUDE"
+    "value": "postlude"
   },
   {
     "label": "Dinka RT3000 (Sports)",
-    "value": "RT3000"
+    "value": "rt3000"
   },
   {
     "label": "Dinka Sugoi (Sports)",
-    "value": "Sugoi"
+    "value": "sugoi"
   },
   {
     "label": "Dinka Thrust (Motorcycles)",
-    "value": "THRUST"
+    "value": "thrust"
   },
   {
     "label": "Dinka Verus (Off-road)",
-    "value": "VERUS"
+    "value": "verus"
   },
   {
     "label": "Dinka Vindicator (Motorcycles)",
-    "value": "VINDICATOR"
+    "value": "vindicator"
   },
   {
     "label": "Docktug (Utility)",
-    "value": "DOCKTUG"
+    "value": "docktug"
   },
   {
     "label": "Dominator (Muscle)",
-    "value": "DOMINATO"
+    "value": "dominato"
   },
   {
     "label": "Dozer (Industrial)",
-    "value": "BULLDOZE"
+    "value": "bulldoze"
   },
   {
     "label": "Dundreary Regina (Sedans)",
-    "value": "REGINA"
+    "value": "regina"
   },
   {
     "label": "Dundreary Stretch (Sedans)",
-    "value": "STRETCH"
+    "value": "stretch"
   },
   {
     "label": "Dundreary Virgo Classic (Muscle)",
-    "value": "VIRGO3"
+    "value": "virgo3"
   },
   {
     "label": "Dundreary Virgo Custom Classic (Muscle)",
-    "value": "VIRGO2"
+    "value": "virgo2"
   },
   {
     "label": "Dune (Service)",
-    "value": "RALLYTRUCK"
+    "value": "rallytruck"
   },
   {
     "label": "Dune FAV (Off-road)",
-    "value": "DUNE3"
+    "value": "dune3"
   },
   {
     "label": "Duneloader (Off-road)",
-    "value": "DLOADER"
+    "value": "dloader"
   },
   {
     "label": "Emperor ETR1 (Super)",
-    "value": "SHEAVA"
+    "value": "sheava"
   },
   {
     "label": "Emperor Habanero (SUVs)",
-    "value": "HABANERO"
+    "value": "habanero"
   },
   {
     "label": "Emperor Vectre (Sports)",
-    "value": "VECTRE"
+    "value": "vectre"
   },
   {
     "label": "Enus Cognoscenti 55 (Sedans)",
-    "value": "COG55"
+    "value": "cog55"
   },
   {
     "label": "Enus Deity (Sedans)",
-    "value": "DEITY"
+    "value": "deity"
   },
   {
     "label": "Enus Huntley S (SUVs)",
-    "value": "HUNTLEY"
+    "value": "huntley"
   },
   {
     "label": "Enus Jubilee (SUVs)",
-    "value": "JUBILEE"
+    "value": "jubilee"
   },
   {
     "label": "Enus Paragon (Sports)",
-    "value": "PARAGON"
+    "value": "paragon"
   },
   {
     "label": "Enus Stafford (Sedans)",
-    "value": "STAFFORD"
+    "value": "stafford"
   },
   {
     "label": "Enus Super Diamond (Sedans)",
-    "value": "SUPERD"
+    "value": "superd"
   },
   {
     "label": "Enus Windsor (Coupes)",
-    "value": "WINDSOR"
+    "value": "windsor"
   },
   {
     "label": "Enus Windsor Drop (Coupes)",
-    "value": "WINDSOR2"
+    "value": "windsor2"
   },
   {
     "label": "F-160 Raiju (Planes)",
-    "value": "RAIJU"
+    "value": "raiju"
   },
   {
     "label": "FH-1 Hunter (Helicopters)",
-    "value": "HUNTER"
+    "value": "hunter"
   },
   {
     "label": "FIB (Emergency)",
-    "value": "FBI2"
+    "value": "fbi"
   },
   {
     "label": "FIB (Emergency)",
-    "value": "FBI"
+    "value": "fbi2"
   },
   {
     "label": "Faggio Sport (Motorcycles)",
-    "value": "FAGGION"
+    "value": "faggion"
   },
   {
     "label": "Fathom FQ2 (SUVs)",
-    "value": "FQ2"
+    "value": "fq2"
   },
   {
     "label": "Feltzer (Sports)",
-    "value": "FELTZER"
+    "value": "feltzer"
   },
   {
     "label": "Festival Bus (Service)",
-    "value": "PBUS2"
+    "value": "pbus2"
   },
   {
     "label": "Fieldmaster (Utility)",
-    "value": "TRACTOR2"
+    "value": "tractor2"
   },
   {
     "label": "Fieldmaster (Utility)",
-    "value": "TRACTOR2"
+    "value": "tractor2"
   },
   {
     "label": "Fire Truck (Emergency)",
-    "value": "FIRETRUK"
+    "value": "firetruk"
   },
   {
     "label": "Forklift (Utility)",
-    "value": "FORK"
+    "value": "fork"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Freight Train (Trains)",
-    "value": "FREIGHT"
+    "value": "freight"
   },
   {
     "label": "Furore GT (Sports)",
-    "value": "FURORE"
+    "value": "furore"
   },
   {
     "label": "Fusilade (Sports)",
-    "value": "FUSILADE"
+    "value": "fusilade"
   },
   {
     "label": "Future Shock Bruiser (Off-road)",
-    "value": "BRUISER2"
+    "value": "bruiser2"
   },
   {
     "label": "Future Shock Brutus (Off-road)",
-    "value": "BRUTUS2"
+    "value": "brutus2"
   },
   {
     "label": "Future Shock Cerberus (Commercial)",
@@ -1217,239 +1217,239 @@
   },
   {
     "label": "Future Shock Dominator (Muscle)",
-    "value": "DOMINATOR5"
+    "value": "dominator5"
   },
   {
     "label": "Future Shock Sasquatch (Off-road)",
-    "value": "MONSTER4"
+    "value": "monster4"
   },
   {
     "label": "Future Shock Scarab (Military)",
-    "value": "SCARAB2"
+    "value": "scarab2"
   },
   {
     "label": "Future Shock Slamvan (Muscle)",
-    "value": "SLAMVAN5"
+    "value": "slamvan5"
   },
   {
     "label": "Future Shock ZR380 (Sports)",
-    "value": "ZR3802"
+    "value": "zr3802"
   },
   {
     "label": "Gallivanter Baller (SUVs)",
-    "value": "BALLER"
+    "value": "baller"
   },
   {
     "label": "Gallivanter Baller II (SUVs)",
-    "value": "BALLER2"
+    "value": "baller2"
   },
   {
     "label": "Gallivanter Baller LE (Armored) (SUVs)",
-    "value": "BALLER5"
+    "value": "baller5"
   },
   {
     "label": "Gallivanter Baller LE (SUVs)",
-    "value": "BALLER3"
+    "value": "baller3"
   },
   {
     "label": "Gallivanter Baller LE LWB (Armored) (SUVs)",
-    "value": "BALLER6"
+    "value": "baller6"
   },
   {
     "label": "Gallivanter Baller LE LWB (SUVs)",
-    "value": "BALLER4"
+    "value": "baller4"
   },
   {
     "label": "Gallivanter Baller ST (SUVs)",
-    "value": "BALLER7"
+    "value": "baller7"
   },
   {
     "label": "Gang Burrito (Vans)",
-    "value": "GBURRITO"
+    "value": "gburrito"
   },
   {
     "label": "Grotti Bestia GTS (Sports)",
-    "value": "BESTIAGTS"
+    "value": "bestiagts"
   },
   {
     "label": "Grotti Brioso 300 (Compacts)",
-    "value": "BRIOSO2"
+    "value": "brioso2"
   },
   {
     "label": "Grotti Brioso 300 Widebody (Compacts)",
-    "value": "BRIOSO3"
+    "value": "brioso3"
   },
   {
     "label": "Grotti Brioso R/A (Compacts)",
-    "value": "BRIOSO"
+    "value": "brioso"
   },
   {
     "label": "Grotti Cheetah (Super)",
-    "value": "CHEETAH"
+    "value": "cheetah"
   },
   {
     "label": "Grotti Cheetah Classic (Sports Classics)",
-    "value": "CHEETAH2"
+    "value": "cheetah2"
   },
   {
     "label": "Grotti Furia (Super)",
-    "value": "FURIA"
+    "value": "furia"
   },
   {
     "label": "Grotti GT500 (Sports Classics)",
-    "value": "GT500"
+    "value": "gt500"
   },
   {
     "label": "Grotti Stinger (Sports Classics)",
-    "value": "STINGER"
+    "value": "stinger"
   },
   {
     "label": "Grotti Turismo Classic (Sports Classics)",
-    "value": "TURISMO2"
+    "value": "turismo2"
   },
   {
     "label": "Grotti Turismo R (Super)",
-    "value": "TURISMOR"
+    "value": "turismor"
   },
   {
     "label": "Grotti Visione (Super)",
-    "value": "VISIONE"
+    "value": "visione"
   },
   {
     "label": "Grotti X80 Proto (Super)",
-    "value": "PROTOTIPO"
+    "value": "prototipo"
   },
   {
     "label": "HVY Cement Mixer (Industrial)",
-    "value": "MIXER"
+    "value": "mixer"
   },
   {
     "label": "HVY Cement Mixer 2 (Industrial)",
-    "value": "MIXER2"
+    "value": "mixer2"
   },
   {
     "label": "HVY Dock Handler (Industrial)",
-    "value": "HANDLER"
+    "value": "handler"
   },
   {
     "label": "HVY Dump Truck (Off Road) (Industrial)",
-    "value": "DUMP"
+    "value": "dump"
   },
   {
     "label": "HVY cutter (Industrial)",
-    "value": "CUTTER"
+    "value": "cutter"
   },
   {
     "label": "Half-track (Military)",
-    "value": "HALFTRACK"
+    "value": "halftrack"
   },
   {
     "label": "Hauler Custom (Commercial)",
-    "value": "HAULER2"
+    "value": "hauler2"
   },
   {
     "label": "Hijak Ruston (Sports)",
-    "value": "RUSTON"
+    "value": "ruston"
   },
   {
     "label": "Hot Rod Blazer (Off-road)",
-    "value": "BLAZER03"
+    "value": "blazer03"
   },
   {
     "label": "Hotring Everon (Sports)",
-    "value": "EVERON2"
+    "value": "everon2"
   },
   {
     "label": "Hotring Hellfire (Sports)",
-    "value": "GAUNTLET6"
+    "value": "gauntlet6"
   },
   {
     "label": "Hotring Sabre (Sports)",
-    "value": "HOTRING"
+    "value": "hotring"
   },
   {
     "label": "Hydra (Planes)",
-    "value": "HYDRA"
+    "value": "hydra"
   },
   {
     "label": "I-Wagen Obey (SUVs)",
-    "value": "IWAGEN"
+    "value": "iwagen"
   },
   {
     "label": "Imponte Beater Dukes (Muscle)",
-    "value": "DUKES3"
+    "value": "dukes3"
   },
   {
     "label": "Imponte Deluxo (Sports Classics)",
-    "value": "DELUXO"
+    "value": "deluxo"
   },
   {
     "label": "Imponte Duke O'Death (Muscle)",
-    "value": "DUKES2"
+    "value": "dukes2"
   },
   {
     "label": "Imponte Dukes (Muscle)",
-    "value": "DUKES"
+    "value": "dukes"
   },
   {
     "label": "Imponte Phoenix (Muscle)",
-    "value": "PHOENIX"
+    "value": "phoenix"
   },
   {
     "label": "Imponte Ruiner (Muscle)",
-    "value": "RUINER"
+    "value": "ruiner"
   },
   {
     "label": "Imponte Ruiner (Muscle)",
-    "value": "RUINER"
+    "value": "ruiner"
   },
   {
     "label": "Imponte Ruiner 2000 (Muscle)",
-    "value": "RUINER2"
+    "value": "ruiner2"
   },
   {
     "label": "Imponte Ruiner ZZ-8 (Muscle)",
-    "value": "RUINER4"
+    "value": "ruiner4"
   },
   {
     "label": "Inductor (Cycles)",
-    "value": "INDUCTOR"
+    "value": "inductor"
   },
   {
     "label": "Injection (Off-road)",
-    "value": "BFINJECT"
+    "value": "bfinject"
   },
   {
     "label": "Insurgent (Off-road)",
-    "value": "INSURGENT2"
+    "value": "insurgent2"
   },
   {
     "label": "Insurgent Pick-Up (Off-road)",
-    "value": "INSURGENT"
+    "value": "insurgent"
   },
   {
     "label": "Insurgent Pick-Up Custom (Off-road)",
-    "value": "INSURGENT3"
+    "value": "insurgent3"
   },
   {
     "label": "Invade and Persuade Tank (Military)",
-    "value": "MINITANK"
+    "value": "minitank"
   },
   {
     "label": "Invetero Coquette (Sports)",
-    "value": "COQUETTE"
+    "value": "coquette"
   },
   {
     "label": "Invetero Coquette BlackFin (Muscle)",
-    "value": "COQUETTE3"
+    "value": "coquette3"
   },
   {
     "label": "Invetero Coquette Classic (Sports Classics)",
-    "value": "COQUETTE2"
+    "value": "coquette2"
   },
   {
     "label": "Invetero Coquette D10 (Sports)",
-    "value": "COQUETTE4"
+    "value": "coquette4"
   },
   {
     "label": "Itali GTO Stinger TT (Sports)",
@@ -1457,63 +1457,63 @@
   },
   {
     "label": "Jet (Planes)",
-    "value": "JET"
+    "value": "jet"
   },
   {
     "label": "Jobuilt Dump Truck (Street Legal) (Industrial)",
-    "value": "RUBBLE"
+    "value": "rubble"
   },
   {
     "label": "Jobuilt Hauler (Commercial)",
-    "value": "HAULER"
+    "value": "hauler"
   },
   {
     "label": "Jobuilt Phantom (Commercial)",
-    "value": "PHANTOM"
+    "value": "phantom"
   },
   {
     "label": "Jobuilt Phantom Custom (Commercial)",
-    "value": "PHANTOM3"
+    "value": "phantom3"
   },
   {
     "label": "Junk Energy Inductor (Cycles)",
-    "value": "INDUCTOR2"
+    "value": "inductor2"
   },
   {
     "label": "Karin 190Z (Sports Classics)",
-    "value": "Z190"
+    "value": "z190"
   },
   {
     "label": "Karin BeeJay XL (SUVs)",
-    "value": "BJXL"
+    "value": "bjxl"
   },
   {
     "label": "Karin Boor (Off-road)",
-    "value": "BOOR"
+    "value": "boor"
   },
   {
     "label": "Karin Calico GTF (Sports)",
-    "value": "CALICO"
+    "value": "calico"
   },
   {
     "label": "Karin Everon Hotring (Off-road)",
-    "value": "EVERON"
+    "value": "everon"
   },
   {
     "label": "Karin Futo (Sports)",
-    "value": "FUTO"
+    "value": "futo"
   },
   {
     "label": "Karin Futo GTX (Sports)",
-    "value": "FUTO2"
+    "value": "futo2"
   },
   {
     "label": "Karin Intruder (Sedans)",
-    "value": "INTRUDER"
+    "value": "intruder"
   },
   {
     "label": "Karin Kuruma (Sports)",
-    "value": "KURUMA"
+    "value": "kuruma"
   },
   {
     "label": "Karin Previon (Coupes)",
@@ -1521,311 +1521,311 @@
   },
   {
     "label": "Karin Sultan (Sports)",
-    "value": "SULTAN"
+    "value": "sultan"
   },
   {
     "label": "Karin Sultan Classic Custom (Sports)",
-    "value": "SULTAN3"
+    "value": "sultan3"
   },
   {
     "label": "Karin Sultan Custom (Sports)",
-    "value": "SULTAN2"
+    "value": "sultan2"
   },
   {
     "label": "Karin Sultan RS (Super)",
-    "value": "SULTANRS"
+    "value": "sultanrs"
   },
   {
     "label": "Karin2 kuruma2 (Sports)",
-    "value": "KURUMA2"
+    "value": "kuruma2"
   },
   {
     "label": "Khamelion (Sports)",
-    "value": "KHAMEL"
+    "value": "khamel"
   },
   {
     "label": "Kosatka (Boats)",
-    "value": "KOSATKA"
+    "value": "kosatka"
   },
   {
     "label": "Kraken (Boats)",
-    "value": "SUBMERS2"
+    "value": "submers2"
   },
   {
     "label": "Kurtz 31 Patrol Boat (Boats)",
-    "value": "PATROLBOAT"
+    "value": "patrolboat"
   },
   {
     "label": "LCC Avarus (Motorcycles)",
-    "value": "AVARUS"
+    "value": "avarus"
   },
   {
     "label": "LCC Hexer (Motorcycles)",
-    "value": "HEXER"
+    "value": "hexer"
   },
   {
     "label": "LCC Sanctus (Motorcycles)",
-    "value": "SANCTUS"
+    "value": "sanctus"
   },
   {
     "label": "LF-22 Starling (Planes)",
-    "value": "STARLING"
+    "value": "starling"
   },
   {
     "label": "LLC Innovation (Motorcycles)",
-    "value": "INNOVATION"
+    "value": "innovation"
   },
   {
     "label": "La Coureuse (Sports)",
-    "value": "COUREUR"
+    "value": "coureur"
   },
   {
     "label": "Lampadati Casco (Sports Classics)",
-    "value": "CASCO"
+    "value": "casco"
   },
   {
     "label": "Lampadati Corsita (Sports)",
-    "value": "CORSITA"
+    "value": "corsita"
   },
   {
     "label": "Lampadati Felon (Coupes)",
-    "value": "FELON"
+    "value": "felon"
   },
   {
     "label": "Lampadati Felon GT (Coupes)",
-    "value": "FELON2"
+    "value": "felon2"
   },
   {
     "label": "Lampadati Komoda (Sports)",
-    "value": "KOMODA"
+    "value": "komoda"
   },
   {
     "label": "Lampadati Michelli GT (Sports Classics)",
-    "value": "MICHELLI"
+    "value": "michelli"
   },
   {
     "label": "Lampadati Novak (SUVs)",
-    "value": "Novak"
+    "value": "novak"
   },
   {
     "label": "Lampadati Pigalle (Sports Classics)",
-    "value": "PIGALLE"
+    "value": "pigalle"
   },
   {
     "label": "Lampadati Tigon (Super)",
-    "value": "TIGON"
+    "value": "tigon"
   },
   {
     "label": "Lampadati Toro (Boats)",
-    "value": "TORO"
+    "value": "toro"
   },
   {
     "label": "Lampadati Toro (Boats)",
-    "value": "TORO"
+    "value": "toro"
   },
   {
     "label": "Lampadati Tropos Rallye (Sports)",
-    "value": "TROPOS"
+    "value": "tropos"
   },
   {
     "label": "Lampadati Viseris (Sports Classics)",
-    "value": "VISERIS"
+    "value": "viseris"
   },
   {
     "label": "Landstalker (SUVs)",
-    "value": "LANDSTAL"
+    "value": "landstal"
   },
   {
     "label": "Landstalker XL (SUVs)",
-    "value": "LANDSTLKR2"
+    "value": "landstlkr2"
   },
   {
     "label": "Lawn Mower (Utility)",
-    "value": "MOWER"
+    "value": "mower"
   },
   {
     "label": "Liberator (Off-road)",
-    "value": "MONSTER"
+    "value": "monster"
   },
   {
     "label": "Lifeguard (Emergency)",
-    "value": "LGUARD"
+    "value": "lguard"
   },
   {
     "label": "MTL Dump Truck (Street Legal) (Industrial)",
-    "value": "TIPTRUCK2"
+    "value": "tiptruck2"
   },
   {
     "label": "MTL Flatbed Truck (Industrial)",
-    "value": "FLATBED"
+    "value": "flatbed"
   },
   {
     "label": "MTL Packer (Commercial)",
-    "value": "PACKER"
+    "value": "packer"
   },
   {
     "label": "MTL Pounder (Commercial)",
-    "value": "POUNDER"
+    "value": "pounder"
   },
   {
     "label": "Maibatsu Manchez (Motorcycles)",
-    "value": "MANCHEZ"
+    "value": "manchez"
   },
   {
     "label": "Maibatsu Manchez Scout (Motorcycles)",
-    "value": "MANCHEZ2"
+    "value": "manchez2"
   },
   {
     "label": "Maibatsu Manchez Scout Classic (Motorcycles)",
-    "value": "MANCHEZ3"
+    "value": "manchez3"
   },
   {
     "label": "Maibatsu Mule (Commercial)",
-    "value": "MULE"
+    "value": "mule"
   },
   {
     "label": "Maibatsu Mule (Commercial)",
-    "value": "MULE"
+    "value": "mule"
   },
   {
     "label": "Maibatsu Mule (Commercial)",
-    "value": "MULE"
+    "value": "mule"
   },
   {
     "label": "Maibatsu Mule with Swinging Doors & Side Step (Commercial)",
-    "value": "MULE4"
+    "value": "mule4"
   },
   {
     "label": "Maibatsu Mule with Swinging Doors & Step Bumper (Commercial)",
-    "value": "MULE5"
+    "value": "mule5"
   },
   {
     "label": "Maibatsu Penumbra (Sports)",
-    "value": "PENUMBRA"
+    "value": "penumbra"
   },
   {
     "label": "Maibatsu Penumbra FF (Sports)",
-    "value": "PENUMBRA2"
+    "value": "penumbra2"
   },
   {
     "label": "Mammoth Dodo (Planes)",
-    "value": "DODO"
+    "value": "dodo"
   },
   {
     "label": "Mammoth Patriot (SUVs)",
-    "value": "PATRIOT"
+    "value": "patriot"
   },
   {
     "label": "Mammoth Patriot Stretch (SUVs)",
-    "value": "PATRIOT2"
+    "value": "patriot2"
   },
   {
     "label": "Marshall (Off-road)",
-    "value": "MARSHALL"
+    "value": "marshall"
   },
   {
     "label": "Maxwell Asbo (Compacts)",
-    "value": "ASBO"
+    "value": "asbo"
   },
   {
     "label": "Maxwell Vagrant (Off-road)",
-    "value": "VAGRANT"
+    "value": "vagrant"
   },
   {
     "label": "Menacer (Off-road)",
-    "value": "MENACER"
+    "value": "menacer"
   },
   {
     "label": "Mil-Spec Patriot Military (Off-road)",
-    "value": "PATRIOT3"
+    "value": "patriot3"
   },
   {
     "label": "Miljet (Planes)",
-    "value": "MILJET"
+    "value": "miljet"
   },
   {
     "label": "Mobile Operations Center (Utility)",
-    "value": "TRLARGE"
+    "value": "trlarge"
   },
   {
     "label": "Mogul (Planes)",
-    "value": "MOGUL"
+    "value": "mogul"
   },
   {
     "label": "MonstroCiti (Off-road)",
-    "value": "MONSTROCITI"
+    "value": "monstrociti"
   },
   {
     "label": "NULL (Utility)",
-    "value": "FREIGHTTRAI"
+    "value": "graintraile"
   },
   {
     "label": "NULL (Utility)",
-    "value": "TANKER"
+    "value": "tanker"
   },
   {
     "label": "NULL (Utility)",
-    "value": "GRAINTRAILE"
+    "value": "freighttrai"
   },
   {
     "label": "Nagasaki BF400 (Motorcycles)",
-    "value": "BF400"
+    "value": "bf400"
   },
   {
     "label": "Nagasaki Blazer Aqua (Off-road)",
-    "value": "BLAZER5"
+    "value": "blazer5"
   },
   {
     "label": "Nagasaki Blazer Lifeguard (Off-road)",
-    "value": "BLAZER2"
+    "value": "blazer2"
   },
   {
     "label": "Nagasaki Chimera (Motorcycles)",
-    "value": "CHIMERA"
+    "value": "chimera"
   },
   {
     "label": "Nagasaki Dinghy 2-Seater (Boats)",
-    "value": "DINGHY"
+    "value": "dinghy"
   },
   {
     "label": "Nagasaki Dinghy 2-Seater (Boats)",
-    "value": "DINGHY"
+    "value": "dinghy"
   },
   {
     "label": "Nagasaki Dinghy 2-Seater (Boats)",
-    "value": "DINGHY"
+    "value": "dinghy"
   },
   {
     "label": "Nagasaki Dinghy 2-Seater (Boats)",
-    "value": "DINGHY"
+    "value": "dinghy"
   },
   {
     "label": "Nagasaki Havok (Helicopters)",
-    "value": "HAVOK"
+    "value": "havok"
   },
   {
     "label": "Nagasaki Outlaw (Off-road)",
-    "value": "OUTLAW"
+    "value": "outlaw"
   },
   {
     "label": "Nagasaki Shinobi (Motorcycles)",
-    "value": "SHINOBI"
+    "value": "shinobi"
   },
   {
     "label": "Nagasaki Shotaro (Motorcycles)",
-    "value": "SHOTARO"
+    "value": "shotaro"
   },
   {
     "label": "Nagasaki Stryder (Motorcycles)",
-    "value": "Stryder"
+    "value": "stryder"
   },
   {
     "label": "Nightmare Bruiser (Off-road)",
-    "value": "BRUISER3"
+    "value": "bruiser3"
   },
   {
     "label": "Nightmare Brutus (Off-road)",
-    "value": "BRUTUS3"
+    "value": "brutus3"
   },
   {
     "label": "Nightmare Cerberus (Commercial)",
@@ -1833,55 +1833,55 @@
   },
   {
     "label": "Nightmare Dominator (Muscle)",
-    "value": "DOMINATOR6"
+    "value": "dominator6"
   },
   {
     "label": "Nightmare Sasquatch (Off-road)",
-    "value": "MONSTER5"
+    "value": "monster5"
   },
   {
     "label": "Nightmare Scarab (Military)",
-    "value": "SCARAB3"
+    "value": "scarab3"
   },
   {
     "label": "Nightmare Slamvan (Muscle)",
-    "value": "SLAMVAN6"
+    "value": "slamvan6"
   },
   {
     "label": "Nightmare ZR380 (Sports)",
-    "value": "ZR3803"
+    "value": "zr3803"
   },
   {
     "label": "Nightshade (Muscle)",
-    "value": "NITESHAD"
+    "value": "niteshad"
   },
   {
     "label": "Nightshark (Off-road)",
-    "value": "NIGHTSHARK"
+    "value": "nightshark"
   },
   {
     "label": "Obey 10F (Sports)",
-    "value": "TENF"
+    "value": "tenf"
   },
   {
     "label": "Obey 10F Widebody (Sports)",
-    "value": "TENF2"
+    "value": "tenf2"
   },
   {
     "label": "Obey 8F Drafter (Sports)",
-    "value": "DRAFTER"
+    "value": "drafter"
   },
   {
     "label": "Obey 9F (Sports)",
-    "value": "NINEF"
+    "value": "ninef"
   },
   {
     "label": "Obey 9F Cabrio (Sports)",
-    "value": "NINEF2"
+    "value": "ninef2"
   },
   {
     "label": "Obey Omnis e-GT (Sports)",
-    "value": "OMNISEGT"
+    "value": "omnisegt"
   },
   {
     "label": "Obey Rocoto (SUVs)",
@@ -1889,35 +1889,35 @@
   },
   {
     "label": "Obey Tailgater S (Sedans)",
-    "value": "TAILGATER2"
+    "value": "tailgater2"
   },
   {
     "label": "Ocelot Ardent (Sports Classics)",
-    "value": "ARDENT"
+    "value": "ardent"
   },
   {
     "label": "Ocelot F620 (Coupes)",
-    "value": "F620"
+    "value": "f620"
   },
   {
     "label": "Ocelot Jackal (Coupes)",
-    "value": "JACKAL"
+    "value": "jackal"
   },
   {
     "label": "Ocelot Jugular (Sports)",
-    "value": "JUGULAR"
+    "value": "jugular"
   },
   {
     "label": "Ocelot Locust (Sports)",
-    "value": "LOCUST"
+    "value": "locust"
   },
   {
     "label": "Ocelot Lynx (Sports)",
-    "value": "LYNX"
+    "value": "lynx"
   },
   {
     "label": "Ocelot Pariah (Sports)",
-    "value": "PARIAH"
+    "value": "pariah"
   },
   {
     "label": "Ocelot Penetrator (Super)",
@@ -1925,235 +1925,235 @@
   },
   {
     "label": "Ocelot Stromberg (Sports Classics)",
-    "value": "STROMBERG"
+    "value": "stromberg"
   },
   {
     "label": "Ocelot Swinger (Sports Classics)",
-    "value": "Swinger"
+    "value": "swinger"
   },
   {
     "label": "Ocelot Virtue (Super)",
-    "value": "VIRTUE"
+    "value": "virtue"
   },
   {
     "label": "Ocelot XA-21 (Super)",
-    "value": "XA21"
+    "value": "xa21"
   },
   {
     "label": "Oppressor Mk II (Motorcycles)",
-    "value": "OPPRESSOR2"
+    "value": "oppressor2"
   },
   {
     "label": "Overflod Entity MT (Super)",
-    "value": "ENTITY3"
+    "value": "entity3"
   },
   {
     "label": "P-45 Nokota (Planes)",
-    "value": "NOKOTA"
+    "value": "nokota"
   },
   {
     "label": "P-996 LAZER (Planes)",
-    "value": "LAZER"
+    "value": "lazer"
   },
   {
     "label": "Paragon R (Armored) (Sports)",
-    "value": "PARAGON2"
+    "value": "paragon2"
   },
   {
     "label": "Park Ranger (Emergency)",
-    "value": "PRANGER"
+    "value": "pranger"
   },
   {
     "label": "Pegassi Bati 801 (Motorcycles)",
-    "value": "BATI"
+    "value": "bati"
   },
   {
     "label": "Pegassi Bati 801RR (Motorcycles)",
-    "value": "BATI2"
+    "value": "bati2"
   },
   {
     "label": "Pegassi Esskey (Motorcycles)",
-    "value": "ESSKEY"
+    "value": "esskey"
   },
   {
     "label": "Pegassi FCR 1000 (Motorcycles)",
-    "value": "FCR"
+    "value": "fcr"
   },
   {
     "label": "Pegassi FCR 1000 Custom (Motorcycles)",
-    "value": "FCR2"
+    "value": "fcr2"
   },
   {
     "label": "Pegassi Faggio Mod (Motorcycles)",
-    "value": "FAGGIO3"
+    "value": "faggio3"
   },
   {
     "label": "Pegassi Faggio Sport (Motorcycles)",
-    "value": "FAGGIO"
+    "value": "faggio"
   },
   {
     "label": "Pegassi Ignus (Super)",
-    "value": "IGNUS"
+    "value": "ignus"
   },
   {
     "label": "Pegassi Infernus (Super)",
-    "value": "INFERNUS"
+    "value": "infernus"
   },
   {
     "label": "Pegassi Infernus Classic (Sports Classics)",
-    "value": "INFERNUS2"
+    "value": "infernus2"
   },
   {
     "label": "Pegassi Monroe (Sports Classics)",
-    "value": "MONROE"
+    "value": "monroe"
   },
   {
     "label": "Pegassi Oppressor (Motorcycles)",
-    "value": "OPPRESSOR"
+    "value": "oppressor"
   },
   {
     "label": "Pegassi Osiris (Super)",
-    "value": "OSIRIS"
+    "value": "osiris"
   },
   {
     "label": "Pegassi Reaper (Super)",
-    "value": "REAPER"
+    "value": "reaper"
   },
   {
     "label": "Pegassi Ruffian (Motorcycles)",
-    "value": "RUFFIAN"
+    "value": "ruffian"
   },
   {
     "label": "Pegassi Speeder (Boats)",
-    "value": "SPEEDER"
+    "value": "speeder"
   },
   {
     "label": "Pegassi Speeder (Boats)",
-    "value": "SPEEDER"
+    "value": "speeder"
   },
   {
     "label": "Pegassi Tempesta (Super)",
-    "value": "TEMPESTA"
+    "value": "tempesta"
   },
   {
     "label": "Pegassi Tezeract (Super)",
-    "value": "TEZERACT"
+    "value": "tezeract"
   },
   {
     "label": "Pegassi Toreador (Sports Classics)",
-    "value": "TOREADOR"
+    "value": "toreador"
   },
   {
     "label": "Pegassi Torero (Sports Classics)",
-    "value": "TORERO"
+    "value": "torero"
   },
   {
     "label": "Pegassi Torero XO (Super)",
-    "value": "TORERO2"
+    "value": "torero2"
   },
   {
     "label": "Pegassi Toros (SUVs)",
-    "value": "TOROS"
+    "value": "toros"
   },
   {
     "label": "Pegassi Vacca (Super)",
-    "value": "VACCA"
+    "value": "vacca"
   },
   {
     "label": "Pegassi Vortex (Motorcycles)",
-    "value": "VORTEX"
+    "value": "vortex"
   },
   {
     "label": "Pegassi Zentorno (Super)",
-    "value": "ZENTORNO"
+    "value": "zentorno"
   },
   {
     "label": "Pegassi Zorrusso (Super)",
-    "value": "ZORRUSSO"
+    "value": "zorrusso"
   },
   {
     "label": "Pfister 811 (Super)",
-    "value": "PFISTER811"
+    "value": "pfister811"
   },
   {
     "label": "Pfister Astron (SUVs)",
-    "value": "ASTRON"
+    "value": "astron"
   },
   {
     "label": "Pfister Comet (Sports)",
-    "value": "COMET2"
+    "value": "comet2"
   },
   {
     "label": "Pfister Comet Retro Custom (Sports)",
-    "value": "COMET3"
+    "value": "comet3"
   },
   {
     "label": "Pfister Comet S2 (Sports)",
-    "value": "COMET6"
+    "value": "comet6"
   },
   {
     "label": "Pfister Comet SR (Sports)",
-    "value": "COMET5"
+    "value": "comet5"
   },
   {
     "label": "Pfister Comet Safari (Sports)",
-    "value": "COMET4"
+    "value": "comet4"
   },
   {
     "label": "Pfister Growler (Sports)",
-    "value": "GROWLER"
+    "value": "growler"
   },
   {
     "label": "Pfister Neon (Sports)",
-    "value": "NEON"
+    "value": "neon"
   },
   {
     "label": "Phantom Wedge (Commercial)",
-    "value": "PHANTOM2"
+    "value": "phantom2"
   },
   {
     "label": "Pisswasser Dominator (Muscle)",
-    "value": "DOMINATO2"
+    "value": "dominato2"
   },
   {
     "label": "Police Bike (Emergency)",
-    "value": "POLICEB"
+    "value": "policeb"
   },
   {
     "label": "Police Cruiser (Emergency)",
-    "value": "POLICE"
+    "value": "police"
   },
   {
     "label": "Police Cruiser (Emergency)",
-    "value": "POLICE2"
+    "value": "police"
   },
   {
     "label": "Police Cruiser (Emergency)",
-    "value": "POLICE"
+    "value": "police2"
   },
   {
     "label": "Police Maverick (Helicopters)",
-    "value": "POLMAV"
+    "value": "polmav"
   },
   {
     "label": "Police Predator (Boats)",
-    "value": "PREDATOR"
+    "value": "predator"
   },
   {
     "label": "Police Rancher (Emergency)",
-    "value": "POLICEO1"
+    "value": "policeo1"
   },
   {
     "label": "Police Riot (Emergency)",
-    "value": "RIOT"
+    "value": "riot"
   },
   {
     "label": "Police Roadcruiser (Emergency)",
-    "value": "POLICEO2"
+    "value": "policeo2"
   },
   {
     "label": "Police Transporter (Emergency)",
-    "value": "POLICET"
+    "value": "policet"
   },
   {
     "label": "Pounder Custom (Commercial)",
@@ -2161,351 +2161,351 @@
   },
   {
     "label": "Principe Deveste (Super)",
-    "value": "DEVESTE"
+    "value": "deveste"
   },
   {
     "label": "Principe Diablous (Motorcycles)",
-    "value": "DIABLOUS"
+    "value": "diablous"
   },
   {
     "label": "Principe Diablous Custom (Motorcycles)",
-    "value": "DIABLOUS2"
+    "value": "diablous2"
   },
   {
     "label": "Principe Lectro (Motorcycles)",
-    "value": "LECTRO"
+    "value": "lectro"
   },
   {
     "label": "Principe Nemesis (Motorcycles)",
-    "value": "NEMESIS"
+    "value": "nemesis"
   },
   {
     "label": "Prison Bus (Emergency)",
-    "value": "PBUS"
+    "value": "pbus"
   },
   {
     "label": "Progen Emerus (Super)",
-    "value": "EMERUS"
+    "value": "emerus"
   },
   {
     "label": "Progen GP1 (Super)",
-    "value": "GP1"
+    "value": "gp1"
   },
   {
     "label": "Progen Itali GTB (Super)",
-    "value": "ITALIGTB"
+    "value": "italigtb"
   },
   {
     "label": "Progen Itali GTB Custom (Super)",
-    "value": "ITALIGTB2"
+    "value": "italigtb2"
   },
   {
     "label": "Progen Itali GTO (Sports)",
-    "value": "ITALIGTO"
+    "value": "italigto"
   },
   {
     "label": "Progen Itali RSX (Sports)",
-    "value": "ITALIRSX"
+    "value": "italirsx"
   },
   {
     "label": "Progen T20 (Super)",
-    "value": "T20"
+    "value": "t20"
   },
   {
     "label": "Progen Tyrus (Super)",
-    "value": "TYRUS"
+    "value": "tyrus"
   },
   {
     "label": "Pyro (Planes)",
-    "value": "PYRO"
+    "value": "pyro"
   },
   {
     "label": "RC Bandito (Off-road)",
-    "value": "RCBANDITO"
+    "value": "rcbandito"
   },
   {
     "label": "RCV (Emergency)",
-    "value": "RIOT2"
+    "value": "riot2"
   },
   {
     "label": "RM-10 Bombushka (Planes)",
-    "value": "BOMBUSHKA"
+    "value": "bombushka"
   },
   {
     "label": "RO-86 Alkonost (Planes)",
-    "value": "ALKONOST"
+    "value": "alkonost"
   },
   {
     "label": "Raiden (Sports)",
-    "value": "RAIDEN"
+    "value": "raiden"
   },
   {
     "label": "Ramp Buggy (Off-road)",
-    "value": "DUNE4"
+    "value": "dune5"
   },
   {
     "label": "Ramp Buggy (Off-road)",
-    "value": "DUNE5"
+    "value": "dune4"
   },
   {
     "label": "Rampant Rocket (Motorcycles)",
-    "value": "RROCKET"
+    "value": "rrocket"
   },
   {
     "label": "Rancher XL (Off-road)",
-    "value": "RANCHERX"
+    "value": "rancherx"
   },
   {
     "label": "Rancher XL (Off-road)",
-    "value": "RANCHERX"
+    "value": "rancherx"
   },
   {
     "label": "Rat-Loader (Muscle)",
-    "value": "RLOADER"
+    "value": "rloader"
   },
   {
     "label": "Rat-Truck (Muscle)",
-    "value": "RLOADER2"
+    "value": "rloader2"
   },
   {
     "label": "Ratel (Off-road)",
-    "value": "RATEL"
+    "value": "ratel"
   },
   {
     "label": "Rebel (Off-road)",
-    "value": "REBEL02"
+    "value": "rebel02"
   },
   {
     "label": "Rental Shuttle Bus (Service)",
-    "value": "RENTBUS"
+    "value": "rentbus"
   },
   {
     "label": "Rhino Tank (Military)",
-    "value": "RHINO"
+    "value": "rhino"
   },
   {
     "label": "Ripley (Utility)",
-    "value": "RIPLEY"
+    "value": "ripley"
   },
   {
     "label": "Rogue (Planes)",
-    "value": "ROGUE"
+    "value": "rogue"
   },
   {
     "label": "Romero Hearse (Sedans)",
-    "value": "ROMERO"
+    "value": "romero"
   },
   {
     "label": "Roosevelt (Sports Classics)",
-    "value": "ROOSEVELT"
+    "value": "roosevelt"
   },
   {
     "label": "Roosevelt Valor (Sports Classics)",
-    "value": "ROOSEVELT2"
+    "value": "roosevelt2"
   },
   {
     "label": "Rune Cheburek (Sports Classics)",
-    "value": "CHEBUREK"
+    "value": "cheburek"
   },
   {
     "label": "Rusty Rebel (Off-road)",
-    "value": "REBEL01"
+    "value": "rebel01"
   },
   {
     "label": "S2 Cabrio Comet (Sports)",
-    "value": "COMET7"
+    "value": "comet7"
   },
   {
     "label": "Sanchez (Motorcycles)",
-    "value": "SANCHEZ02"
+    "value": "sanchez02"
   },
   {
     "label": "Sanchez (livery) (Motorcycles)",
-    "value": "SANCHEZ01"
+    "value": "sanchez01"
   },
   {
     "label": "Sandking SWB (Off-road)",
-    "value": "SANDKIN2"
+    "value": "sandkin2"
   },
   {
     "label": "Savage (Helicopters)",
-    "value": "SAVAGE"
+    "value": "savage"
   },
   {
     "label": "Schafter (Sedans)",
-    "value": "SCHAFTER"
+    "value": "schafter"
   },
   {
     "label": "Schafter LWB (Armored) (Sedans)",
-    "value": "SCHAFTER6"
+    "value": "schafter6"
   },
   {
     "label": "Schafter V12 (Armored) (Sedans)",
-    "value": "SCHAFTER5"
+    "value": "schafter5"
   },
   {
     "label": "Schwartzer (Sports)",
-    "value": "SCHWARZE"
+    "value": "schwarze"
   },
   {
     "label": "Schyster Deviant (Muscle)",
-    "value": "DEVIANT"
+    "value": "deviant"
   },
   {
     "label": "Scramjet (Super)",
-    "value": "SCRAMJET"
+    "value": "scramjet"
   },
   {
     "label": "Scrap Truck (Utility)",
-    "value": "SCRAP"
+    "value": "scrap"
   },
   {
     "label": "Sea Sparrow (Helicopters)",
-    "value": "SPARROW"
+    "value": "sparrow"
   },
   {
     "label": "Seabreeze (Planes)",
-    "value": "SEABREEZE"
+    "value": "seabreeze"
   },
   {
     "label": "Sheriff Cruiser (Emergency)",
-    "value": "SHERIFF"
+    "value": "sheriff"
   },
   {
     "label": "Sheriff SUV (Emergency)",
-    "value": "SHERIFF2"
+    "value": "sheriff2"
   },
   {
     "label": "Shitzu Defiler (Motorcycles)",
-    "value": "DEFILER"
+    "value": "defiler"
   },
   {
     "label": "Shitzu Hakuchou (Motorcycles)",
-    "value": "HAKUCHOU"
+    "value": "hakuchou"
   },
   {
     "label": "Shitzu Hakuchou Drag (Motorcycles)",
-    "value": "HAKUCHOU2"
+    "value": "hakuchou2"
   },
   {
     "label": "Shitzu Jetmax (Boats)",
-    "value": "JETMAX"
+    "value": "jetmax"
   },
   {
     "label": "Shitzu Longfin (Boats)",
-    "value": "LONGFIN"
+    "value": "longfin"
   },
   {
     "label": "Shitzu PCJ-600 (Motorcycles)",
-    "value": "PCJ"
+    "value": "pcj"
   },
   {
     "label": "Shitzu Squalo (Boats)",
-    "value": "SQUALO"
+    "value": "squalo"
   },
   {
     "label": "Shitzu Suntrap (Boats)",
-    "value": "SUNTRAP"
+    "value": "suntrap"
   },
   {
     "label": "Shitzu Tropic (Boats)",
-    "value": "TROPIC"
+    "value": "tropic"
   },
   {
     "label": "Shitzu Tropic (Boats)",
-    "value": "TROPIC"
+    "value": "tropic"
   },
   {
     "label": "Shitzu Vader (Motorcycles)",
-    "value": "VADER"
+    "value": "vader"
   },
   {
     "label": "Skylift (Helicopters)",
-    "value": "SKYLIFT"
+    "value": "skylift"
   },
   {
     "label": "Space Docker (Off-road)",
-    "value": "DUNE2"
+    "value": "dune2"
   },
   {
     "label": "Sparrow (Helicopters)",
-    "value": "SPARROW2"
+    "value": "sparrow3"
   },
   {
     "label": "Sparrow (Helicopters)",
-    "value": "SPARROW3"
+    "value": "sparrow2"
   },
   {
     "label": "Specter Custom (Sports)",
-    "value": "SPECTER2"
+    "value": "specter2"
   },
   {
     "label": "Speedophile Seashark (Boats)",
-    "value": "SEASHARK"
+    "value": "seashark"
   },
   {
     "label": "Speedophile Seashark (Boats)",
-    "value": "SEASHARK"
+    "value": "seashark"
   },
   {
     "label": "Speedophile Seashark (Boats)",
-    "value": "SEASHARK"
+    "value": "seashark"
   },
   {
     "label": "Sprunk Buffalo (Sports)",
-    "value": "BUFFALO3"
+    "value": "buffalo3"
   },
   {
     "label": "Squaddie (SUVs)",
-    "value": "SQUADDIE"
+    "value": "squaddie"
   },
   {
     "label": "Stinger GT (Sports Classics)",
-    "value": "STINGERG"
+    "value": "stingerg"
   },
   {
     "label": "Streamer216 (Planes)",
-    "value": "STREAMER216"
+    "value": "streamer216"
   },
   {
     "label": "Submersible (Boats)",
-    "value": "SUBMERS"
+    "value": "submers"
   },
   {
     "label": "SuperVolito (Helicopters)",
-    "value": "SVOLITO"
+    "value": "svolito"
   },
   {
     "label": "SuperVolito Carbon (Helicopters)",
-    "value": "SVOLITO2"
+    "value": "svolito2"
   },
   {
     "label": "Surfer (Vans)",
-    "value": "SURFER2"
+    "value": "surfer2"
   },
   {
     "label": "TM-02 Khanjali (Military)",
-    "value": "KHANJALI"
+    "value": "khanjali"
   },
   {
     "label": "Tailgater (Sedans)",
-    "value": "TAILGATE"
+    "value": "tailgate"
   },
   {
     "label": "Taxi (Service)",
-    "value": "TAXI"
+    "value": "taxi"
   },
   {
     "label": "Technical (Off-road)",
-    "value": "TECHNICAL"
+    "value": "technical"
   },
   {
     "label": "Technical Aqua (Off-road)",
-    "value": "TECHNICAL2"
+    "value": "technical2"
   },
   {
     "label": "Technical Custom (Off-road)",
-    "value": "TECHNICAL3"
+    "value": "technical3"
   },
   {
     "label": "Terrorbyte (Commercial)",
@@ -2513,83 +2513,83 @@
   },
   {
     "label": "Thruster (Military)",
-    "value": "THRUSTER"
+    "value": "thruster"
   },
   {
     "label": "Titan (Planes)",
-    "value": "TITAN"
+    "value": "titan"
   },
   {
     "label": "Tornado (Sports Classics)",
-    "value": "TORNADO3"
+    "value": "tornado3"
   },
   {
     "label": "Tornado Rat Rod (Sports Classics)",
-    "value": "TORNADO6"
+    "value": "tornado6"
   },
   {
     "label": "Toundra Panthere (Sports)",
-    "value": "PANTHERE"
+    "value": "panthere"
   },
   {
     "label": "Tourbus (Service)",
-    "value": "TOURBUS"
+    "value": "tourbus"
   },
   {
     "label": "Towtruck (Utility)",
-    "value": "TOWTRUCK"
+    "value": "towtruck"
   },
   {
     "label": "Towtruck (Utility)",
-    "value": "TOWTRUCK"
+    "value": "towtruck"
   },
   {
     "label": "Tractor (Utility)",
-    "value": "TRACTOR"
+    "value": "tractor"
   },
   {
     "label": "Trashmaster (Service)",
-    "value": "TRASH"
+    "value": "trash"
   },
   {
     "label": "Trashmaster (Service)",
-    "value": "TRASH"
+    "value": "trash"
   },
   {
     "label": "Trophy Truck (Off-road)",
-    "value": "TROPHY"
+    "value": "trophy"
   },
   {
     "label": "Truffade Adder (Super)",
-    "value": "ADDER"
+    "value": "adder"
   },
   {
     "label": "Truffade Nero (Super)",
-    "value": "NERO"
+    "value": "nero"
   },
   {
     "label": "Truffade Nero Custom (Super)",
-    "value": "NERO2"
+    "value": "nero2"
   },
   {
     "label": "Truffade Thrax (Super)",
-    "value": "THRAX"
+    "value": "thrax"
   },
   {
     "label": "Truffade Z-Type (Sports Classics)",
-    "value": "ZTYPE"
+    "value": "ztype"
   },
   {
     "label": "Tug (Boats)",
-    "value": "TUG"
+    "value": "tug"
   },
   {
     "label": "Tula (Planes)",
-    "value": "TULA"
+    "value": "tula"
   },
   {
     "label": "Turreted Limo (Sedans)",
-    "value": "LIMO2"
+    "value": "limo2"
   },
   {
     "label": "Ultralight (Planes)",
@@ -2597,255 +2597,255 @@
   },
   {
     "label": "Unknown Buzzard (Helicopters)",
-    "value": "BUZZARD2"
+    "value": "buzzard2"
   },
   {
     "label": "Unknown Duster (Planes)",
-    "value": "DUSTER"
+    "value": "duster"
   },
   {
     "label": "Unknown Frogger (Helicopters)",
-    "value": "FROGGER"
+    "value": "frogger"
   },
   {
     "label": "Unknown Frogger (Helicopters)",
-    "value": "FROGGER"
+    "value": "frogger"
   },
   {
     "label": "Unknown Mallard (Planes)",
-    "value": "STUNT"
+    "value": "stunt"
   },
   {
     "label": "Unknown Mammatus (Planes)",
-    "value": "MAMMATUS"
+    "value": "mammatus"
   },
   {
     "label": "Unknown Maverick (Helicopters)",
-    "value": "MAVERICK"
+    "value": "maverick"
   },
   {
     "label": "Unknown Velum (Planes)",
-    "value": "VELUM"
+    "value": "velum"
   },
   {
     "label": "Unknown Velum 5-Seater (Planes)",
-    "value": "VELUM2"
+    "value": "velum2"
   },
   {
     "label": "Unmarked Cruiser (Emergency)",
-    "value": "POLICE4"
+    "value": "police4"
   },
   {
     "label": "Utility Truck (Utility)",
-    "value": "UTILTRUC"
+    "value": "utiltruc"
   },
   {
     "label": "Utility Truck (Utility)",
-    "value": "UTILTRUC"
+    "value": "utiltruc"
   },
   {
     "label": "Utility Truck (Utility)",
-    "value": "UTILTRUC"
+    "value": "utiltruc"
   },
   {
     "label": "V-65 Molotok (Planes)",
-    "value": "MOLOTOK"
+    "value": "molotok"
   },
   {
     "label": "Valkyrie (Helicopters)",
-    "value": "VALKYRIE"
+    "value": "valkyrie"
   },
   {
     "label": "Valkyrie MOD.0 (Helicopters)",
-    "value": "VALKYRI2"
+    "value": "valkyri2"
   },
   {
     "label": "Vapid Benson (Commercial)",
-    "value": "BENSON"
+    "value": "benson"
   },
   {
     "label": "Vapid Blade (Muscle)",
-    "value": "BLADE"
+    "value": "blade"
   },
   {
     "label": "Vapid Bobcat XL Open (Vans)",
-    "value": "BOBCATXL"
+    "value": "bobcatxl"
   },
   {
     "label": "Vapid Bullet (Super)",
-    "value": "BULLET"
+    "value": "bullet"
   },
   {
     "label": "Vapid Caracara (Off-road)",
-    "value": "CARACARA"
+    "value": "caracara"
   },
   {
     "label": "Vapid Caracara 4x4 (Off-road)",
-    "value": "CARACARA2"
+    "value": "caracara2"
   },
   {
     "label": "Vapid Chino (Muscle)",
-    "value": "CHINO"
+    "value": "chino"
   },
   {
     "label": "Vapid Chino Luxe (Muscle)",
-    "value": "CHINO2"
+    "value": "chino2"
   },
   {
     "label": "Vapid Clique (Muscle)",
-    "value": "CLIQUE"
+    "value": "clique"
   },
   {
     "label": "Vapid Contender (SUVs)",
-    "value": "CONTENDER"
+    "value": "contender"
   },
   {
     "label": "Vapid Dominator ASP (Muscle)",
-    "value": "DOMINATOR7"
+    "value": "dominator7"
   },
   {
     "label": "Vapid Dominator Arena (Muscle)",
-    "value": "DOMINATOR4"
+    "value": "dominator4"
   },
   {
     "label": "Vapid Dominator GTT (Muscle)",
-    "value": "DOMINATOR8"
+    "value": "dominator8"
   },
   {
     "label": "Vapid Dominator GTX (Muscle)",
-    "value": "DOMINATOR3"
+    "value": "dominator3"
   },
   {
     "label": "Vapid Ellie (Muscle)",
-    "value": "ELLIE"
+    "value": "ellie"
   },
   {
     "label": "Vapid FMJ (Super)",
-    "value": "FMJ"
+    "value": "fmj"
   },
   {
     "label": "Vapid Flash GT (Sports)",
-    "value": "FLASHGT"
+    "value": "flashgt"
   },
   {
     "label": "Vapid GB 200 (Sports)",
-    "value": "GB200"
+    "value": "gb200"
   },
   {
     "label": "Vapid Guardian (Industrial)",
-    "value": "GUARDIAN"
+    "value": "guardian"
   },
   {
     "label": "Vapid Hotknife (Muscle)",
-    "value": "HOTKNIFE"
+    "value": "hotknife"
   },
   {
     "label": "Vapid Hustler (Muscle)",
-    "value": "HUSTLER"
+    "value": "hustler"
   },
   {
     "label": "Vapid Impaler (Muscle)",
-    "value": "IMPALER"
+    "value": "impaler"
   },
   {
     "label": "Vapid Impaler Arena (Muscle)",
-    "value": "IMPALER2"
+    "value": "impaler2"
   },
   {
     "label": "Vapid Impaler Future Shock (Muscle)",
-    "value": "IMPALER3"
+    "value": "impaler3"
   },
   {
     "label": "Vapid Impaler Nightmare (Muscle)",
-    "value": "IMPALER4"
+    "value": "impaler4"
   },
   {
     "label": "Vapid Imperator Arena (Muscle)",
-    "value": "IMPERATOR"
+    "value": "imperator"
   },
   {
     "label": "Vapid Imperator Nightmare (Muscle)",
-    "value": "IMPERATOR3"
+    "value": "imperator3"
   },
   {
     "label": "Vapid Lost Slam Van (Muscle)",
-    "value": "SLAMVAN2"
+    "value": "slamvan2"
   },
   {
     "label": "Vapid Minivan (Vans)",
-    "value": "MINIVAN"
+    "value": "minivan"
   },
   {
     "label": "Vapid Minivan Custom (Vans)",
-    "value": "MINIVAN2"
+    "value": "minivan2"
   },
   {
     "label": "Vapid Peyote (Sports Classics)",
-    "value": "PEYOTE"
+    "value": "peyote"
   },
   {
     "label": "Vapid Peyote Custom (Sports Classics)",
-    "value": "PEYOTE3"
+    "value": "peyote3"
   },
   {
     "label": "Vapid Peyote Gasser (Muscle)",
-    "value": "PEYOTE2"
+    "value": "peyote2"
   },
   {
     "label": "Vapid Radius (SUVs)",
-    "value": "RADI"
+    "value": "radi"
   },
   {
     "label": "Vapid Retinue (Sports Classics)",
-    "value": "RETINUE"
+    "value": "retinue"
   },
   {
     "label": "Vapid Retinue MKII (Sports Classics)",
-    "value": "RETINUE2"
+    "value": "retinue2"
   },
   {
     "label": "Vapid Riata (Off-road)",
-    "value": "RIATA"
+    "value": "riata"
   },
   {
     "label": "Vapid Sadler (Utility)",
-    "value": "SADLER"
+    "value": "sadler"
   },
   {
     "label": "Vapid Sadler (Utility)",
-    "value": "SADLER"
+    "value": "sadler"
   },
   {
     "label": "Vapid Sandking XL (Off-road)",
-    "value": "SANDKING"
+    "value": "sandking"
   },
   {
     "label": "Vapid Slam Truck (Utility)",
-    "value": "SLAMTRUCK"
+    "value": "slamtruck"
   },
   {
     "label": "Vapid Slam Van (Muscle)",
-    "value": "SLAMVAN"
+    "value": "slamvan"
   },
   {
     "label": "Vapid Slam Van Custom (Muscle)",
-    "value": "SLAMVAN3"
+    "value": "slamvan3"
   },
   {
     "label": "Vapid Speedo (Vans)",
-    "value": "SPEEDO"
+    "value": "speedo"
   },
   {
     "label": "Vapid Speedo Custom (Vans)",
-    "value": "SPEEDO4"
+    "value": "speedo4"
   },
   {
     "label": "Vapid Speedo Custom (Vans)",
-    "value": "SPEEDO4"
+    "value": "speedo4"
   },
   {
     "label": "Vapid Stanier (Sedans)",
-    "value": "STANIER"
+    "value": "stanier"
   },
   {
     "label": "Vapid Winky (Off-road)",
@@ -2853,75 +2853,75 @@
   },
   {
     "label": "Vapid imperator Future Shock (Muscle)",
-    "value": "IMPERATOR2"
+    "value": "imperator2"
   },
   {
     "label": "Verlierer (Sports)",
-    "value": "VERLIER"
+    "value": "verlier"
   },
   {
     "label": "Vetir (Military)",
-    "value": "VETIR"
+    "value": "vetir"
   },
   {
     "label": "Veto Classic (Sports)",
-    "value": "VETO"
+    "value": "veto"
   },
   {
     "label": "Veto Modern (Sports)",
-    "value": "VETO2"
+    "value": "veto2"
   },
   {
     "label": "Vigilante (Super)",
-    "value": "VIGILANTE"
+    "value": "vigilante"
   },
   {
     "label": "Volatol (Planes)",
-    "value": "VOLATOL"
+    "value": "volatol"
   },
   {
     "label": "Voodoo Custom (Muscle)",
-    "value": "VOODOO2"
+    "value": "voodoo2"
   },
   {
     "label": "Vulcar Fagaloa (Sports Classics)",
-    "value": "FAGALOA"
+    "value": "fagaloa"
   },
   {
     "label": "Vulcar Ingot (Sedans)",
-    "value": "INGOT"
+    "value": "ingot"
   },
   {
     "label": "Vulcar Nebula (Sports Classics)",
-    "value": "NEBULA"
+    "value": "nebula"
   },
   {
     "label": "Vulcar Warrener (Sedans)",
-    "value": "WARRENER"
+    "value": "warrener"
   },
   {
     "label": "Vulcar Warrener HKR (Sedans)",
-    "value": "WARRENER2"
+    "value": "warrener2"
   },
   {
     "label": "Vysser Neo (Sports)",
-    "value": "NEO"
+    "value": "neo"
   },
   {
     "label": "WMC Bagger (Motorcycles)",
-    "value": "BAGGER"
+    "value": "bagger"
   },
   {
     "label": "WMC Daemon (Motorcycles)",
-    "value": "DAEMON"
+    "value": "daemon"
   },
   {
     "label": "WMC Nightblade (Motorcycles)",
-    "value": "NIGHTBLADE"
+    "value": "nightblade"
   },
   {
     "label": "WMC Sovereign (Motorcycles)",
-    "value": "SOVEREIGN"
+    "value": "sovereign"
   },
   {
     "label": "Walton L35 (Off-road)",
@@ -2929,179 +2929,179 @@
   },
   {
     "label": "Washington (Sedans)",
-    "value": "WASHINGT"
+    "value": "washingt"
   },
   {
     "label": "Wastelander (Service)",
-    "value": "WASTLNDR"
+    "value": "wastlndr"
   },
   {
     "label": "Weaponized Conada (Helicopters)",
-    "value": "Conada2"
+    "value": "conada2"
   },
   {
     "label": "Weaponized Dinghy (Boats)",
-    "value": "DINGHY5"
+    "value": "dinghy5"
   },
   {
     "label": "Weaponized Tampa (Muscle)",
-    "value": "TAMPA3"
+    "value": "tampa3"
   },
   {
     "label": "Weeny Dynasty (Sports Classics)",
-    "value": "Dynasty"
+    "value": "dynasty"
   },
   {
     "label": "Weeny Issi (Compacts)",
-    "value": "ISSI2"
+    "value": "issi2"
   },
   {
     "label": "Weeny Issi Arena (Compacts)",
-    "value": "ISSI4"
+    "value": "issi4"
   },
   {
     "label": "Weeny Issi Classic (Compacts)",
-    "value": "ISSI3"
+    "value": "issi3"
   },
   {
     "label": "Weeny Issi Future Shock (Compacts)",
-    "value": "ISSI5"
+    "value": "issi5"
   },
   {
     "label": "Weeny Issi Nightmare (Compacts)",
-    "value": "ISSI6"
+    "value": "issi6"
   },
   {
     "label": "Weeny Issi Rally (SUVs)",
-    "value": "ISSI8"
+    "value": "issi8"
   },
   {
     "label": "Weeny Issi Sport (Sports)",
-    "value": "ISSI7"
+    "value": "issi7"
   },
   {
     "label": "Western Cliffhanger (Motorcycles)",
-    "value": "CLIFFHANGER"
+    "value": "cliffhanger"
   },
   {
     "label": "Western Daemon Custom (Motorcycles)",
-    "value": "DAEMON2"
+    "value": "daemon2"
   },
   {
     "label": "Western Gargoyle (Motorcycles)",
-    "value": "GARGOYLE"
+    "value": "gargoyle"
   },
   {
     "label": "Western Powersurge (Motorcycles)",
-    "value": "POWERSURGE"
+    "value": "powersurge"
   },
   {
     "label": "Western Rat Bike (Motorcycles)",
-    "value": "RATBIKE"
+    "value": "ratbike"
   },
   {
     "label": "Western Reever (Motorcycles)",
-    "value": "REEVER"
+    "value": "reever"
   },
   {
     "label": "Western Wolfsbane (Motorcycles)",
-    "value": "WOLFSBANE"
+    "value": "wolfsbane"
   },
   {
     "label": "Western Zombie Bobber (Motorcycles)",
-    "value": "ZOMBIEA"
+    "value": "zombiea"
   },
   {
     "label": "Western Zombie Chopper (Motorcycles)",
-    "value": "ZOMBIEB"
+    "value": "zombieb"
   },
   {
     "label": "Willard Eudora (Muscle)",
-    "value": "EUDORA"
+    "value": "eudora"
   },
   {
     "label": "Willard Faction (Muscle)",
-    "value": "FACTION"
+    "value": "faction"
   },
   {
     "label": "Willard Faction Custom Donk (Muscle)",
-    "value": "FACTION3"
+    "value": "faction3"
   },
   {
     "label": "Willard Faction Rider (Muscle)",
-    "value": "FACTION2"
+    "value": "faction2"
   },
   {
     "label": "Wow Omnis (Sports)",
-    "value": "OMNIS"
+    "value": "omnis"
   },
   {
     "label": "XLS (Armored) (SUVs)",
-    "value": "XLS2"
+    "value": "xls2"
   },
   {
     "label": "Xero Blimp (Planes)",
-    "value": "BLIMP2"
+    "value": "blimp2"
   },
   {
     "label": "Zhaba (Off-road)",
-    "value": "ZHABA"
+    "value": "zhaba"
   },
   {
     "label": "Zirconium Journey (Vans)",
-    "value": "JOURNEY"
+    "value": "journey"
   },
   {
     "label": "Zirconium Journey II (Vans)",
-    "value": "JOURNEY2"
+    "value": "journey2"
   },
   {
     "label": "Zirconium Stratum (Sedans)",
-    "value": "STRATUM"
+    "value": "stratum"
   },
   {
     "label": "Överflöd Autarch (Super)",
-    "value": "AUTARCH"
+    "value": "autarch"
   },
   {
     "label": "Överflöd Entity XF (Super)",
-    "value": "ENTITYXF"
+    "value": "entityxf"
   },
   {
     "label": "Överflöd Entity XXR (Super)",
-    "value": "ENTITY2"
+    "value": "entity2"
   },
   {
     "label": "Överflöd Imorgon (Sports)",
-    "value": "IMORGON"
+    "value": "imorgon"
   },
   {
     "label": "Överflöd Tyrant (Super)",
-    "value": "TYRANT"
+    "value": "tyrant"
   },
   {
     "label": "Överflöd Zeno (Super)",
-    "value": "ZENO"
+    "value": "zeno"
   },
   {
     "label": "Übermacht Cypher (Sports)",
-    "value": "CYPHER"
+    "value": "cypher"
   },
   {
     "label": "Übermacht Oracle (Coupes)",
-    "value": "ORACLE"
+    "value": "oracle"
   },
   {
     "label": "Übermacht Oracle XS (Coupes)",
-    "value": "ORACLE2"
+    "value": "oracle2"
   },
   {
     "label": "Übermacht Rebla GTS (SUVs)",
-    "value": "REBLA"
+    "value": "rebla"
   },
   {
     "label": "Übermacht Revolter (Sports)",
-    "value": "REVOLTER"
+    "value": "revolter"
   },
   {
     "label": "Übermacht Rhinehart (Sedans)",
@@ -3109,11 +3109,11 @@
   },
   {
     "label": "Übermacht SC1 (Super)",
-    "value": "SC1"
+    "value": "sc1"
   },
   {
     "label": "Übermacht Sentinel (Coupes)",
-    "value": "SENTINEL"
+    "value": "sentinel"
   },
   {
     "label": "Übermacht Sentinel Classic (Sports)",
@@ -3125,15 +3125,15 @@
   },
   {
     "label": "Übermacht Sentinel XS (Coupes)",
-    "value": "SENTINEL2"
+    "value": "sentinel2"
   },
   {
     "label": "Übermacht Zion (Coupes)",
-    "value": "ZION"
+    "value": "zion"
   },
   {
     "label": "Übermacht Zion Cabrio (Coupes)",
-    "value": "ZION2"
+    "value": "zion2"
   },
   {
     "label": "Übermacht Zion Classic (Sports Classics)",
