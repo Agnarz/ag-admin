@@ -1,26 +1,17 @@
 import type { ArgValue } from '../../../types';
 interface OptionsProps { [index: string]: ArgValue; };
-import Vehicles from '../../../../../shared/vehicles.json';
-import Weapons from '../../../../../shared/weapons.json';
-import Teleports from '../../../../../shared/teleports.json';
-import PedModels from '../../../../../shared/pedmodels.json';
-import Timecycles from '../../../../../shared/timecycles.json';
-import Weather from '../../../../../shared/weather.json';
-import Items from '../../../../../shared/items.json';
-import Jobs from '../../../../../shared/jobs.json';
-import Gangs from '../../../../../shared/gangs.json';
 
 const Options: OptionsProps = {
   Targets: [],
-  Vehicles: Vehicles,
-  Weapons: Weapons,
-  Teleports: Teleports,
-  PedModels: PedModels,
-  Timecycles: Timecycles,
-  Weather: Weather,
-  Items: Items,
-  Jobs: Jobs,
-  Gangs: Gangs,
+  Vehicles: [],
+  Weapons: [],
+  Teleports: [],
+  PedModels: [],
+  Timecycles: [],
+  Weather: [],
+  Items: [],
+  Jobs: [],
+  Gangs: [],
 };
 
 export const SetOptions = (index: string, value: ArgValue) => {

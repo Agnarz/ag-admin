@@ -26,7 +26,15 @@ end
 
 local commands = loadJSON('commands')
 local quickactions = loadJSON('quickactions')
+local vehicles = loadJSON('vehicles')
+local weapons = loadJSON('weapons')
 teleports = loadJSON('teleports')
+local pedmodels = loadJSON('pedmodels')
+local timecycles = loadJSON('timecycles')
+local weather = loadJSON('weather')
+local items = loadJSON('items')
+local jobs = loadJSON('jobs')
+local gangs = loadJSON('gangs')
 
 ---Update the menu with new data
 ---@param action string -- Action to perform
@@ -46,7 +54,10 @@ local function toggleMenu(bool)
     updateMenu('toggleMenu', bool)
     isMenuOpen = bool
     if bool == true then
-        updateMenu('setTargets', lib.callback.await('ag:getTargets', 100))
+        updateMenu('updateOptions', {
+            key = 'Targets',
+            options = lib.callback.await('ag:getTargets', 100)
+        })
         updateMenu('setPlayers', lib.callback.await('ag:getPlayers', 100))
     end
 end
@@ -58,6 +69,8 @@ RegisterNuiCallback('closeMenu', function(_, cb)
     cb(1)
     toggleMenu(false)
 end)
+
+
 
 local favorites = {}
 
@@ -83,6 +96,20 @@ RegisterCommand('commands-r', function()
         DeleteResourceKvp('favorites')
         updateMenu('resetCommands')
     end
+end)
+
+RegisterNuiCallback('GetOptions', function(_, cb)
+    cb({
+        vehicles = vehicles,
+        weapons = weapons,
+        teleports = teleports,
+        pedmodels = pedmodels,
+        timecycles = timecycles,
+        weather = weather,
+        items = items,
+        jobs = jobs,
+        gangs = gangs
+    })
 end)
 
 RegisterNuiCallback('init', function(_, cb)

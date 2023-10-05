@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { createStyles, Tabs, Divider } from '@mantine/core';
 import { QuickActionProps } from '../types/quickaction';
 import QuickAction from './components/QuickAction';
+import { useSetCommands, useSetFavorites } from '../state';
+import { SetOptions } from './lists/Commands/options';
 import { CommandsList } from './lists/Commands';
 import { PlayersList } from './lists/Players';
 import { useNuiEvent } from '../hooks/useNuiEvent';
 import { fetchNui } from '../utils/fetchNui';
 import { CommandProps } from '../types';
-import { useSetCommands, useSetFavorites } from '../state';
+
+
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -63,27 +66,45 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
+interface Init {
+  commands: CommandProps[];
+  favorites: string[];
+  quickactions: QuickActionProps[];
+};
+
 export const AdminMenu: React.FC = () => {
   const { classes } = useStyles();
+
   const [visible, setVisible] = useState(0);
   const [quickActions, setQuickactions] = useState<QuickActionProps[]>([]);
   const setCommands = useSetCommands();
   const setFavorites = useSetFavorites();
 
+
   useEffect(() => {
-    fetchNui<{
-      commands: CommandProps[];
-      favorites: string[];
-      quickactions: QuickActionProps[];
-    }>('init').then((data) => {
-      setQuickactions(data.quickactions);
-      setFavorites(data.favorites);
-      data.commands.forEach((v, index) => {
-        v.id = index + 1;
-        v.fav = data.favorites.includes(v.command);
-      });
-      setCommands(data.commands);
+    fetchNui('GetOptions').then((data) => {
+      SetOptions('Targets', data.targets);
+      SetOptions('Vehicles', data.vehicles);
+      SetOptions('Weapons', data.weapons);
+      SetOptions('Teleports', data.teleports);
+      SetOptions('PedModels', data.pedmodels);
+      SetOptions('Timecycles', data.timecycles);
+      SetOptions('Weather', data.weather);
+      SetOptions('Items', data.items);
+      SetOptions('Jobs', data.jobs);
+      SetOptions('Gangs', data.gangs);
     });
+    setTimeout(() => {
+      fetchNui<Init>('init').then((data) => {
+        setQuickactions(data.quickactions);
+        setFavorites(data.favorites);
+        data.commands.forEach((v, index) => {
+          v.id = index + 1;
+          v.fav = data.favorites.includes(v.command);
+        });
+        setCommands(data.commands);
+      });
+    }, 250);
   }, []);
 
   // Using opacity instead of display: none; because we want to keep the menu mounted
@@ -99,8 +120,6 @@ export const AdminMenu: React.FC = () => {
     { name: 'Commands', icon: 'fas fa-hat-wizard' },
     { name: 'Players', icon: 'fas fa-users' }
   ];
-
-
 
   return (
     <div className={classes.root} style={{ opacity: visible }}>
