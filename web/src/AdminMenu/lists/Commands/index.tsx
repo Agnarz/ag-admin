@@ -5,6 +5,7 @@ import FormCommand from './components/FormCommand';
 import { useNuiEvent } from '../../../hooks/useNuiEvent';
 import { fetchNui } from '../../../utils/fetchNui';
 import { useCommands, useFavorites } from '../../../state';
+import { ArgValue } from '../../../types';
 
 export const CommandsList: React.FC = () => {
   const [commands, setCommands] = useCommands();
@@ -63,6 +64,22 @@ export const CommandsList: React.FC = () => {
     setCommands(newCommands);
     setFavorites([]);
     fetchNui('resetCommands');
+  });
+
+  useNuiEvent('updateOptions', (data: {
+    key: string; options: ArgValue;
+  }) => {
+    const newCommands = [...commands];
+    newCommands.forEach((v) => {
+      if ( v.type == 'form' ) {
+        v.args.forEach((arg) => {
+          if ( arg.type == 'select' && arg.getOptions == data.key )   {
+            arg.options = data.options;
+          }
+        }, data);
+      }
+    });
+    setCommands(newCommands);
   });
 
   return (

@@ -2,12 +2,15 @@ import { MultiSelect, Select } from '@mantine/core';
 import { Control, useController } from 'react-hook-form';
 import { FormValues, ArgSelect } from '../../../../../../types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { GetOptions } from '../../../options';
+import { fetchNui } from '../../../../../../utils/fetchNui';
+
 interface Props {
   args: ArgSelect;
   index: number;
   control: Control<FormValues>;
-}
-import { GetOptions } from '../../../options';
+};
+
 const FormSelect: React.FC<Props> = (props) => {
   const controller = useController({
     name: `test.${props.index}.value`,
@@ -17,25 +20,32 @@ const FormSelect: React.FC<Props> = (props) => {
 
   const optionsKey = props.args.optionsKey;
   if (optionsKey) {
-    const options = GetOptions(optionsKey);
-    props.args.options = options;
+    const newOptions = GetOptions(optionsKey);
+    props.args.options = newOptions;
   } else {
-    props.args.options =  props.args.options;
+    props.args.options = props.args.options;
   };
+
+  const onChange = (value: string) => {
+    controller.field.onChange(value);
+    if (props.args.setOptions) {
+      fetchNui(props.args.setOptions, value)
+    };
+  }
 
   return (
     <>
       {props.args.type === 'select' ? (
         <Select
-          data={props.args.options}
+          data={props.args.options? props.args.options : []}
           value={controller.field.value}
           name={controller.field.name}
           ref={controller.field.ref}
           onBlur={controller.field.onBlur}
-          onChange={controller.field.onChange}
+          onChange={onChange}
           disabled={props.args.disabled}
           searchable={props.args.searchable}
-          label={props.args.label + ' (' + props.args.options.length + ')'}
+          label={props.args.label + ' (' + props.args.options?.length + ')'}
           description={props.args.description}
           withAsterisk={props.args.required}
           clearable={props.args.clearable}
@@ -46,7 +56,7 @@ const FormSelect: React.FC<Props> = (props) => {
         <>
           {props.args.type === 'multi-select' && (
             <MultiSelect
-              data={props.args.options}
+              data={props.args.options? props.args.options : []}
               value={controller.field.value}
               name={controller.field.name}
               ref={controller.field.ref}
@@ -54,7 +64,7 @@ const FormSelect: React.FC<Props> = (props) => {
               onChange={controller.field.onChange}
               disabled={props.args.disabled}
               searchable={props.args.searchable}
-              label={props.args.label + ' (' + props.args.options.length + ')'}
+              label={props.args.label + ' (' + props.args.options?.length + ')'}
               description={props.args.description}
               withAsterisk={props.args.required}
               clearable={props.args.clearable}

@@ -65,8 +65,10 @@ export interface ArgNumber extends BaseArg<'number', number> {
 
 export type ArgValue = Array<{ value: string; label?: string }> | Array<string>;
 export interface ArgSelect extends BaseArg<'select' | 'multi-select', string | string[]> {
-  options: ArgValue;
+  options?: ArgValue;
   optionsKey?: string;
+  getOptions?: string;
+  setOptions?: string;
   clearable?: boolean;
   searchable?: boolean;
 };

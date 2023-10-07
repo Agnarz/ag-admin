@@ -77,7 +77,6 @@
       {
         "type": "select",
         "label": "Model",
-        "options": [],
         "optionsKey": "PedModels",
         "searchable": true,
         "clearable": true,
@@ -86,8 +85,7 @@
       {
         "type": "select",
         "label": "Target",
-        "options": [],
-        "optionsKey": "Targets",
+        "getOptions": "Targets",
         "searchable": true,
         "clearable": true,
         "required": false
@@ -103,7 +101,6 @@
       {
         "type": "select",
         "label": "Weapon",
-        "options": [],
         "optionsKey": "Weapons",
         "searchable": true,
         "clearable": true,
@@ -120,8 +117,7 @@
       {
         "type": "select",
         "label": "Target",
-        "options": [],
-        "optionsKey": "Targets",
+        "getOptions": "Targets",
         "searchable": true,
         "clearable": true
       }
@@ -136,7 +132,6 @@
       {
         "type": "select",
         "label": "Vehicle",
-        "options": [],
         "optionsKey": "Vehicles",
         "searchable": true,
         "clearable": true,
@@ -160,7 +155,6 @@
       {
         "type": "select",
         "label": "Engine",
-        "options": [],
         "optionsKey": "Vehicles",
         "searchable": true,
         "clearable": true,
@@ -209,7 +203,6 @@
       {
         "type": "select",
         "label": "Location",
-        "options": [],
         "optionsKey": "Teleports",
         "searchable": true,
         "clearable": true,
@@ -227,7 +220,6 @@
       {
         "type": "select",
         "label": "Timecycle",
-        "options": [],
         "optionsKey": "Timecycles",
         "searchable": true,
         "clearable": true,
@@ -257,8 +249,7 @@
       {
         "type": "select",
         "label": "Target",
-        "options": [],
-        "optionsKey": "Targets",
+        "getOptions": "Targets",
         "searchable": true,
         "clearable": true,
         "required": true
@@ -286,8 +277,7 @@
       {
         "type": "select",
         "label": "Target",
-        "options": [],
-        "optionsKey": "Targets",
+        "getOptions": "Targets",
         "searchable": true,
         "clearable": true,
         "required": true
