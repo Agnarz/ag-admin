@@ -40,6 +40,7 @@ const useStyles = createStyles((theme) => ({
     overflow: 'hidden'
   },
   expand: {
+    color: 'white',
     background: theme.colors.ag[5],
     position: 'inherit',
     display: 'flex',
