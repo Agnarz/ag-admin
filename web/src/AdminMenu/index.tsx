@@ -10,8 +10,6 @@ import { useNuiEvent } from '../hooks/useNuiEvent';
 import { fetchNui } from '../utils/fetchNui';
 import { CommandProps } from '../types';
 
-
-
 const useStyles = createStyles((theme) => ({
   root: {
     position: 'absolute',
@@ -110,7 +108,7 @@ export const AdminMenu: React.FC = () => {
   // Using opacity instead of display: none; because we want to keep the menu mounted
   useNuiEvent('toggleMenu', (data) => {
     if (data) {
-      setVisible(1);
+      setVisible(0.95);
     } else {
       setVisible(0);
     }
