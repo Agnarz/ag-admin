@@ -9,6 +9,7 @@ local infiniteStamina = false
 local nightVision = false
 local thermalVision = false
 local customWheels = false
+local dev = false
 
 local function indexOf(t, v)
     for i = 1, #t do
@@ -242,6 +243,12 @@ RegisterCommand('copycoords', function (_, args)
             round(GetEntityHeading(cache.ped), 3)
         ))
     end
+end)
+
+RegisterCommand('dev', function()
+    dev = not dev
+    updateMenu('setActive:dev', dev)
+    TriggerEvent('hud:client:toggleDev')
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
