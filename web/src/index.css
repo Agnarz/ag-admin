@@ -7,11 +7,192 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   user-select: none;
   overflow: hidden;
-
+  background: #00000000!important
 }
 
 #root { height: 100%; }
+
+:root {
+  color-scheme: none;
+  --mantine-color-dark-1: #b1bac4;
+  --mantine-color-dark-2: #8b949e;
+  --mantine-color-dark-3: #6b7682;
+  --mantine-color-dark-4: #4f5964;
+  --mantine-color-dark-5: #373e47;
+  --mantine-color-dark-6: #21262d;
+  --mantine-color-dark-7: #161b22;
+  --mantine-color-dark-8: #0d1117;
+  --mantine-color-dark-9: #010409;
+  --mantine-color-body: #00000000 !important;
+}
+.mantine-Tabs-tab {
+  background: var(--mantine-color-dark-9)
+}
+.mantine-Tabs-tab[data-active][data-active] {
+  background: var(--tabs-color);
+}
+
+
+.QuickAction-button {
+  background: var(--mantine-color-dark-9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  transition: all 0.2s ease;
+}
+.QuickAction-button:hover {
+  background: var(--mantine-color-dark-4);
+  cursor: pointer;
+}
+
+.DataList-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overFlow: hidden;
+}
+
+.DataList-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.DataList-filterBar {
+  background: var(--mantine-color-dark-9);
+  position: relative;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+}
+
+.DataList-filterButtons {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 100%;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.DataList-filterButtons:hover {
+  background: var(--mantine-color-dark-4);
+  cursor: pointer;
+}
+
+.DataList-search {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.DataList-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  padding: 8px;
+  gap: 4px;
+}
+
+.Expand-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: min-content;
+  overflow: visible;
+}
+
+.Expand-header {
+  color: white;
+  background: var(--mantine-color-dark-8);
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  height: 2.75rem;
+  align-items: center;
+  overflow-x: hidden;
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+
+.Expand-header:hover {
+  background: var(--mantine-color-dark-4);
+  cursor: pointer;
+}
+
+.Expand-label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-weight: 500;
+  padding-left: 8px;
+  font-size: 14px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.Expand-content {
+  color: white;
+  background: var(--mantine-color-dark-7);
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: left;
+  align-content: center;
+  padding: 12px;
+  gap: 6px;
+}
+
+.Expand-icon {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  right: 12px;
+}
+.ButtonCommand-root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  width: 100%;
+  overflow-y: visible;
+}
+
+.ButtonCommand-container {
+  color: white;
+  background: var(--mantine-color-dark-8);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2.75rem;
+  border-radius: 0;
+  transition: all 0.2s ease;
+  overflow-x: hidden;
+  padding-left: 8px;
+}
+.ButtonCommand-container:hover {
+  background: var(--mantine-color-dark-4);
+  cursor: pointer;
+}

@@ -13,7 +13,7 @@ type BaseCommand<T> = {
 
 export interface ButtonCommandProps extends BaseCommand<'button'> {
   active?: boolean;
-};
+}
 
 export type ArgsProps = Array<ArgInput | ArgCheckbox | ArgSelect | ArgNumber | ArgSlider | ArgAutoComplete>;
 type ExtraButtonProps = Array<{label: string; command: string; color: string;}>;
@@ -23,13 +23,13 @@ export interface FormCommandProps extends BaseCommand<'form'> {
     execute?: string;
     extra?: ExtraButtonProps;
   };
-};
+}
 
 export type FormValues = {
   test: {
-    value: any;
+    value: unknown;
   }[];
-};
+}
 
 type BaseArg<T, U> = {
   type: T;
@@ -48,20 +48,20 @@ export interface ArgCheckbox {
   checked?: boolean;
   disabled?: boolean;
   required?: boolean;
-};
+}
 
 export interface ArgInput extends BaseArg<'input', string> {
   password?: boolean;
   min?: number;
   max?: number;
-};
+}
 
 export interface ArgNumber extends BaseArg<'number', number> {
   precision?: number;
   min?: number;
   max?: number;
   step?: number;
-};
+}
 
 export type ArgValue = Array<{ value: string; label?: string }> | Array<string>;
 export interface ArgSelect extends BaseArg<'select' | 'multi-select', string | string[]> {
@@ -71,15 +71,15 @@ export interface ArgSelect extends BaseArg<'select' | 'multi-select', string | s
   setOptions?: string;
   clearable?: boolean;
   searchable?: boolean;
-};
+}
 
 export interface ArgAutoComplete extends BaseArg<'autocomplete', string | string[]> {
   options: ArgValue;
   optionsKey?: string;
-};
+}
 
 export interface ArgSlider extends BaseArg<'slider', number> {
   min?: number;
   max?: number;
   step?: number;
-};
+}

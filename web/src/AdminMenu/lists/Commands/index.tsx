@@ -1,18 +1,18 @@
-import React, { useState, useMemo } from 'react';
-import { DataList } from '../../components/DataList';
-import ButtonCommand from './components/ButtonCommand';
-import FormCommand from './components/FormCommand';
-import { useNuiEvent } from '../../../hooks/useNuiEvent';
-import { fetchNui } from '../../../utils/fetchNui';
-import { useCommands, useFavorites } from '../../../state';
-import { ArgValue } from '../../../types';
+import React, { useState, useMemo } from "react";
+import { DataList } from "../../components/DataList";
+import ButtonCommand from "./components/ButtonCommand";
+import FormCommand from "./components/FormCommand";
+import { useNuiEvent } from "../../../hooks/useNuiEvent";
+import { fetchNui } from "../../../utils/fetchNui";
+import { useCommands, useFavorites } from "../../../state";
+import { ArgValue } from "../../../types";
 
 export const CommandsList: React.FC = () => {
   const [commands, setCommands] = useCommands();
   const [favorites, setFavorites] = useFavorites();
 
-  const [filter, setFilter] = useState<string>('all');
-  const [search, setSearch] = useState<string>('');
+  const [filter, setFilter] = useState<string>("all");
+  const [search, setSearch] = useState<string>("");
 
   const sortedCommands = useMemo(() => {
     return commands.sort((a, b) => {
@@ -33,7 +33,7 @@ export const CommandsList: React.FC = () => {
   });
 
   const filteredCommands = searchCommands.filter((v) => {
-    if (filter == 'all') {
+    if (filter == "all") {
       return true;
     } else {
       return v.filter == filter;
@@ -53,27 +53,27 @@ export const CommandsList: React.FC = () => {
       newFavorites.push(command);
     }
     setFavorites(newFavorites);
-    fetchNui('favorite', newFavorites);
+    fetchNui("favorite", newFavorites);
   });
 
-  useNuiEvent('resetCommands', () => {
+  useNuiEvent("resetCommands", () => {
     const newCommands = [...commands];
     newCommands.forEach((v) => {
       v.fav = false;
     });
     setCommands(newCommands);
     setFavorites([]);
-    fetchNui('resetCommands');
+    fetchNui("resetCommands");
   });
 
-  useNuiEvent('updateOptions', (data: {
+  useNuiEvent("updateOptions", (data: {
     key: string; options: ArgValue;
   }) => {
     const newCommands = [...commands];
     newCommands.forEach((v) => {
-      if ( v.type == 'form' ) {
+      if ( v.type == "form" ) {
         v.args.forEach((arg) => {
-          if ( arg.type == 'select' && arg.getOptions == data.key )   {
+          if ( arg.type == "select" && arg.getOptions == data.key )   {
             arg.options = data.options;
           }
         }, data);
@@ -84,15 +84,15 @@ export const CommandsList: React.FC = () => {
 
   return (
     <DataList context={{
-      list: 'commands',
+      list: "commands",
       filter: filter,
       filters: [
-        { label: 'All', value: 'all' },
-        { label: 'Player', value: 'player' },
-        { label: 'Vehicle', value: 'vehicle' },
-        { label: 'Utility', value: 'utility' },
-        { label: 'User', value: 'user' },
-        { label: 'Server', value: 'server' }
+        { label: "All", value: "all" },
+        { label: "Player", value: "player" },
+        { label: "Vehicle", value: "vehicle" },
+        { label: "Utility", value: "utility" },
+        { label: "User", value: "user" },
+        { label: "Server", value: "server" }
       ],
       setFilter: setFilter,
       search: search,
@@ -100,7 +100,7 @@ export const CommandsList: React.FC = () => {
     }}>
       {filteredCommands.map((v) => (
         <React.Fragment key={v.command + v.id}>
-          {v.type == 'button' && (
+          {v.type == "button" && (
             <ButtonCommand
               id={v.id}
               label={v.label}
@@ -114,7 +114,7 @@ export const CommandsList: React.FC = () => {
             />
           )}
 
-          {v.type == 'form' && (
+          {v.type == "form" && (
             <FormCommand
               id={v.id}
               label={v.label}

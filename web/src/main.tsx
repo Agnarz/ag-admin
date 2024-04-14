@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { Provider } from 'jotai';
 import { theme } from './theme';
+import "@mantine/core/styles.css";
+import './index.css'
+
 import { MantineProvider } from '@mantine/core'
-import { isEnvBrowser } from './utils/misc';
-import './index.css';
-import App from './App';
+import App from './App.tsx'
+import { isEnvBrowser } from './utils/misc.ts';
 
 if (isEnvBrowser()) {
   const root = document.getElementById('root');
@@ -14,15 +16,14 @@ if (isEnvBrowser()) {
   root!.style.backgroundSize = 'cover';
   root!.style.backgroundRepeat = 'no-repeat';
   root!.style.backgroundPosition = 'center';
-};
-
+}
 const root = document.getElementById('root');
 ReactDOM.createRoot(root!).render(
   <React.StrictMode>
-    <MantineProvider withNormalizeCSS theme={{ ...theme }}>
-      <Provider>
-        <App />
-      </Provider>
+    <Provider>
+    <MantineProvider theme={theme} defaultColorScheme="dark">
+      <App />
     </MantineProvider>
+    </Provider>
   </React.StrictMode>
 );

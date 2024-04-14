@@ -1,60 +1,5 @@
-import React from 'react';
-import { createStyles, TextInput } from '@mantine/core';
-
-const useStyles = createStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%',
-    overflowY: 'hidden'
-  },
-  container: {
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%'
-  },
-  filterBar: {
-    background: theme.colors.ag[8],
-    position: 'relative',
-    height: 42,
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  filterButtons: {
-    background: '#00000000',
-    color: 'white',
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 8,
-    width: '100%',
-    fontSize: 13,
-    transition: 'all 0.2s ease',
-    ':hover': {
-      background: theme.colors.ag[3],
-      cursor: 'pointer',
-    }
-  },
-  search: {
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  list: {
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%',
-    overflowY: 'auto',
-    overflowX: 'hidden',
-    padding: 8,
-    gap: 4
-  }
-}));
+import { Fragment } from "react";
+import { Input } from "@mantine/core";
 
 interface ListProps {
   children: React.ReactNode;
@@ -66,60 +11,48 @@ interface ListProps {
     search: string;
     setSearch(value: string): void;
   };
-};
+}
 
 export const DataList: React.FC<ListProps> = ({children, context}) => {
-  const { classes } = useStyles();
   const { list, filter, filters, setFilter, search, setSearch} = context;
 
   return (
-    <div className={classes.root}>
-      <div className={classes.container}>
-        <div className={classes.filterBar}>
+    <div className="DataList-root">
+      <div className="DataList-container">
+        <div className="DataList-filterBar">
           {filters.map((v, index) => (
-            <React.Fragment key={index}>
+            <Fragment key={index}>
               <div
-                className={classes.filterButtons}
-                style={{background: filter == v.value ? '#1971C2' : ''}}
+              className="DataList-filterButtons"
+                style={{
+                  background: filter == v.value ? "#1971C2" : "",
+                }}
                 onClick={() => setFilter(v.value)}
               >
                 {v.label}
               </div>
-            </React.Fragment>
+            </Fragment>
           ))}
         </div>
-        <div className={classes.search}>
-          <TextInput
-            style={{position: 'relative', width: '100%', height: '100%'}}
-            styles={{
-              input: {
-                borderBottom: '2px solid #ffffff14!important',
-                padding: 8,
-                transition: 'all 0.2s ease',
-                ':hover': {
-                  borderBottom: '2px solid #ffffff88!important'
-                },
-                ':focus': {
-                  borderBottom: '2px solid #1971C2!important'
-                }
-              }
-            }}
-            variant='unstyled'
+        <div className="DataList-search">
+          <Input
+            style={{position: "relative", width: "100%", height: "100%"}}
+            variant="underline"
             placeholder={`Type to filter ${list}`}
-            radius='sm'
+            radius="none"
             value={search}
             onChange={(event) => setSearch(event.currentTarget.value)}
           />
         </div>
         <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          position: 'relative',
+          display: "flex",
+          flexDirection: "column",
+          position: "relative",
           flex: 1,
           padding: 8,
-          overflow: 'hidden',
+          overflow: "hidden",
         }}>
-          <div className={classes.list}>
+          <div className="DataList-list">
             {children}
           </div>
         </div>

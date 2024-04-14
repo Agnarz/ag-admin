@@ -1,0 +1,19 @@
+.input {
+  font-size: 16px!important;
+}
+.input[data-variant='underline'] {
+  background: var(--mantine-color-dark-6)!important;
+  border-color: var(--mantine-color-dark-5);
+
+    border-bottom: 2px solid!important;
+    border-radius: 0;
+    transition: 0.25s ease;
+    border-bottom-color: var(--mantine-color-gray-7)!important;
+}
+.input[data-variant='underline']:hover {
+  border-bottom-color:  #ffffff88!important
+}
+.input[data-variant='underline']:focus {
+  border-bottom-color: var(--mantine-color-blue-filled)!important;
+}
+

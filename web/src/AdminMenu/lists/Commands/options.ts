@@ -1,5 +1,5 @@
 import type { ArgValue } from '../../../types';
-interface OptionsProps { [index: string]: ArgValue; };
+interface OptionsProps { [index: string]: ArgValue; }
 
 const Options: OptionsProps = {
   Targets: [],
@@ -19,7 +19,7 @@ export const SetOptions = (index: string, value: ArgValue) => {
 };
 
 export const GetOptions = (index: string) => {
-  var options = Options[index as keyof typeof Options];
+  let options = Options[index as keyof typeof Options];
   if (!options) {
     options = [];
   } return options;
